@@ -1,0 +1,91 @@
+:root{
+	--duraction: 1.2s;
+}
+*[data-animation]
+{
+    opacity: 0;
+}
+*.animation_fade-lf
+{
+    animation-name: fade-lf;
+    animation-duration: var(--duraction);
+    animation-timing-function: ease;
+
+    animation-fill-mode: forwards;
+}
+@keyframes fade-lf
+{
+    0%
+    {
+        transform: translateX(-25%);
+    }
+    100%
+    {
+        transform: translateY(0%);
+
+        opacity: 1;
+    }
+}
+*.animation_fade-dw
+{
+    animation-name: fade-dw;
+    animation-duration: var(--duraction);
+    animation-timing-function: ease;
+
+    animation-fill-mode: forwards;
+}
+@keyframes fade-dw
+{
+    0%
+    {
+        transform: translateY(25%);
+    }
+    100%
+    {
+        transform: translateY(0%);
+
+        opacity: 1;
+    }
+}
+*.animation_fade-rg
+{
+    animation-name: fade-rg;
+    animation-duration: var(--duraction);
+    animation-timing-function: ease;
+
+    animation-fill-mode: forwards;
+}
+@keyframes fade-rg
+{
+    0%
+    {
+        transform: translateX(25%);
+    }
+    100%
+    {
+        transform: translateY(0%);
+
+        opacity: 1;
+    }
+}
+*.animation_zoom-out
+{
+    animation-name: zoom-out;
+    animation-duration: var(--duraction);
+    animation-timing-function: ease;
+
+    animation-fill-mode: forwards;
+}
+@keyframes zoom-out
+{
+    0%
+    {
+        transform: scale(0);
+    }
+    100%
+    {
+        transform: scale(1);
+
+        opacity: 1;
+    }
+}
