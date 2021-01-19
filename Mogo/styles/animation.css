@@ -1,0 +1,27 @@
+/*
+В этом файле описываются анимации.
+Для того чтобы добавить нужную анимацию нужно просто указать начальное положение,а после конечное.
+Пример добавления анимации:
+*[data-animation="название анимации"]{
+	начальное положение...
+}
+*animation_название анимации{
+	конечное положение...
+}
+*/
+*[data-animation="show-dw"] {
+	opacity: 0;
+	transform: translateY(100%);
+	transition: 0.7s;
+}
+*.animation_show-dw{
+	opacity: 1;
+	transform: translateY(0px);
+}
+*[data-animation="show-scale"] {
+	transform: scale(0);
+	transition-duration: 0.9s;
+}
+*.animation_show-scale{
+	transform: scale(1);
+}
