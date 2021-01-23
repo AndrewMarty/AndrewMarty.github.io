@@ -200,21 +200,27 @@ body
     display: none;
 
     width: 28px;
-    height: 18px;
+    height: 20px;
 
     cursor: pointer;
 }
 
 .burger_active.burger::after
 {
-    transform: rotate(32deg);
+    bottom: 50%;
+
+    transition-delay: .2s,0s,0s,0s,0s;
+    transform: translateY(50%) rotate(-40deg);
 
     background-color: #fff !important;
 }
 
 .burger_active.burger::before
 {
-    transform: rotate(-34deg);
+    top: 50%;
+
+    transition-delay: .2s,0s,0s,0s,0s;
+    transform: translateY(-50%) rotate(40deg);
 
     background-color: #fff !important;
 }
@@ -235,12 +241,11 @@ body
     left: 0;
 
     width: 100%;
-    height: 2px;
+    height: 3px;
 
     content: '';
-    transition: transform .3s,opacity .3s,background .3s;
+    transition: transform .2s,opacity .2s,background .2s,top .2s,bottom .2s;
     transition-timing-function: linear;
-    transform-origin: right;
 
     opacity: 1;
     background-color: #fff;
@@ -263,11 +268,15 @@ body
 .burger::after
 {
     bottom: 0;
+
+    transition-delay: 0s,0s,0s,.2s,.2s;
 }
 
 .burger::before
 {
     top: 0;
+
+    transition-delay: 0s,0s,0s,.2s,.2s;
 }
 
 /*panel*/
@@ -361,7 +370,7 @@ body
 
     padding: 14px 80px;
 
-    transition: color .8s;
+    transition: color .5s;
     letter-spacing: .116em;
 
     color: #fff;
@@ -463,7 +472,7 @@ body
     margin-top: 64px;
     padding: 14px 80px;
 
-    transition: color .7s;
+    transition: color .5s;
     letter-spacing: .138em;
 
     color: #000;
@@ -486,7 +495,7 @@ body
     height: 0;
 
     content: '';
-    transition: height .8s;
+    transition: height .5s;
 
     background-color: #000;
 }
