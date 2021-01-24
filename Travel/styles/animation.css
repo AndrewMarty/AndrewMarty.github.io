@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 :root{
 	--duraction: 1.2s;
 }
@@ -7,84 +14,172 @@
 }
 *.animation_fade-lf
 {
-    animation-name: fade-lf;
-    animation-duration: var(--duraction);
-    animation-timing-function: ease;
+    -webkit-animation-name: fade-lf;
+            animation-name: fade-lf;
+    -webkit-animation-duration: var(--duraction);
+            animation-duration: var(--duraction);
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
 
-    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+
+            animation-fill-mode: forwards;
+}
+@-webkit-keyframes fade-lf
+{
+    0%
+    {
+        -webkit-transform: translateX(-25%);
+                transform: translateX(-25%);
+    }
+    100%
+    {
+        -webkit-transform: translateY(0%);
+                transform: translateY(0%);
+
+        opacity: 1;
+    }
 }
 @keyframes fade-lf
 {
     0%
     {
-        transform: translateX(-25%);
+        -webkit-transform: translateX(-25%);
+                transform: translateX(-25%);
     }
     100%
     {
-        transform: translateY(0%);
+        -webkit-transform: translateY(0%);
+                transform: translateY(0%);
 
         opacity: 1;
     }
 }
 *.animation_fade-dw
 {
-    animation-name: fade-dw;
-    animation-duration: var(--duraction);
-    animation-timing-function: ease;
+    -webkit-animation-name: fade-dw;
+            animation-name: fade-dw;
+    -webkit-animation-duration: var(--duraction);
+            animation-duration: var(--duraction);
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
 
-    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+
+            animation-fill-mode: forwards;
+}
+@-webkit-keyframes fade-dw
+{
+    0%
+    {
+        -webkit-transform: translateY(25%);
+                transform: translateY(25%);
+    }
+    100%
+    {
+        -webkit-transform: translateY(0%);
+                transform: translateY(0%);
+
+        opacity: 1;
+    }
 }
 @keyframes fade-dw
 {
     0%
     {
-        transform: translateY(25%);
+        -webkit-transform: translateY(25%);
+                transform: translateY(25%);
     }
     100%
     {
-        transform: translateY(0%);
+        -webkit-transform: translateY(0%);
+                transform: translateY(0%);
 
         opacity: 1;
     }
 }
 *.animation_fade-rg
 {
-    animation-name: fade-rg;
-    animation-duration: var(--duraction);
-    animation-timing-function: ease;
+    -webkit-animation-name: fade-rg;
+            animation-name: fade-rg;
+    -webkit-animation-duration: var(--duraction);
+            animation-duration: var(--duraction);
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
 
-    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+
+            animation-fill-mode: forwards;
+}
+@-webkit-keyframes fade-rg
+{
+    0%
+    {
+        -webkit-transform: translateX(25%);
+                transform: translateX(25%);
+    }
+    100%
+    {
+        -webkit-transform: translateY(0%);
+                transform: translateY(0%);
+
+        opacity: 1;
+    }
 }
 @keyframes fade-rg
 {
     0%
     {
-        transform: translateX(25%);
+        -webkit-transform: translateX(25%);
+                transform: translateX(25%);
     }
     100%
     {
-        transform: translateY(0%);
+        -webkit-transform: translateY(0%);
+                transform: translateY(0%);
 
         opacity: 1;
     }
 }
 *.animation_zoom-out
 {
-    animation-name: zoom-out;
-    animation-duration: var(--duraction);
-    animation-timing-function: ease;
+    -webkit-animation-name: zoom-out;
+            animation-name: zoom-out;
+    -webkit-animation-duration: var(--duraction);
+            animation-duration: var(--duraction);
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
 
-    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+
+            animation-fill-mode: forwards;
+}
+@-webkit-keyframes zoom-out
+{
+    0%
+    {
+        -webkit-transform: scale(0);
+                transform: scale(0);
+    }
+    100%
+    {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+
+        opacity: 1;
+    }
 }
 @keyframes zoom-out
 {
     0%
     {
-        transform: scale(0);
+        -webkit-transform: scale(0);
+                transform: scale(0);
     }
     100%
     {
-        transform: scale(1);
+        -webkit-transform: scale(1);
+                transform: scale(1);
 
         opacity: 1;
     }
