@@ -496,9 +496,9 @@ body
     height: 0;
 
     content: '';
-    -webkit-transition: height .8s;
-    -o-transition: height .8s;
-    transition: height .8s;
+    -webkit-transition: height .5s;
+    -o-transition: height .5s;
+    transition: height .5s;
 
     background-color: #fff;
 }
