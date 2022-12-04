@@ -4,12 +4,17 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="css/style.min.css?_v=20221204192312" />
+		<link rel="stylesheet" href="css/style.min.css?_v=20221205010306" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap&_v=20221204192312"
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap&_v=20221205010306"
 			rel="stylesheet"
+		/>
+		<script src="https://code.jquery.com/jquery-3.6.1.min.js?_v=20221205010306"></script>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css?_v=20221205010306"
 		/>
 		<title>обьлифт</title>
 	</head>
@@ -102,7 +107,7 @@
 								alt="arrow-up"
 								class="screen__form-icon"
 							/>
-							<input id="telephone" type="text" class="screen__form-input" />
+							<input id="telephone" type="tel" class="screen__form-input tel" />
 						</div>
 					</div>
 					<button type="submit" class="screen__form-item screen__form-btn">
@@ -113,6 +118,12 @@
 		</div>
 	</div>
 </section>
+<!-- <input
+								id="telephone"
+								type="tel"
+								data-modal="1"
+								class="js-open-modal screen__form-input tel"
+							/> -->
 
 				</div>
 				<img
@@ -190,36 +201,36 @@
 						><span class="quiz__quastion-text">Какое количество лифтов?</span>
 					</h6>
 					<div class="quiz__body">
-						<div class="quiz__option">
+						<label class="quiz__option">
 							<picture><source srcset="img/quiz/photo_1.webp" type="image/webp"><img src="img/quiz/photo_1.png" alt="photo" class="quiz__photo" /></picture>
 							<div class="quiz__answer">
 								<label class="quiz__text">
-									<input type="checkbox" name="answer" class="quiz__field" />
-									1-5</label
+									<input type="radio" name="answer" class="quiz__field" />
+									<span class='quiz__check'>1-5</span></label
 								>
 							</div>
-						</div>
-						<div class="quiz__option">
+						</label>
+						<label class="quiz__option">
 							<picture><source srcset="img/quiz/photo_1.webp" type="image/webp"><img src="img/quiz/photo_1.png" alt="photo" class="quiz__photo" /></picture>
 							<div class="quiz__answer">
 								<label class="quiz__text"
-									><input type="checkbox" name="answer" class="quiz__field" />
-									5-10</label
+									><input type="radio" name="answer" class="quiz__field" />
+									<span class='quiz__check'>5-10</span></label
 								>
 							</div>
-						</div>
-						<div class="quiz__option">
+						</label>
+						<label class="quiz__option">
 							<picture><source srcset="img/quiz/photo_1.webp" type="image/webp"><img src="img/quiz/photo_1.png" alt="photo" class="quiz__photo" /></picture>
 							<div class="quiz__answer">
 								<label class="quiz__text"
 									><input
-										type="checkbox"
+										type="radio"
 										name="answer"
 										class="quiz__field"
-									/>>10</label
+									/><span class='quiz__check'>>10</span></label
 								>
 							</div>
-						</div>
+						</label>
 					</div>
 				</div>
 				<div class="quiz__template">
@@ -228,48 +239,48 @@
 						><span class="quiz__quastion-text">Какое количество лифтов?</span>
 					</h6>
 					<div class="quiz__body quiz__body-grid">
-						<div class="quiz__option">
+						<label class="quiz__option">
 							<picture><source srcset="img/quiz/photo_2.webp" type="image/webp"><img src="img/quiz/photo_2.png" alt="photo" class="quiz__photo" /></picture>
 							<div class="quiz__answer">
 								<label class="quiz__text">
-									<input type="checkbox" name="answer" class="quiz__field" />
-									8</label
+									<input type="radio" name="answer" class="quiz__field" />
+									<span class='quiz__check'>8</span></label
 								>
 							</div>
-						</div>
-						<div class="quiz__option">
+						</label>
+						<label class="quiz__option">
 							<picture><source srcset="img/quiz/photo_2.webp" type="image/webp"><img src="img/quiz/photo_2.png" alt="photo" class="quiz__photo" /></picture>
 							<div class="quiz__answer">
 								<label class="quiz__text"
-									><input type="checkbox" name="answer" class="quiz__field" />
-									9</label
+									><input type="radio" name="answer" class="quiz__field" />
+									<span class='quiz__check'>9</span></label
 								>
 							</div>
-						</div>
-						<div class="quiz__option">
-							<picture><source srcset="img/quiz/photo_2.webp" type="image/webp"><img src="img/quiz/photo_2.png" alt="photo" class="quiz__photo" /></picture>
-							<div class="quiz__answer">
-								<label class="quiz__text"
-									><input
-										type="checkbox"
-										name="answer"
-										class="quiz__field"
-									/>12</label
-								>
-							</div>
-						</div>
-						<div class="quiz__option">
+						</label>
+						<label class="quiz__option">
 							<picture><source srcset="img/quiz/photo_2.webp" type="image/webp"><img src="img/quiz/photo_2.png" alt="photo" class="quiz__photo" /></picture>
 							<div class="quiz__answer">
 								<label class="quiz__text"
 									><input
-										type="checkbox"
+										type="radio"
 										name="answer"
 										class="quiz__field"
-									/>16</label
+									/><span class='quiz__check'>12</span></label
 								>
 							</div>
-						</div>
+						</label>
+						<label class="quiz__option">
+							<picture><source srcset="img/quiz/photo_2.webp" type="image/webp"><img src="img/quiz/photo_2.png" alt="photo" class="quiz__photo" /></picture>
+							<div class="quiz__answer">
+								<label class="quiz__text"
+									><input
+										type="radio"
+										name="answer"
+										class="quiz__field"
+									/><span class='quiz__check'></span>16</label
+								>
+							</div>
+						</label>
 					</div>
 				</div>
 				<div class="quiz__template">
@@ -278,49 +289,43 @@
 						><span class="quiz__quastion-text">Какое количество лифтов?</span>
 					</h6>
 					<div class="quiz__body quiz__body-grid">
-						<div class="quiz__option">
+						<label class="quiz__option">
 							<picture><source srcset="img/quiz/photo_3.webp" type="image/webp"><img src="img/quiz/photo_3.png" alt="photo" class="quiz__photo" /></picture>
 							<div class="quiz__answer">
 								<label class="quiz__text">
-									<input type="checkbox" name="answer" class="quiz__field" />
-									320 кг.</label
+									<input type="radio" name="answer" class="quiz__field" />
+									<span class='quiz__check'>320 кг.</span></label
 								>
 							</div>
-						</div>
-						<div class="quiz__option">
+						</label>
+						<label class="quiz__option">
 							<picture><source srcset="img/quiz/photo_3.webp" type="image/webp"><img src="img/quiz/photo_3.png" alt="photo" class="quiz__photo" /></picture>
 							<div class="quiz__answer">
 								<label class="quiz__text"
-									><input type="checkbox" name="answer" class="quiz__field" />
-									400 кг.</label
+									><input type="radio" name="answer" class="quiz__field" /><span class='quiz__check'>400
+									кг.</span></label
 								>
 							</div>
-						</div>
-						<div class="quiz__option">
+						</label>
+						<label class="quiz__option">
 							<picture><source srcset="img/quiz/photo_3.webp" type="image/webp"><img src="img/quiz/photo_3.png" alt="photo" class="quiz__photo" /></picture>
 							<div class="quiz__answer">
 								<label class="quiz__text"
-									><input
-										type="checkbox"
-										name="answer"
-										class="quiz__field"
-									/>630 кг.</label
+									><input type="radio" name="answer" class="quiz__field" /><span class='quiz__check'>630
+									кг.</span></label
 								>
 							</div>
-						</div>
+						</label>
 
-						<div class="quiz__option">
+						<label class="quiz__option">
 							<picture><source srcset="img/quiz/photo_3.webp" type="image/webp"><img src="img/quiz/photo_3.png" alt="photo" class="quiz__photo" /></picture>
 							<div class="quiz__answer">
 								<label class="quiz__text"
-									><input
-										type="checkbox"
-										name="answer"
-										class="quiz__field"
-									/>1000 кг.</label
+									><input type="radio" name="answer" class="quiz__field" /><span class='quiz__check'>1000
+									кг.</span></label
 								>
 							</div>
-						</div>
+						</label>
 					</div>
 				</div>
 				<div class="quiz__template">
@@ -329,62 +334,62 @@
 						><span class="quiz__quastion-text">Выберете модель</span>
 					</h6>
 					<div class="quiz__body quiz__body-col">
-						<div class="quiz__option">
+						<label class="quiz__option">
 							<div class="quiz__answer">
 								<label class="quiz__text">
-									<input type="checkbox" name="answer" class="quiz__field" />
-									Карачаровский механический завод</label
+									<input type="radio" name="answer" class="quiz__field" />
+									<span class='quiz__check'>Карачаровский механический завод</span></label
 								>
 							</div>
-						</div>
-						<div class="quiz__option">
+						</label>
+						<label class="quiz__option">
 							<div class="quiz__answer">
 								<label class="quiz__text"
-									><input type="checkbox" name="answer" class="quiz__field" />
-									Щербинский лифтостроительный завод</label
+									><input type="radio" name="answer" class="quiz__field" />
+									<span class='quiz__check'>Щербинский лифтостроительный завод</span></label
 								>
 							</div>
-						</div>
-						<div class="quiz__option">
+						</label>
+						<label class="quiz__option">
 							<div class="quiz__answer">
 								<label class="quiz__text"
-									><input type="checkbox" name="answer" class="quiz__field" />
-									Могилевский лифтостроительный завод</label
+									><input type="radio" name="answer" class="quiz__field" />
+									<span class='quiz__check'>Могилевский лифтостроительный завод</span></label
 								>
 							</div>
-						</div>
-						<div class="quiz__option">
+						</label>
+						<label class="quiz__option">
 							<div class="quiz__answer">
 								<label class="quiz__text"
-									><input type="checkbox" name="answer" class="quiz__field" />
-									СИБЛИФТ</label
+									><input type="radio" name="answer" class="quiz__field" />
+									<span class='quiz__check'>СИБЛИФТ</span></label
 								>
 							</div>
-						</div>
-						<div class="quiz__option">
+						</label>
+						<label class="quiz__option">
 							<div class="quiz__answer">
 								<label class="quiz__text"
-									><input type="checkbox" name="answer" class="quiz__field" />
-									KONE</label
+									><input type="radio" name="answer" class="quiz__field" />
+									<span class='quiz__check'>KONE</span></label
 								>
 							</div>
-						</div>
-						<div class="quiz__option">
+						</label>
+						<label class="quiz__option">
 							<div class="quiz__answer">
 								<label class="quiz__text"
-									><input type="checkbox" name="answer" class="quiz__field" />
-									OTIS</label
+									><input type="radio" name="answer" class="quiz__field" />
+									<span class='quiz__check'>OTIS</span></label
 								>
 							</div>
-						</div>
-						<div class="quiz__option">
+						</label>
+						<label class="quiz__option">
 							<div class="quiz__answer">
 								<label class="quiz__text"
-									><input type="checkbox" name="answer" class="quiz__field" />
-									другая модель</label
+									><input type="radio" name="answer" class="quiz__field" />
+									<span class='quiz__check'>другая модель</span></label
 								>
 							</div>
-						</div>
+						</label>
 					</div>
 				</div>
 				<div class="quiz__template">
@@ -395,33 +400,30 @@
 						>
 					</h6>
 					<div class="quiz__body quiz__body-col">
-						<div class="quiz__option">
+						<label class="quiz__option">
 							<div class="quiz__answer">
 								<label class="quiz__text">
-									<input type="checkbox" name="answer" class="quiz__field" />
-									до 10 лет</label
+									<input type="radio" name="answer" class="quiz__field" />
+									<span class='quiz__check'>до 10 лет</span></label
 								>
 							</div>
-						</div>
-						<div class="quiz__option">
+						</label>
+						<label class="quiz__option">
 							<div class="quiz__answer">
 								<label class="quiz__text"
-									><input type="checkbox" name="answer" class="quiz__field" />
-									от 10 до 20 лет</label
+									><input type="radio" name="answer" class="quiz__field" /><span class='quiz__check'> от
+									10 до 20 лет</span></label
 								>
 							</div>
-						</div>
-						<div class="quiz__option">
+						</label>
+						<label class="quiz__option">
 							<div class="quiz__answer">
 								<label class="quiz__text"
-									><input
-										type="checkbox"
-										name="answer"
-										class="quiz__field"
-									/>свеше 20 лет</label
+									><input type="radio" name="answer" class="quiz__field" /><span class='quiz__check'></span>свеше
+									20 лет</span></label
 								>
 							</div>
-						</div>
+						</label>
 					</div>
 				</div>
 				<span class="quiz__info">Ваша скидка пока</span>
@@ -454,9 +456,9 @@
 					</p>
 					<form action="#" class="quiz__form">
 						<input
-							type="text"
+							type="tel"
 							placeholder="Введите Ваш телефон"
-							class="quiz__telephone"
+							class="quiz__telephone tel"
 						/>
 						<div class="quiz__submit">Получить расчет</div>
 						<div class="quiz__note">
@@ -481,7 +483,12 @@
 		</h2>
 		<div class="team__row">
 			<div class="team__item">
-				<picture><source srcset="img/team/work1.webp" type="image/webp"><img src="img/team/work1.png" alt="photo" class="team__photo" /></picture>
+				<img
+					src="img/team/work1.png"
+					data-fancybox
+					alt="photo"
+					class="team__photo"
+				/>
 				<div class="team__inner">
 					<span class="team__prof">Главный инженер</span>
 					<span class="team__name">Шумкин Иван Александрович</span>
@@ -489,7 +496,12 @@
 				</div>
 			</div>
 			<div class="team__item">
-				<picture><source srcset="img/team/work2.webp" type="image/webp"><img src="img/team/work2.png" alt="photo" class="team__photo" /></picture>
+				<img
+					src="img/team/work2.png"
+					data-fancybox
+					alt="photo"
+					class="team__photo minimized"
+				/>
 				<div class="team__inner">
 					<span class="team__prof">Инженер</span>
 					<span class="team__name">Попов Сергей Павлович</span>
@@ -497,7 +509,12 @@
 				</div>
 			</div>
 			<div class="team__item">
-				<picture><source srcset="img/team/work3.webp" type="image/webp"><img src="img/team/work3.png" alt="photo" class="team__photo" /></picture>
+				<img
+					src="img/team/work3.png"
+					data-fancybox
+					alt="photo"
+					class="team__photo"
+				/>
 				<div class="team__inner">
 					<span class="team__prof">Прораб</span>
 					<span class="team__name">Хаид Владимир Львович</span>
@@ -505,7 +522,12 @@
 				</div>
 			</div>
 			<div class="team__item">
-				<picture><source srcset="img/team/work4.webp" type="image/webp"><img src="img/team/work4.png" alt="photo" class="team__photo" /></picture>
+				<img
+					src="img/team/work4.png"
+					data-fancybox
+					alt="photo"
+					class="team__photo"
+				/>
 				<div class="team__inner">
 					<span class="team__prof">Электромеханик</span>
 					<span class="team__name">Федоров Сергей Радионович </span>
@@ -513,7 +535,12 @@
 				</div>
 			</div>
 			<div class="team__item">
-				<picture><source srcset="img/team/work5.webp" type="image/webp"><img src="img/team/work5.png" alt="photo" class="team__photo" /></picture>
+				<img
+					src="img/team/work5.png"
+					data-fancybox
+					alt="photo"
+					class="team__photo"
+				/>
 				<div class="team__inner">
 					<span class="team__prof">Электромеханик</span>
 					<span class="team__name">Узких Виктор Юрьевич</span>
@@ -521,7 +548,12 @@
 				</div>
 			</div>
 			<div class="team__item">
-				<picture><source srcset="img/team/work6.webp" type="image/webp"><img src="img/team/work6.png" alt="photo" class="team__photo" /></picture>
+				<img
+					src="img/team/work6.png"
+					data-fancybox
+					alt="photo"
+					class="team__photo"
+				/>
 				<div class="team__inner">
 					<span class="team__prof">Электромеханик</span>
 					<span class="team__name">Рыжов Александр Иванович</span>
@@ -529,7 +561,12 @@
 				</div>
 			</div>
 			<div class="team__item">
-				<picture><source srcset="img/team/work7.webp" type="image/webp"><img src="img/team/work7.png" alt="photo" class="team__photo" /></picture>
+				<img
+					src="img/team/work7.png"
+					data-fancybox
+					alt="photo"
+					class="team__photo"
+				/>
 				<div class="team__inner">
 					<span class="team__prof">Электромеханик</span>
 					<span class="team__name">Новичков Дмитрий Евгеньевич</span>
@@ -537,7 +574,12 @@
 				</div>
 			</div>
 			<div class="team__item">
-				<picture><source srcset="img/team/work8.webp" type="image/webp"><img src="img/team/work8.png" alt="photo" class="team__photo" /></picture>
+				<img
+					src="img/team/work8.png"
+					data-fancybox
+					alt="photo"
+					class="team__photo"
+				/>
 				<div class="team__inner">
 					<span class="team__prof">Электромеханик</span>
 					<span class="team__name">Михайлов Роман Викторович</span>
@@ -545,7 +587,12 @@
 				</div>
 			</div>
 			<div class="team__item">
-				<picture><source srcset="img/team/work9.webp" type="image/webp"><img src="img/team/work9.png" alt="photo" class="team__photo" /></picture>
+				<img
+					src="img/team/work9.png"
+					data-fancybox
+					alt="photo"
+					class="team__photo"
+				/>
 				<div class="team__inner">
 					<span class="team__prof">Электромеханик</span>
 					<span class="team__name">Гаров Олег Владимирович</span>
@@ -553,7 +600,12 @@
 				</div>
 			</div>
 			<div class="team__item">
-				<picture><source srcset="img/team/work10.webp" type="image/webp"><img src="img/team/work10.png" alt="photo" class="team__photo" /></picture>
+				<img
+					src="img/team/work10.png"
+					data-fancybox
+					alt="photo"
+					class="team__photo"
+				/>
 				<div class="team__inner">
 					<span class="team__prof">Электромеханик</span>
 					<span class="team__name">Павлов Сергей Витальевич</span>
@@ -561,7 +613,12 @@
 				</div>
 			</div>
 			<div class="team__item">
-				<picture><source srcset="img/team/work11.webp" type="image/webp"><img src="img/team/work11.png" alt="photo" class="team__photo" /></picture>
+				<img
+					src="img/team/work11.png"
+					data-fancybox
+					alt="photo"
+					class="team__photo"
+				/>
 				<div class="team__inner">
 					<span class="team__prof">Электромеханик</span>
 					<span class="team__name">Павлов Вячеслав Витальевич</span>
@@ -569,7 +626,12 @@
 				</div>
 			</div>
 			<div class="team__item">
-				<picture><source srcset="img/team/work12.webp" type="image/webp"><img src="img/team/work12.png" alt="photo" class="team__photo" /></picture>
+				<img
+					src="img/team/work12.png"
+					data-fancybox
+					alt="photo"
+					class="team__photo"
+				/>
 				<div class="team__inner">
 					<span class="team__prof">Электромеханик</span>
 					<span class="team__name">Павлов Александр Витальевич</span>
@@ -577,7 +639,12 @@
 				</div>
 			</div>
 			<div class="team__item">
-				<picture><source srcset="img/team/work13.webp" type="image/webp"><img src="img/team/work13.png" alt="photo" class="team__photo" /></picture>
+				<img
+					src="img/team/work13.png"
+					data-fancybox
+					alt="photo"
+					class="team__photo"
+				/>
 				<div class="team__inner">
 					<span class="team__prof">Электромеханик</span>
 					<span class="team__name">Барских Егор Денисов</span>
@@ -585,7 +652,12 @@
 				</div>
 			</div>
 			<div class="team__item">
-				<picture><source srcset="img/team/work14.webp" type="image/webp"><img src="img/team/work14.png" alt="photo" class="team__photo" /></picture>
+				<img
+					src="img/team/work14.png"
+					data-fancybox
+					alt="photo"
+					class="team__photo"
+				/>
 				<div class="team__inner">
 					<span class="team__prof">Электромеханик</span>
 					<span class="team__name">Кошелев Петр Сергеевич</span>
@@ -624,16 +696,36 @@
 	<div class="container">
 		<div class="awards__diploms">
 			<div class="awards__diplome">
-				<picture><source srcset="img/awards/award1.webp" type="image/webp"><img src="img/awards/award1.png" alt="diplome" class="awards__inner" /></picture>
+				<img
+					src="img/awards/award1.png"
+					data-fancybox
+					alt="diplome"
+					class="awards__inner"
+				/>
 			</div>
 			<div class="awards__diplome">
-				<picture><source srcset="img/awards/award2.webp" type="image/webp"><img src="img/awards/award2.png" alt="diplome" class="awards__inner" /></picture>
+				<img
+					src="img/awards/award2.png"
+					data-fancybox
+					alt="diplome"
+					class="awards__inner"
+				/>
 			</div>
 			<div class="awards__diplome">
-				<picture><source srcset="img/awards/award3.webp" type="image/webp"><img src="img/awards/award3.png" alt="diplome" class="awards__inner" /></picture>
+				<img
+					src="img/awards/award3.png"
+					data-fancybox
+					alt="diplome"
+					class="awards__inner"
+				/>
 			</div>
 			<div class="awards__diplome">
-				<picture><source srcset="img/awards/award4.webp" type="image/webp"><img src="img/awards/award4.png" alt="diplome" class="awards__inner" /></picture>
+				<img
+					src="img/awards/award4.png"
+					data-fancybox
+					alt="diplome"
+					class="awards__inner"
+				/>
 			</div>
 		</div>
 	</div>
@@ -650,10 +742,20 @@
 	<div class="container-small">
 		<div class="awards__grid">
 			<div class="awards__item">
-				<picture><source srcset="img/awards/photo_1.webp" type="image/webp"><img src="img/awards/photo_1.png" alt="photo_1" class="awards__photo" /></picture>
+				<img
+					src="img/awards/photo_1.png"
+					data-fancybox
+					alt="photo_1"
+					class="awards__photo"
+				/>
 			</div>
 			<div class="awards__item">
-				<picture><source srcset="img/awards/photo_2.webp" type="image/webp"><img src="img/awards/photo_2.png" alt="photo_2" class="awards__photo" /></picture>
+				<img
+					src="img/awards/photo_2.png"
+					data-fancybox
+					alt="photo_2"
+					class="awards__photo"
+				/>
 			</div>
 		</div>
 	</div>
@@ -784,41 +886,86 @@
 			<div class="zones__col">
 				<div class="zones__item">
 					<h6 class="zones__name">Участок Центральный</h6>
-					<picture><source srcset="img/zones/zone-1.webp" type="image/webp"><img src="img/zones/zone-1.png" alt="zone" class="zones__photo" /></picture>
+					<img
+						src="img/zones/zone-1.png"
+						data-fancybox
+						alt="zone"
+						class="zones__photo"
+					/>
 				</div>
 				<div class="zones__item">
 					<h6 class="zones__name">Участок Кропоткина</h6>
-					<picture><source srcset="img/zones/zone-2.webp" type="image/webp"><img src="img/zones/zone-2.png" alt="zone" class="zones__photo" /></picture>
+					<img
+						src="img/zones/zone-2.png"
+						data-fancybox
+						alt="zone"
+						class="zones__photo"
+					/>
 				</div>
 				<div class="zones__item">
 					<h6 class="zones__name">Участок Учительская</h6>
-					<picture><source srcset="img/zones/zone-3.webp" type="image/webp"><img src="img/zones/zone-3.png" alt="zone" class="zones__photo" /></picture>
+					<img
+						src="img/zones/zone-3.png"
+						data-fancybox
+						alt="zone"
+						class="zones__photo"
+					/>
 				</div>
 				<div class="zones__item">
 					<h6 class="zones__name">Участок ГБШ-Толбухина</h6>
-					<picture><source srcset="img/zones/zone-4.webp" type="image/webp"><img src="img/zones/zone-4.png" alt="zone" class="zones__photo" /></picture>
+					<img
+						src="img/zones/zone-4.png"
+						data-fancybox
+						alt="zone"
+						class="zones__photo"
+					/>
 				</div>
 				<div class="zones__item">
 					<h6 class="zones__name">Участок Западный жилмассив</h6>
-					<picture><source srcset="img/zones/zone-5.webp" type="image/webp"><img src="img/zones/zone-5.png" alt="zone" class="zones__photo" /></picture>
+					<img
+						src="img/zones/zone-5.png"
+						data-fancybox
+						alt="zone"
+						class="zones__photo"
+					/>
 				</div>
 				<div class="zones__item">
 					<h6 class="zones__name">Участок Троллейный жилмассив</h6>
-					<picture><source srcset="img/zones/zone-6.webp" type="image/webp"><img src="img/zones/zone-6.png" alt="zone" class="zones__photo" /></picture>
+					<img
+						src="img/zones/zone-6.png"
+						data-fancybox
+						alt="zone"
+						class="zones__photo"
+					/>
 				</div>
 			</div>
 			<div class="zones__col">
 				<div class="zones__item">
 					<h6 class="zones__name">Участок Юго-Западный жилмассив</h6>
-					<picture><source srcset="img/zones/zone-7.webp" type="image/webp"><img src="img/zones/zone-7.png" alt="zone" class="zones__photo" /></picture>
+					<img
+						src="img/zones/zone-7.png"
+						data-fancybox
+						alt="zone"
+						class="zones__photo"
+					/>
 				</div>
 				<div class="zones__item">
 					<h6 class="zones__name">Участок Беловежская</h6>
-					<picture><source srcset="img/zones/zone-8.webp" type="image/webp"><img src="img/zones/zone-8.png" alt="zone" class="zones__photo" /></picture>
+					<img
+						src="img/zones/zone-8.png"
+						data-fancybox
+						alt="zone"
+						class="zones__photo"
+					/>
 				</div>
 				<div class="zones__item">
 					<h6 class="zones__name">Участок Оловозаводская</h6>
-					<picture><source srcset="img/zones/zone-9.webp" type="image/webp"><img src="img/zones/zone-9.png" alt="zone" class="zones__photo" /></picture>
+					<img
+						src="img/zones/zone-9.png"
+						data-fancybox
+						alt="zone"
+						class="zones__photo"
+					/>
 				</div>
 			</div>
 		</div>
@@ -835,8 +982,8 @@
 			<div class="request__row">
 				<div class="request__wrap request__item">
 					<input
-						type="text"
-						class="request__field"
+						type="tel"
+						class="request__field tel"
 						placeholder="Номер телефона"
 					/>
 				</div>
@@ -844,11 +991,13 @@
 					Сделать заказ
 				</button>
 			</div>
-			<input type="checkbox" />
-			<span class="request__agree"
-				>Нажамая на кнопку, вы соглашаетесь с условиями обработки персональных
-				данных</span
-			>
+			<label>
+				<input type="checkbox" class="request__check" />
+				<span class="request__agree"
+					>Нажамая на кнопку, вы соглашаетесь с условиями обработки персональных
+					данных</span
+				>
+			</label>
 		</form>
 	</div>
 </section>
@@ -870,8 +1019,38 @@
 		</div>
 	</div>
 </footer>
+ <div class="modal" data-modal="1">
+	<div class="modal__inner">
+		<div class="modal__close js-modal-close"></div>
+		<h5 class="modal__title">УЗНАТЬ ПОДРОБНЕЕ</h5>
+		<form class="modal__form">
+			<input
+				type="tel"
+				name="telephone"
+				class="modal__field tel"
+				placeholder="телефон*"
+			/>
+			<label class="modal__agree">
+				<input type="checkbox" class="modal__check" />
+				<span class="modal__text"
+					>Нажимая на кнопку "Отправить" я даю свое согласие на обработку
+					персональных данных</span
+				>
+			</label>
+			<button type="submit" class="modal__btn">Отправить</button>
+		</form>
+	</div>
+</div>
+
+<!-- Подложка под модальным окном -->
+<div class="overlay js-overlay-modal"></div>
 
 		</div>
-		<script src="js/app.js?_v=20221204192312"></script>
+		<script
+			ript
+			src="https://www.sng-it.ru/bitrix/templates/master/js/jquery.inputmask.bundle.min.js"
+		></script>
+		<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js?_v=20221205010306"></script>
+		<script src="js/app.js?_v=20221205010306"></script>
 	</body>
 </html>

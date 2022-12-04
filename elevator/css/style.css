@@ -432,7 +432,7 @@ template {
 }
 
 .wrapper__img {
-  top: 66px;
+  top: 100px;
   right: 16px;
   position: absolute;
 }
@@ -1000,7 +1000,51 @@ template {
 }
 
 .quiz__field {
-  margin-right: 8px;
+  width: 0;
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.quiz__field:checked + .quiz__check::before {
+  opacity: 1;
+}
+
+.quiz__check {
+  padding-left: 30px;
+  position: relative;
+}
+
+.quiz__check::before {
+  -webkit-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  content: "";
+  opacity: 0;
+  width: 5px;
+  position: absolute;
+  left: 8px;
+  top: 48%;
+  -webkit-transform: translateY(-50%) rotate(45deg);
+      -ms-transform: translateY(-50%) rotate(45deg);
+          transform: translateY(-50%) rotate(45deg);
+  border-right: 2px solid #f36c50;
+  border-bottom: 2px solid #f36c50;
+  height: 10px;
+}
+
+.quiz__check::after {
+  content: "";
+  height: 20px;
+  width: 20px;
+  border: 1px solid #a7a9ac;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .quiz__btn-next {
@@ -1313,8 +1357,6 @@ template {
   letter-spacing: -0.2px;
   color: #434b53;
   margin-bottom: 74px;
-  background: -o-linear-gradient(178.1deg, #ffffff 61.82%, rgba(255, 255, 255, 0) 97.88%);
-  background: linear-gradient(271.9deg, #ffffff 61.82%, rgba(255, 255, 255, 0) 97.88%);
 }
 
 .no-webp .director__text::after{
@@ -1659,6 +1701,7 @@ template {
   bottom: 0;
   right: -14px;
   z-index: 101;
+  pointer-events: none;
 }
 
 .request__content {
@@ -1708,7 +1751,7 @@ template {
 }
 
 .request__item:last-child {
-  margin-right: 0;
+  margin: 0;
 }
 
 .request__wrap {
@@ -1752,11 +1795,56 @@ template {
   cursor: pointer;
 }
 
+.request__check {
+  width: 0;
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.request__check:checked + .request__agree::before {
+  opacity: 1;
+}
+
 .request__agree {
   font-weight: 400;
   font-size: 11px;
   line-height: 130%;
   color: #7e868e;
+  padding-left: 30px;
+  position: relative;
+}
+
+.request__agree::before {
+  -webkit-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  content: "";
+  opacity: 0;
+  width: 5px;
+  position: absolute;
+  left: 7px;
+  top: 45%;
+  -webkit-transform: translateY(-50%) rotate(45deg);
+      -ms-transform: translateY(-50%) rotate(45deg);
+          transform: translateY(-50%) rotate(45deg);
+  border-right: 2px solid #f36c50;
+  border-bottom: 2px solid #f36c50;
+  height: 10px;
+}
+
+.request__agree::after {
+  content: "";
+  height: 18px;
+  width: 18px;
+  border: 1px solid #a7a9ac;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .footer {
@@ -1804,6 +1892,215 @@ template {
   font-weight: 400;
   font-size: 12px;
   line-height: 150%;
+}
+
+.overlay {
+  /* Скрываем подложку  */
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 20;
+  -webkit-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+/* Стили для модальных окон */
+
+.modal {
+  /* Скрываем окна  */
+  opacity: 0;
+  visibility: hidden;
+  /*  Установаем ширину окна  */
+  width: 100%;
+  max-width: 500px;
+  /*  Центрируем и задаем z-index */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 30;
+  /* Должен быть выше чем у подложки*/
+  /*  Побочные стили   */
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #fff;
+  -webkit-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+/* Стили для активных классов подложки и окна */
+
+.modal.active,
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Стили для кнопки закрытия */
+
+.modal {
+  padding-top: 60px;
+  max-width: 800px;
+}
+
+.modal__inner {
+  max-width: 620px;
+}
+
+.modal__close {
+  cursor: pointer;
+  right: 30px;
+  top: 30px;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+}
+
+.modal__close::after,
+.modal__close::before {
+  content: "";
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+}
+
+.modal__close::before {
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+      -ms-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.modal__close::after {
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+      -ms-transform: translate(-50%, -50%) rotate(-45deg);
+          transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.modal__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 138.88889%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #000;
+  margin: 0px 0px 50px 0px;
+}
+
+.modal__check {
+  width: 0;
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.modal__check:checked + .modal__text::before {
+  opacity: 1;
+}
+
+.modal__text {
+  display: block;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 130%;
+  color: #7e868e;
+  padding-left: 30px;
+  position: relative;
+}
+
+.modal__text::before {
+  -webkit-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  content: "";
+  opacity: 0;
+  width: 5px;
+  position: absolute;
+  left: 7px;
+  top: 45%;
+  -webkit-transform: translateY(-50%) rotate(45deg);
+      -ms-transform: translateY(-50%) rotate(45deg);
+          transform: translateY(-50%) rotate(45deg);
+  border-right: 2px solid #f36c50;
+  border-bottom: 2px solid #f36c50;
+  height: 10px;
+}
+
+.modal__text::after {
+  content: "";
+  height: 18px;
+  width: 18px;
+  border: 1px solid #a7a9ac;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.modal__field {
+  width: 100%;
+  border: none;
+  background: transparent;
+  padding: 0;
+  color: #000;
+  border-bottom: 1px solid #000;
+  height: 45px;
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
+.modal__field:focus {
+  outline: none;
+}
+
+.modal__field::-webkit-input-placeholder {
+  color: #000;
+}
+
+.modal__field::-moz-placeholder {
+  color: #000;
+}
+
+.modal__field:-ms-input-placeholder {
+  color: #000;
+}
+
+.modal__field::-ms-input-placeholder {
+  color: #000;
+}
+
+.modal__field::placeholder {
+  color: #000;
+}
+
+.modal__agree {
+  display: block;
+  color: #000;
+  margin-bottom: 40px;
+}
+
+.modal__btn {
+  color: #fff;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 22px 75px;
+  font-family: inherit;
+  border: none;
+  background-color: #f36c50;
 }
 
 @media (max-width: 1200px) {
@@ -1903,10 +2200,6 @@ template {
 
   .director__btn {
     padding: 28px 70px;
-  }
-
-  .awards {
-    padding-top: 200px;
   }
 
   .awards__desc {
@@ -2046,6 +2339,10 @@ template {
   }
 
   .quiz__wrapper {
+    padding: 45px 45px 65px;
+  }
+
+  .quiz__result {
     padding: 45px 45px 65px;
   }
 
@@ -2259,7 +2556,23 @@ template {
     margin: 30px 10px;
   }
 
+  .director {
+    z-index: 100;
+  }
+
   .director__background {
+    top: auto;
+    left: auto;
+    bottom: -266px;
+    right: -320px;
+    width: 730px;
+  }
+
+  .director__background img {
+    width: 100%;
+  }
+
+  .director__background::after {
     display: none;
   }
 
@@ -2312,6 +2625,21 @@ template {
   .zones__name {
     font-size: 17px;
     margin-bottom: 25px;
+  }
+
+  .request__row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .request__item {
+    margin-right: 0;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .request__field {
+    padding: 25px 30px 25px 75px;
   }
 
   .request__title {
@@ -2431,6 +2759,41 @@ template {
     grid-template-columns: 1fr;
   }
 
+  .quiz__item:first-child {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .quiz__result-title {
+    font-size: 26px;
+  }
+
+  .quiz__result-subtitle {
+    font-size: 15px;
+    margin-bottom: 45px;
+  }
+
+  .quiz__telephone {
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  .quiz__submit {
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+
+  .quiz__note {
+    font-size: 17px;
+  }
+
   .quiz__out {
     max-width: none;
     left: 50%;
@@ -2478,6 +2841,10 @@ template {
     padding: 30px 10px 30px;
   }
 
+  .quiz__result {
+    padding: 30px 10px 30px;
+  }
+
   .quiz__quastion {
     font-size: 17px;
     margin-bottom: 5px;
@@ -2491,7 +2858,8 @@ template {
   .quiz__value {
     padding: 0 10px;
     font-size: 15px;
-    margin-right: 10px;
+    margin-right: 0px;
+    margin-bottom: 5px;
     line-height: 36px;
   }
 
@@ -2503,6 +2871,10 @@ template {
   .quiz__btn-next {
     position: relative;
     padding: 12px 9px;
+  }
+
+  .quiz__btn-next::after {
+    bottom: -10px;
   }
 
   .team__row {
@@ -2531,12 +2903,8 @@ template {
   }
 
   .director__btn {
-    padding: 24px 38px;
+    padding: 24px 29px;
     font-size: 15px;
-  }
-
-  .awards {
-    padding-top: 120px;
   }
 
   .awards__diploms {
@@ -2625,15 +2993,16 @@ template {
   }
 
   .request__field {
-    padding: 0 30px 0 40px;
+    padding: 20px 30px 20px 40px;
+    font-size: 10px;
   }
 
   .request__wrap::after {
-    left: 5px;
+    left: 10px;
   }
 
   .request__btn {
-    padding: 14px;
+    padding: 15px;
   }
 
   .request__row {
@@ -2642,14 +3011,6 @@ template {
 
   .request__agree {
     font-size: 9px;
-  }
-
-  .request__field {
-    font-size: 10px;
-  }
-
-  .request__btn {
-    font-size: 14px;
   }
 
   .footer {
@@ -2694,6 +3055,10 @@ template {
   }
 
   .quiz__wrapper {
+    padding: 30px 10px 30px;
+  }
+
+  .quiz__result {
     padding: 30px 10px 30px;
   }
 
@@ -2784,16 +3149,6 @@ template {
 
   .request__form {
     padding: 20px;
-  }
-
-  .request__row {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-
-  .request__item {
-    margin: 0;
-    width: 40%;
   }
 
   .footer__info {
