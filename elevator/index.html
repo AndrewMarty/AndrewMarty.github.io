@@ -4,11 +4,11 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="css/style.min.css?_v=20221204133443" />
+		<link rel="stylesheet" href="css/style.min.css?_v=20221204192312" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap&_v=20221204133443"
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap&_v=20221204192312"
 			rel="stylesheet"
 		/>
 		<title>обьлифт</title>
@@ -20,9 +20,9 @@
 					<header class="header">
 	<div class="container-small">
 		<div class="header__row">
-			<div class="header__logo">
+			<a href="#" class="header__logo">
 				<picture><source srcset="img/header/logo.webp" type="image/webp"><img src="img/header/logo.png" alt="logo" class="header__logo-photo" /></picture>
-			</div>
+			</a>
 			<div class="header__items">
 				<div class="header__item">
 					<img
@@ -39,7 +39,9 @@
 						alt="telephone"
 						class="header__icon"
 					/>
-					<span class="header__name">8 (913) 917-59-47</span>
+					<a class="header__name" href="tel:8 (913) 917-59-47"
+						>8 (913) 917-59-47</a
+					>
 					<span class="header__subname">Ежедневно с 9:00 до 20:00</span>
 				</div>
 			</div>
@@ -172,56 +174,295 @@
 		</div>
 	</div>
 	<div class="quiz">
-	<div class="quiz__out">
-		<span class="quiz__instruc">Ответьте на 5 простых вопросов</span>
-		<span class="quiz__subinstruc">и получите дополнительную скидку</span>
-	</div>
 	<div class="container-small quiz__content">
+		<div class="quiz__out">
+			<span class="quiz__instruc">Ответьте на 5 простых вопросов</span>
+			<span class="quiz__subinstruc">и получите дополнительную скидку</span>
+		</div>
 		<h4 class="quiz__title">
 			Узнайте индивидуальные условия сотрудничества, ответив на 5 вопросов
 		</h4>
 		<div class="quiz__inner">
-			<h6 class="quiz__quastion">
-				<span class="quiz__quastion-num">1/5</span>Какое количество лифтов?
-			</h6>
-			<div class="quiz__body">
-				<div class="quiz__option">
-					<picture><source srcset="img/quiz/photo_1.webp" type="image/webp"><img src="img/quiz/photo_1.png" alt="photo" class="quiz__photo" /></picture>
-					<div class="quiz__answer">
-						<input id="1" type="checkbox" />
-						<label for="1" class="quiz__text">1-5</label>
+			<div class="quiz__wrapper">
+				<div class="quiz__template quiz__template-active">
+					<h6 class="quiz__quastion">
+						<span class="quiz__quastion-num">1/5</span
+						><span class="quiz__quastion-text">Какое количество лифтов?</span>
+					</h6>
+					<div class="quiz__body">
+						<div class="quiz__option">
+							<picture><source srcset="img/quiz/photo_1.webp" type="image/webp"><img src="img/quiz/photo_1.png" alt="photo" class="quiz__photo" /></picture>
+							<div class="quiz__answer">
+								<label class="quiz__text">
+									<input type="checkbox" name="answer" class="quiz__field" />
+									1-5</label
+								>
+							</div>
+						</div>
+						<div class="quiz__option">
+							<picture><source srcset="img/quiz/photo_1.webp" type="image/webp"><img src="img/quiz/photo_1.png" alt="photo" class="quiz__photo" /></picture>
+							<div class="quiz__answer">
+								<label class="quiz__text"
+									><input type="checkbox" name="answer" class="quiz__field" />
+									5-10</label
+								>
+							</div>
+						</div>
+						<div class="quiz__option">
+							<picture><source srcset="img/quiz/photo_1.webp" type="image/webp"><img src="img/quiz/photo_1.png" alt="photo" class="quiz__photo" /></picture>
+							<div class="quiz__answer">
+								<label class="quiz__text"
+									><input
+										type="checkbox"
+										name="answer"
+										class="quiz__field"
+									/>>10</label
+								>
+							</div>
+						</div>
 					</div>
 				</div>
-				<div class="quiz__option">
-					<picture><source srcset="img/quiz/photo_1.webp" type="image/webp"><img src="img/quiz/photo_1.png" alt="photo" class="quiz__photo" /></picture>
-					<div class="quiz__answer">
-						<input id="2" type="checkbox" />
-						<label for="2" class="quiz__text">5-10</label>
+				<div class="quiz__template">
+					<h6 class="quiz__quastion">
+						<span class="quiz__quastion-num">2/5</span
+						><span class="quiz__quastion-text">Какое количество лифтов?</span>
+					</h6>
+					<div class="quiz__body quiz__body-grid">
+						<div class="quiz__option">
+							<picture><source srcset="img/quiz/photo_2.webp" type="image/webp"><img src="img/quiz/photo_2.png" alt="photo" class="quiz__photo" /></picture>
+							<div class="quiz__answer">
+								<label class="quiz__text">
+									<input type="checkbox" name="answer" class="quiz__field" />
+									8</label
+								>
+							</div>
+						</div>
+						<div class="quiz__option">
+							<picture><source srcset="img/quiz/photo_2.webp" type="image/webp"><img src="img/quiz/photo_2.png" alt="photo" class="quiz__photo" /></picture>
+							<div class="quiz__answer">
+								<label class="quiz__text"
+									><input type="checkbox" name="answer" class="quiz__field" />
+									9</label
+								>
+							</div>
+						</div>
+						<div class="quiz__option">
+							<picture><source srcset="img/quiz/photo_2.webp" type="image/webp"><img src="img/quiz/photo_2.png" alt="photo" class="quiz__photo" /></picture>
+							<div class="quiz__answer">
+								<label class="quiz__text"
+									><input
+										type="checkbox"
+										name="answer"
+										class="quiz__field"
+									/>12</label
+								>
+							</div>
+						</div>
+						<div class="quiz__option">
+							<picture><source srcset="img/quiz/photo_2.webp" type="image/webp"><img src="img/quiz/photo_2.png" alt="photo" class="quiz__photo" /></picture>
+							<div class="quiz__answer">
+								<label class="quiz__text"
+									><input
+										type="checkbox"
+										name="answer"
+										class="quiz__field"
+									/>16</label
+								>
+							</div>
+						</div>
 					</div>
 				</div>
-				<div class="quiz__option">
-					<picture><source srcset="img/quiz/photo_1.webp" type="image/webp"><img src="img/quiz/photo_1.png" alt="photo" class="quiz__photo" /></picture>
-					<div class="quiz__answer">
-						<input id="3" type="checkbox" />
-						<label for="3" class="quiz__text">>10</label>
+				<div class="quiz__template">
+					<h6 class="quiz__quastion">
+						<span class="quiz__quastion-num">3/5</span
+						><span class="quiz__quastion-text">Какое количество лифтов?</span>
+					</h6>
+					<div class="quiz__body quiz__body-grid">
+						<div class="quiz__option">
+							<picture><source srcset="img/quiz/photo_3.webp" type="image/webp"><img src="img/quiz/photo_3.png" alt="photo" class="quiz__photo" /></picture>
+							<div class="quiz__answer">
+								<label class="quiz__text">
+									<input type="checkbox" name="answer" class="quiz__field" />
+									320 кг.</label
+								>
+							</div>
+						</div>
+						<div class="quiz__option">
+							<picture><source srcset="img/quiz/photo_3.webp" type="image/webp"><img src="img/quiz/photo_3.png" alt="photo" class="quiz__photo" /></picture>
+							<div class="quiz__answer">
+								<label class="quiz__text"
+									><input type="checkbox" name="answer" class="quiz__field" />
+									400 кг.</label
+								>
+							</div>
+						</div>
+						<div class="quiz__option">
+							<picture><source srcset="img/quiz/photo_3.webp" type="image/webp"><img src="img/quiz/photo_3.png" alt="photo" class="quiz__photo" /></picture>
+							<div class="quiz__answer">
+								<label class="quiz__text"
+									><input
+										type="checkbox"
+										name="answer"
+										class="quiz__field"
+									/>630 кг.</label
+								>
+							</div>
+						</div>
+
+						<div class="quiz__option">
+							<picture><source srcset="img/quiz/photo_3.webp" type="image/webp"><img src="img/quiz/photo_3.png" alt="photo" class="quiz__photo" /></picture>
+							<div class="quiz__answer">
+								<label class="quiz__text"
+									><input
+										type="checkbox"
+										name="answer"
+										class="quiz__field"
+									/>1000 кг.</label
+								>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="quiz__template">
+					<h6 class="quiz__quastion">
+						<span class="quiz__quastion-num">4/5</span
+						><span class="quiz__quastion-text">Выберете модель</span>
+					</h6>
+					<div class="quiz__body quiz__body-col">
+						<div class="quiz__option">
+							<div class="quiz__answer">
+								<label class="quiz__text">
+									<input type="checkbox" name="answer" class="quiz__field" />
+									Карачаровский механический завод</label
+								>
+							</div>
+						</div>
+						<div class="quiz__option">
+							<div class="quiz__answer">
+								<label class="quiz__text"
+									><input type="checkbox" name="answer" class="quiz__field" />
+									Щербинский лифтостроительный завод</label
+								>
+							</div>
+						</div>
+						<div class="quiz__option">
+							<div class="quiz__answer">
+								<label class="quiz__text"
+									><input type="checkbox" name="answer" class="quiz__field" />
+									Могилевский лифтостроительный завод</label
+								>
+							</div>
+						</div>
+						<div class="quiz__option">
+							<div class="quiz__answer">
+								<label class="quiz__text"
+									><input type="checkbox" name="answer" class="quiz__field" />
+									СИБЛИФТ</label
+								>
+							</div>
+						</div>
+						<div class="quiz__option">
+							<div class="quiz__answer">
+								<label class="quiz__text"
+									><input type="checkbox" name="answer" class="quiz__field" />
+									KONE</label
+								>
+							</div>
+						</div>
+						<div class="quiz__option">
+							<div class="quiz__answer">
+								<label class="quiz__text"
+									><input type="checkbox" name="answer" class="quiz__field" />
+									OTIS</label
+								>
+							</div>
+						</div>
+						<div class="quiz__option">
+							<div class="quiz__answer">
+								<label class="quiz__text"
+									><input type="checkbox" name="answer" class="quiz__field" />
+									другая модель</label
+								>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="quiz__template">
+					<h6 class="quiz__quastion">
+						<span class="quiz__quastion-num">5/5</span
+						><span class="quiz__quastion-text"
+							>Укажите срок эксплуатации лифта</span
+						>
+					</h6>
+					<div class="quiz__body quiz__body-col">
+						<div class="quiz__option">
+							<div class="quiz__answer">
+								<label class="quiz__text">
+									<input type="checkbox" name="answer" class="quiz__field" />
+									до 10 лет</label
+								>
+							</div>
+						</div>
+						<div class="quiz__option">
+							<div class="quiz__answer">
+								<label class="quiz__text"
+									><input type="checkbox" name="answer" class="quiz__field" />
+									от 10 до 20 лет</label
+								>
+							</div>
+						</div>
+						<div class="quiz__option">
+							<div class="quiz__answer">
+								<label class="quiz__text"
+									><input
+										type="checkbox"
+										name="answer"
+										class="quiz__field"
+									/>свеше 20 лет</label
+								>
+							</div>
+						</div>
+					</div>
+				</div>
+				<span class="quiz__info">Ваша скидка пока</span>
+				<div class="quiz__row">
+					<div class="quiz__item">
+						<div class="quiz__value">
+							<span class="quiz__discaunt">1000</span> ₽
+						</div>
+						<div class="quiz__desc">
+							За каждый ответ вы получаете <span class="orange">+1000₽</span>
+						</div>
+					</div>
+					<div class="quiz__item">
+						<button class="quiz__btn-prev">
+							<img src="img/quiz/arrow-left.svg" alt="arrow" />
+						</button>
+						<button class="quiz__btn-next">
+							<span class="quiz__btn-text">Далее</span
+							><img src="img/quiz/arrow-right.svg" alt="arrow" />
+						</button>
 					</div>
 				</div>
 			</div>
-			<span class="quiz__info">Ваша скидка пока</span>
-			<div class="quiz__row">
-				<div class="quiz__item">
-					<div class="quiz__value">1000 ₽</div>
-					<div class="quiz__desc">
-						За каждый ответ вы получаете <span class="orange">+1000₽</span>
-					</div>
-				</div>
-				<div class="quiz__item">
-					<button class="quiz__btn-prev">
-						<img src="img/quiz/arrow-left.svg" alt="arrow" />
-					</button>
-					<button class="quiz__btn-next">
-						Далее<img src="img/quiz/arrow-right.svg" alt="arrow" />
-					</button>
+			<div class="quiz__result">
+				<div class="quiz__result-inner">
+					<h4 class="quiz__result-title orange">ваша скидка 5000 ₽</h4>
+					<p class="quiz__result-subtitle">
+						Заполните форму ниже для получения расчета Вашей зоны обслуживания и
+						ремонта
+					</p>
+					<form action="#" class="quiz__form">
+						<input
+							type="text"
+							placeholder="Введите Ваш телефон"
+							class="quiz__telephone"
+						/>
+						<div class="quiz__submit">Получить расчет</div>
+						<div class="quiz__note">
+							К вашему номеру будет привязана персональная скидка
+						</div>
+					</form>
 				</div>
 			</div>
 		</div>
@@ -382,17 +623,17 @@
 				<section class="awards">
 	<div class="container">
 		<div class="awards__diploms">
-			<div class="awards__item">
-				<picture><source srcset="img/awards/award1.webp" type="image/webp"><img src="img/awards/award1.png" alt="diplome" /></picture>
+			<div class="awards__diplome">
+				<picture><source srcset="img/awards/award1.webp" type="image/webp"><img src="img/awards/award1.png" alt="diplome" class="awards__inner" /></picture>
 			</div>
-			<div class="awards__item">
-				<picture><source srcset="img/awards/award2.webp" type="image/webp"><img src="img/awards/award2.png" alt="diplome" /></picture>
+			<div class="awards__diplome">
+				<picture><source srcset="img/awards/award2.webp" type="image/webp"><img src="img/awards/award2.png" alt="diplome" class="awards__inner" /></picture>
 			</div>
-			<div class="awards__item">
-				<picture><source srcset="img/awards/award3.webp" type="image/webp"><img src="img/awards/award3.png" alt="diplome" /></picture>
+			<div class="awards__diplome">
+				<picture><source srcset="img/awards/award3.webp" type="image/webp"><img src="img/awards/award3.png" alt="diplome" class="awards__inner" /></picture>
 			</div>
-			<div class="awards__item">
-				<picture><source srcset="img/awards/award4.webp" type="image/webp"><img src="img/awards/award4.png" alt="diplome" /></picture>
+			<div class="awards__diplome">
+				<picture><source srcset="img/awards/award4.webp" type="image/webp"><img src="img/awards/award4.png" alt="diplome" class="awards__inner" /></picture>
 			</div>
 		</div>
 	</div>
@@ -593,7 +834,11 @@
 			</p>
 			<div class="request__row">
 				<div class="request__wrap request__item">
-					<input type="text" class="request__field" />
+					<input
+						type="text"
+						class="request__field"
+						placeholder="Номер телефона"
+					/>
 				</div>
 				<button type="submit" class="request__btn request__item">
 					Сделать заказ
@@ -627,6 +872,6 @@
 </footer>
 
 		</div>
-		<script src="js/app.js?_v=20221204133443"></script>
+		<script src="js/app.js?_v=20221204192312"></script>
 	</body>
 </html>
