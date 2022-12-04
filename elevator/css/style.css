@@ -391,6 +391,7 @@ template {
 }
 
 .wrap {
+  overflow: hidden;
   margin: 0 auto;
   max-width: 1920px;
   position: relative;
@@ -457,7 +458,6 @@ template {
 }
 
 .header {
-  border-bottom: 0.5px solid #7e868e;
   padding-bottom: 16px;
 }
 
@@ -491,7 +491,7 @@ template {
 }
 
 .header__item:last-child {
-  margin-right: 0;
+  margin: 0;
 }
 
 .header__icon {
@@ -666,7 +666,7 @@ template {
 }
 
 .screen__form-btn {
-  padding: 44px 0;
+  padding: 0;
   font-family: "Montserrat";
   border: none;
   background: -o-linear-gradient(266.36deg, #f97b61 10.83%, #ee5e3f 91.05%);
@@ -764,7 +764,6 @@ template {
 
 .services__photo {
   display: block;
-  height: 250px;
 }
 
 .services__btn {
@@ -861,6 +860,8 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-bottom: 82px;
 }
 
@@ -1023,6 +1024,7 @@ template {
 }
 
 .team__photo {
+  width: 100%;
   display: block;
 }
 
@@ -1307,23 +1309,39 @@ template {
   max-width: none;
 }
 
-.solutions__item:nth-child(even) .solutions__name {
-  margin-left: 0;
-  margin-right: auto;
-}
-
 .solutions__name {
-  margin: 0;
-  margin-left: auto;
-  max-width: 300px;
+  margin: 0 auto;
+  max-width: 320px;
   color: #2e363e;
   font-weight: 700;
   font-size: 24px;
   line-height: 143%;
 }
 
-.solutions__photo:not(:last-child) {
+.solutions__block {
   margin-right: 20px;
+}
+
+.solutions__block:last-child {
+  margin-right: 0;
+}
+
+.solutions__block-small {
+  width: 280px;
+}
+
+.solutions__block-middle {
+  width: 380px;
+}
+
+.solutions__block-big {
+  width: 580px;
+}
+
+.solutions__photo {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .solutions__inner {
@@ -1333,6 +1351,7 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 0 -10px;
 }
 
 .zones {
@@ -1584,6 +1603,761 @@ template {
   font-weight: 400;
   font-size: 12px;
   line-height: 150%;
+}
+
+@media (max-width: 1200px) {
+  .wrapper__img {
+    right: -45px;
+  }
+
+  .container-middle {
+    max-width: 1000px;
+  }
+
+  .container-small {
+    max-width: 1000px;
+  }
+
+  .header__items {
+    margin-right: 35px;
+  }
+
+  .screen__request {
+    padding: 35px 30px 50px;
+  }
+
+  .screen__prime {
+    width: 200px;
+  }
+
+  .screen__form-title {
+    font-size: 18px;
+  }
+
+  .screen__form-item {
+    padding: 18px 42px;
+  }
+
+  .services__inner {
+    padding: 35px 30px;
+  }
+
+  .services__name {
+    font-size: 18px;
+  }
+
+  .services__btn {
+    padding: 12px 30px;
+  }
+
+  .quiz__inner {
+    padding: 48px 70px 65px;
+  }
+
+  .quiz__title {
+    font-size: 30px;
+  }
+
+  .team__inner {
+    padding: 30px 40px 55px;
+  }
+
+  .team__name {
+    font-size: 21px;
+  }
+
+  .team__desc {
+    font-size: 16px;
+  }
+
+  .team__inner {
+    padding: 30px 30px 40px;
+  }
+
+  .team__blank {
+    right: -185px;
+  }
+
+  .director__background {
+    left: -385px;
+  }
+
+  .director__name {
+    font-size: 42px;
+    line-height: 50px;
+  }
+
+  .director__text {
+    font-size: 18px;
+    margin-bottom: 45px;
+  }
+
+  .director__btn {
+    padding: 28px 70px;
+  }
+
+  .awards {
+    padding-top: 200px;
+  }
+
+  .awards__desc {
+    font-size: 20px;
+  }
+
+  .awards__btn {
+    padding: 30px 105px;
+  }
+
+  .solutions {
+    padding: 150px 0 90px;
+  }
+
+  .solutions__title-inner {
+    padding: 20px 0;
+  }
+
+  .zones__elevator {
+    top: 202px;
+    right: -145px;
+  }
+
+  .zones__col:not(:last-child) {
+    margin-right: 90px;
+  }
+
+  .zones__item {
+    margin-bottom: 115px;
+  }
+
+  .request__form {
+    padding: 35px 90px;
+  }
+
+  .request__hand {
+    right: -262px;
+  }
+
+  .footer {
+    padding: 50px 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .title__inner {
+    font-size: 38px;
+  }
+
+  .wrapper__img {
+    display: none;
+  }
+
+  .container-middle {
+    padding: 0 15px;
+  }
+
+  .container-small {
+    padding: 0 15px;
+  }
+
+  .header__items {
+    margin-right: 0;
+  }
+
+  .screen__title {
+    font-size: 42px;
+    line-height: 48px;
+  }
+
+  .screen__subtitle {
+    margin-bottom: 20px;
+  }
+
+  .screen__request {
+    padding: 30px;
+    max-width: 880px;
+  }
+
+  .screen__form-title {
+    font-size: 15px;
+  }
+
+  .screen__form-item {
+    padding: 9px 15px;
+  }
+
+  .screen__prime {
+    width: 150px;
+  }
+
+  .screen__form-label {
+    font-size: 15px;
+    margin-bottom: 0px;
+  }
+
+  .screen__form-btn {
+    font-size: 16px;
+  }
+
+  .screen__form-icon {
+    top: 4pxs;
+  }
+
+  .services__grid {
+    margin-bottom: 210px;
+  }
+
+  .services__inner {
+    padding: 30px 25px;
+  }
+
+  .services__name {
+    font-size: 15px;
+    margin-bottom: 18px;
+  }
+
+  .services__btn {
+    padding: 10px 25px;
+    font-size: 14px;
+  }
+
+  .quiz__inner {
+    padding: 45px 45px 65px;
+  }
+
+  .quiz__title {
+    padding: 25px 50px;
+    font-size: 27px;
+  }
+
+  .quiz__quastion {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+
+  .director__background {
+    left: -545px;
+  }
+
+  .awards__desc {
+    font-size: 18px;
+  }
+
+  .awards__content {
+    margin-bottom: 170px;
+  }
+
+  .solutions__title-inner {
+    font-size: 38px;
+  }
+
+  .solutions__name {
+    font-size: 21px;
+  }
+
+  .solutions__item::after {
+    content: "";
+    width: 50px;
+    height: 50px;
+  }
+
+  .solutions__item:last-child {
+    margin-bottom: 0;
+  }
+
+  .zones__items {
+    display: -ms-grid;
+    display: grid;
+    gap: 60px;
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .zones__col:not(:last-child) {
+    margin-right: 0px;
+  }
+
+  .zones__photo {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
+  .zones__item {
+    margin-bottom: 70px;
+  }
+
+  .zones::before {
+    display: none;
+  }
+
+  .zones__elevator {
+    top: 220px;
+    right: -276px;
+  }
+
+  .request {
+    padding: 200px 0 120px;
+  }
+
+  .request__form {
+    padding: 35px 70px;
+  }
+
+  .request__title {
+    font-size: 27px;
+  }
+
+  .request__subtitle {
+    font-size: 17px;
+    margin-bottom: 30px;
+  }
+
+  .request__hand {
+    display: none;
+  }
+
+  .footer {
+    padding: 40px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .title__inner {
+    padding: 13px 39px 14px;
+    font-size: 28px;
+  }
+
+  .wrapper {
+    padding: 90px 0 156px;
+  }
+
+  .header__logo {
+    width: 200px;
+  }
+
+  .header__logo-photo {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
+  .header__name {
+    font-size: 15px;
+  }
+
+  .header__item {
+    margin-right: 10px;
+  }
+
+  .screen__title {
+    font-size: 38px;
+    line-height: 44px;
+    margin-bottom: 15px;
+  }
+
+  .screen__prime {
+    display: none;
+  }
+
+  .services__grid {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .quiz__title {
+    font-size: 22px;
+  }
+
+  .quiz__body {
+    margin-bottom: 65px;
+  }
+
+  .quiz__option {
+    margin-right: 20px;
+  }
+
+  .quiz__info {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+
+  .quiz__value {
+    font-size: 30px;
+  }
+
+  .team {
+    padding-top: 200px;
+  }
+
+  .team__prof {
+    font-size: 15px;
+  }
+
+  .team__name {
+    font-size: 17px;
+    line-height: 21px;
+  }
+
+  .team__desc {
+    font-size: 12px;
+    line-height: 17px;
+  }
+
+  .team__row {
+    margin: -20px -10px;
+  }
+
+  .team__item {
+    margin: 30px 10px;
+  }
+
+  .director__background {
+    display: none;
+  }
+
+  .director__row {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+
+  .director__name {
+    line-height: 40px;
+  }
+
+  .director__text {
+    font-size: 15px;
+  }
+
+  .director__btn {
+    padding: 28px 53px;
+    font-size: 19px;
+  }
+
+  .awards__desc {
+    font-size: 16px;
+    margin-bottom: 35px;
+  }
+
+  .awards__btn {
+    font-size: 19px;
+  }
+
+  .awards__content {
+    margin-bottom: 140px;
+  }
+
+  .solutions {
+    padding: 90px 0;
+  }
+
+  .zones__title {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .zones__items {
+    gap: 40px;
+  }
+
+  .zones__name {
+    font-size: 17px;
+    margin-bottom: 25px;
+  }
+
+  .request__title {
+    font-size: 21px;
+  }
+
+  .request__subtitle {
+    font-size: 13px;
+    margin-bottom: 30px;
+  }
+
+  .request__btn {
+    padding: 20px;
+  }
+
+  .footer__info {
+    font-size: 10px;
+  }
+
+  .footer__link {
+    font-size: 10px;
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title__title {
+    margin-bottom: 60px;
+  }
+
+  .title__inner {
+    padding: 9px 30px;
+    min-width: auto;
+    font-size: 21px;
+  }
+
+  .wrapper {
+    padding: 60px 0 90px;
+  }
+
+  .header__items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .header__logo {
+    width: 150px;
+  }
+
+  .header__item {
+    padding-left: 30px;
+    margin-bottom: 10px;
+  }
+
+  .header__name {
+    font-size: 11px;
+    margin-bottom: 3px;
+  }
+
+  .header__subname {
+    font-size: 11px;
+  }
+
+  .screen__title {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  .screen__subtitle {
+    margin-bottom: 12px;
+  }
+
+  .screen__name {
+    font-size: 11px;
+    margin-bottom: 0;
+  }
+
+  .screen__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .screen__form-wrap {
+    max-width: 100%;
+  }
+
+  .screen__form-item {
+    padding: 15px 45px;
+  }
+
+  .screen__form-btn {
+    padding: 25px 0;
+  }
+
+  .screen {
+    padding-top: 45px;
+  }
+
+  .screen__request {
+    padding: 25px;
+  }
+
+  .services__grid {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .quiz__title {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .quiz__inner {
+    padding: 30px 25px 30px;
+  }
+
+  .quiz__quastion {
+    font-size: 17px;
+    margin-bottom: 5px;
+  }
+
+  .quiz__info {
+    font-size: 21px;
+    margin-bottom: 0;
+  }
+
+  .quiz__value {
+    padding: 0 10px;
+    font-size: 15px;
+    margin-right: 10px;
+  }
+
+  .quiz__desc {
+    font-size: 11px;
+    line-height: 15px;
+  }
+
+  .quiz__btn-next {
+    padding: 12px 9px;
+  }
+
+  .team__row {
+    margin: -20px -5px;
+  }
+
+  .team__item {
+    width: calc(50% - 10px);
+    margin: 20px 5px;
+  }
+
+  .team__blank {
+    display: none;
+  }
+
+  .director {
+    padding-top: 80px;
+  }
+
+  .director__name {
+    font-size: 36px;
+  }
+
+  .director__text {
+    font-size: 12px;
+  }
+
+  .director__btn {
+    padding: 24px 38px;
+    font-size: 15px;
+  }
+
+  .awards {
+    padding-top: 120px;
+  }
+
+  .awards__content {
+    margin-bottom: 95px;
+  }
+
+  .awards__desc {
+    font-size: 12px;
+  }
+
+  .awards__btn {
+    font-size: 16px;
+    padding: 20px 75px;
+  }
+
+  .solutions__item {
+    padding: 40px;
+  }
+
+  .solutions__name {
+    font-size: 12px;
+  }
+
+  .solutions__block {
+    margin-right: 10px;
+  }
+
+  .solutions__item::after {
+    width: 35px;
+    height: 35px;
+  }
+
+  .solutions__item::before {
+    width: 9px;
+    height: 9px;
+  }
+
+  .solutions__item:last-child .solutions__name {
+    margin-bottom: 20px;
+  }
+
+  .zones__title {
+    font-size: 32px;
+    line-height: 35px;
+  }
+
+  .zones__elevator {
+    display: none;
+  }
+
+  .zones__col:last-child {
+    margin-top: 0px;
+  }
+
+  .zones__items {
+    gap: 20px;
+  }
+
+  .request {
+    padding: 100px 0;
+  }
+
+  .request__title {
+    font-size: 13px;
+  }
+
+  .request__subtitle {
+    font-size: 9px;
+    margin-bottom: 15px;
+  }
+
+  .request__form {
+    padding: 35px;
+  }
+
+  .request__field {
+    padding: 0 30px 0 40px;
+  }
+
+  .request__wrap::after {
+    left: 5px;
+  }
+
+  .request__btn {
+    padding: 14px;
+  }
+
+  .request__row {
+    margin-bottom: 15px;
+  }
+
+  .request__agree {
+    font-size: 9px;
+  }
+
+  .request__field {
+    font-size: 10px;
+  }
+
+  .request__btn {
+    font-size: 14px;
+  }
+
+  .footer {
+    padding: 25px;
+  }
+
+  .footer__row {
+    margin-bottom: 10px;
+  }
+
+  .footer__link {
+    font-size: 8px;
+    margin-right: 10px;
+  }
 }
 
 .webp .wrapper { background: right top no-repeat url(../img/wrapper/background.webp); }
