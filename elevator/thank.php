@@ -1,20 +1,49 @@
+<?php
+if (isset($_POST['send'])) {
+	$name = $_POST['name'];
+	$telephone = $_POST['telephone'];
+	$to  = "digital.craft1@yandex.ru" ; 
+$subject = "Новая заявка"; 
+$message = ' <p>Была отправленная заявка</p></br> Имя: <b>'. $name .'</b> </br>Телефон:<b>'.$telephone.'</b> </br>';
+$headers  = "Content-type: text/html; charset=windows-1251 \r\n"; 
+$headers .= "From: digital.craft1@yandex.ru\r\n"; 
+
+mail($to, $subject, $message, $headers); 
+unset($_POST['send']);
+}
+if(isset($_POST['quiz'])){
+	$telephone = $_POST['telephone'];
+	$answer_1 = $_POST['answer'];
+	$answer_2 = $_POST['answer2'];
+	$answer_3 = $_POST['answer3'];
+	$answer_4 = $_POST['answer4'];
+	$answer_5 = $_POST['answer5'];
+	$to  = "digital.craft1@yandex.ru" ; 
+$subject = "Заявка"; 
+$message = ' <p>Была отправленная заявка</p></br>Телефон:<b>'.$telephone.'</b> </br> вопрос 1: '. $answer_1. '</br> вопрос 2: '. $answer_2.'</br> вопрос 3: '. $answer_3.'</br> вопрос 4: '. $answer_4.'</br> вопрос 5: '. $answer_5.'';
+$headers  = "Content-type: text/html; charset=windows-1251 \r\n"; 
+$headers .= "From: digital.craft1@yandex.ru\r\n"; 
+
+mail($to, $subject, $message, $headers); 
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="css/style.min.css?_v=20221205040702" />
+		<link rel="stylesheet" href="css/style.min.css?_v=20221205155934" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap&_v=20221205040702"
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap&_v=20221205155934"
 			rel="stylesheet"
 		/>
-		<script src="https://code.jquery.com/jquery-3.6.1.min.js?_v=20221205040702"></script>
+		<script src="https://code.jquery.com/jquery-3.6.1.min.js?_v=20221205155934"></script>
 		<link
 			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css?_v=20221205040702"
+			href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css?_v=20221205155934"
 		/>
 		<title>благодарим</title>
 	</head>
@@ -23,7 +52,7 @@
 			<header class="header">
 	<div class="container-small">
 		<div class="header__row">
-			<a href="#" class="header__logo">
+			<a href="index.php" class="header__logo">
 				<picture><source srcset="img/header/logo.webp" type="image/webp"><img src="img/header/logo.png" alt="logo" class="header__logo-photo" /></picture>
 			</a>
 			<div class="header__items">
@@ -48,7 +77,7 @@
 				СПАСИБО ЗА ЗАЯВКУ!<br />
 				<span class="orange">МЫ СВЯЖИМСЯ С ВАМИ В ТЕЧЕНИЕ 15 МИНУТ</span>
 			</h1>
-			<a href="index.html" class="thanks__link">ВЕРНУТЬСЯ НА ГЛАВНУЮ</a>
+			<a href="index.php" class="thanks__link">ВЕРНУТЬСЯ НА ГЛАВНУЮ</a>
 		</div>
 	</div>
 </section></main>

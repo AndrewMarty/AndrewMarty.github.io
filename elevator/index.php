@@ -4,17 +4,17 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="css/style.min.css?_v=20221205040702" />
+		<link rel="stylesheet" href="css/style.min.css?_v=20221205155934" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap&_v=20221205040702"
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap&_v=20221205155934"
 			rel="stylesheet"
 		/>
-		<script src="https://code.jquery.com/jquery-3.6.1.min.js?_v=20221205040702"></script>
+		<script src="https://code.jquery.com/jquery-3.6.1.min.js?_v=20221205155934"></script>
 		<link
 			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css?_v=20221205040702"
+			href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css?_v=20221205155934"
 		/>
 		<title>обьлифт</title>
 	</head>
@@ -25,7 +25,7 @@
 					<header class="header">
 	<div class="container-small">
 		<div class="header__row">
-			<a href="#" class="header__logo">
+			<a href="index.php" class="header__logo">
 				<picture><source srcset="img/header/logo.webp" type="image/webp"><img src="img/header/logo.png" alt="logo" class="header__logo-photo" /></picture>
 			</a>
 			<div class="header__items">
@@ -76,22 +76,22 @@
 				<h2 class="screen__form-title">
 					Оставьте заявку и наш менеджер свяжется с Вами в течение 15 минут
 				</h2>
-				<form action="#" class="screen__form">
+				<form action="thank.php" class="screen__form" method="post">
 					<div class="screen__form-item">
 						<label for="name" class="screen__form-label">Имя</label>
 						<div class="screen__form-wrap">
 							<img src="img/screen/arrow-up.svg" alt="arrow-up" class="screen__form-icon" />
-							<input id="name" type="text" class="screen__form-input" />
+							<input id="name" type="text" name="name" class="screen__form-input" />
 						</div>
 					</div>
 					<div class="screen__form-item">
 						<label for="telephone" class="screen__form-label">Телефон</label>
 						<div class="screen__form-wrap">
 							<img src="img/screen/arrow-up.svg" alt="arrow-up" class="screen__form-icon" />
-							<input id="telephone" type="tel" class="screen__form-input tel" />
+							<input id="telephone" type="tel" name='telephone' class="screen__form-input tel" />
 						</div>
 					</div>
-					<button type="submit" class="screen__form-item screen__form-btn">
+					<button type="submit" name="send" class="screen__form-item screen__form-btn">
 						Оставить заявку
 					</button>
 				</form>
@@ -177,21 +177,21 @@
 							<picture><source srcset="img/quiz/photo_1.webp" type="image/webp"><img src="img/quiz/photo_1.png" alt="photo" class="quiz__photo" /></picture>
 							<div class="quiz__answer">
 								<label class="quiz__text">
-									<input type="radio" name="answer" class="quiz__field" />
+									<input type="radio" value="1-5" name="answer" class="quiz__field" />
 									<span class='quiz__check'>1-5</span></label>
 							</div>
 						</label>
 						<label class="quiz__option">
 							<picture><source srcset="img/quiz/photo_1.webp" type="image/webp"><img src="img/quiz/photo_1.png" alt="photo" class="quiz__photo" /></picture>
 							<div class="quiz__answer">
-								<label class="quiz__text"><input type="radio" name="answer" class="quiz__field" />
+								<label class="quiz__text"><input type="radio" value="5-10" name="answer" class="quiz__field" />
 									<span class='quiz__check'>5-10</span></label>
 							</div>
 						</label>
 						<label class="quiz__option">
 							<picture><source srcset="img/quiz/photo_1.webp" type="image/webp"><img src="img/quiz/photo_1.png" alt="photo" class="quiz__photo" /></picture>
 							<div class="quiz__answer">
-								<label class="quiz__text"><input type="radio" name="answer" class="quiz__field" /><span
+								<label class="quiz__text"><input type="radio" value=">10" name="answer" class="quiz__field" /><span
 										class='quiz__check'>>10</span></label>
 							</div>
 						</label>
@@ -207,28 +207,28 @@
 							<picture><source srcset="img/quiz/photo_2.webp" type="image/webp"><img src="img/quiz/photo_2.png" alt="photo" class="quiz__photo" /></picture>
 							<div class="quiz__answer">
 								<label class="quiz__text">
-									<input type="radio" name="answer" class="quiz__field" />
+									<input type="radio" name="answer2" class="quiz__field" />
 									<span class='quiz__check'>8</span></label>
 							</div>
 						</label>
 						<label class="quiz__option">
 							<picture><source srcset="img/quiz/photo_2.webp" type="image/webp"><img src="img/quiz/photo_2.png" alt="photo" class="quiz__photo" /></picture>
 							<div class="quiz__answer">
-								<label class="quiz__text"><input type="radio" name="answer" class="quiz__field" />
+								<label class="quiz__text"><input type="radio" name="answer2" class="quiz__field" />
 									<span class='quiz__check'>9</span></label>
 							</div>
 						</label>
 						<label class="quiz__option">
 							<picture><source srcset="img/quiz/photo_2.webp" type="image/webp"><img src="img/quiz/photo_2.png" alt="photo" class="quiz__photo" /></picture>
 							<div class="quiz__answer">
-								<label class="quiz__text"><input type="radio" name="answer" class="quiz__field" /><span
+								<label class="quiz__text"><input type="radio" name="answer2" class="quiz__field" /><span
 										class='quiz__check'>12</span></label>
 							</div>
 						</label>
 						<label class="quiz__option">
 							<picture><source srcset="img/quiz/photo_2.webp" type="image/webp"><img src="img/quiz/photo_2.png" alt="photo" class="quiz__photo" /></picture>
 							<div class="quiz__answer">
-								<label class="quiz__text"><input type="radio" name="answer" class="quiz__field" /><span
+								<label class="quiz__text"><input type="radio" name="answer2" class="quiz__field" /><span
 										class='quiz__check'></span>16</label>
 							</div>
 						</label>
@@ -244,14 +244,14 @@
 							<picture><source srcset="img/quiz/photo_3.webp" type="image/webp"><img src="img/quiz/photo_3.png" alt="photo" class="quiz__photo" /></picture>
 							<div class="quiz__answer">
 								<label class="quiz__text">
-									<input type="radio" name="answer" class="quiz__field" />
+									<input type="radio" name="answer3" class="quiz__field" />
 									<span class='quiz__check'>320 кг.</span></label>
 							</div>
 						</label>
 						<label class="quiz__option">
 							<picture><source srcset="img/quiz/photo_3.webp" type="image/webp"><img src="img/quiz/photo_3.png" alt="photo" class="quiz__photo" /></picture>
 							<div class="quiz__answer">
-								<label class="quiz__text"><input type="radio" name="answer" class="quiz__field" /><span
+								<label class="quiz__text"><input type="radio" name="answer3" class="quiz__field" /><span
 										class='quiz__check'>400
 										кг.</span></label>
 							</div>
@@ -259,7 +259,7 @@
 						<label class="quiz__option">
 							<picture><source srcset="img/quiz/photo_3.webp" type="image/webp"><img src="img/quiz/photo_3.png" alt="photo" class="quiz__photo" /></picture>
 							<div class="quiz__answer">
-								<label class="quiz__text"><input type="radio" name="answer" class="quiz__field" /><span
+								<label class="quiz__text"><input type="radio" name="answer3" class="quiz__field" /><span
 										class='quiz__check'>630
 										кг.</span></label>
 							</div>
@@ -268,7 +268,7 @@
 						<label class="quiz__option">
 							<picture><source srcset="img/quiz/photo_3.webp" type="image/webp"><img src="img/quiz/photo_3.png" alt="photo" class="quiz__photo" /></picture>
 							<div class="quiz__answer">
-								<label class="quiz__text"><input type="radio" name="answer" class="quiz__field" /><span
+								<label class="quiz__text"><input type="radio" name="answer3" class="quiz__field" /><span
 										class='quiz__check'>1000
 										кг.</span></label>
 							</div>
@@ -284,43 +284,43 @@
 						<label class="quiz__option">
 							<div class="quiz__answer">
 								<label class="quiz__text">
-									<input type="radio" name="answer" class="quiz__field" />
+									<input type="radio" name="answer4" class="quiz__field" />
 									<span class='quiz__check'>Карачаровский механический завод</span></label>
 							</div>
 						</label>
 						<label class="quiz__option">
 							<div class="quiz__answer">
-								<label class="quiz__text"><input type="radio" name="answer" class="quiz__field" />
+								<label class="quiz__text"><input type="radio" name="answer4" class="quiz__field" />
 									<span class='quiz__check'>Щербинский лифтостроительный завод</span></label>
 							</div>
 						</label>
 						<label class="quiz__option">
 							<div class="quiz__answer">
-								<label class="quiz__text"><input type="radio" name="answer" class="quiz__field" />
+								<label class="quiz__text"><input type="radio" name="answer4" class="quiz__field" />
 									<span class='quiz__check'>Могилевский лифтостроительный завод</span></label>
 							</div>
 						</label>
 						<label class="quiz__option">
 							<div class="quiz__answer">
-								<label class="quiz__text"><input type="radio" name="answer" class="quiz__field" />
+								<label class="quiz__text"><input type="radio" name="answer4" class="quiz__field" />
 									<span class='quiz__check'>СИБЛИФТ</span></label>
 							</div>
 						</label>
 						<label class="quiz__option">
 							<div class="quiz__answer">
-								<label class="quiz__text"><input type="radio" name="answer" class="quiz__field" />
+								<label class="quiz__text"><input type="radio" name="answer4" class="quiz__field" />
 									<span class='quiz__check'>KONE</span></label>
 							</div>
 						</label>
 						<label class="quiz__option">
 							<div class="quiz__answer">
-								<label class="quiz__text"><input type="radio" name="answer" class="quiz__field" />
+								<label class="quiz__text"><input type="radio" name="answer4" class="quiz__field" />
 									<span class='quiz__check'>OTIS</span></label>
 							</div>
 						</label>
 						<label class="quiz__option">
 							<div class="quiz__answer">
-								<label class="quiz__text"><input type="radio" name="answer" class="quiz__field" />
+								<label class="quiz__text"><input type="radio" name="answer4" class="quiz__field" />
 									<span class='quiz__check'>другая модель</span></label>
 							</div>
 						</label>
@@ -335,20 +335,20 @@
 						<label class="quiz__option">
 							<div class="quiz__answer">
 								<label class="quiz__text">
-									<input type="radio" name="answer" class="quiz__field" />
+									<input type="radio" name="answer5" class="quiz__field" />
 									<span class='quiz__check'>до 10 лет</span></label>
 							</div>
 						</label>
 						<label class="quiz__option">
 							<div class="quiz__answer">
-								<label class="quiz__text"><input type="radio" name="answer" class="quiz__field" /><span
+								<label class="quiz__text"><input type="radio" name="answer5" class="quiz__field" /><span
 										class='quiz__check'> от
 										10 до 20 лет</span></label>
 							</div>
 						</label>
 						<label class="quiz__option">
 							<div class="quiz__answer">
-								<label class="quiz__text"><input type="radio" name="answer" class="quiz__field" /><span
+								<label class="quiz__text"><input type="radio" name="answer5" class="quiz__field" /><span
 										class='quiz__check'></span>свеше
 									20 лет</span></label>
 							</div>
@@ -382,9 +382,9 @@
 						Заполните форму ниже для получения расчета Вашей зоны обслуживания и
 						ремонта
 					</p>
-					<form action="#" class="quiz__form">
-						<input type="tel" placeholder="Введите Ваш телефон" class="quiz__telephone tel" />
-						<div class="quiz__submit">Получить расчет</div>
+					<form action="thank.php" class="quiz__form" method="POST">
+						<input type="tel" placeholder="Введите Ваш телефон" name='telephone' class="quiz__telephone tel" />
+						<button class="quiz__submit" name="quiz">Получить расчет</button>
 						<div class="quiz__note">
 							К вашему номеру будет привязана персональная скидка
 						</div>
@@ -413,7 +413,8 @@
 				</div>
 			</div>
 			<div class="team__item">
-				<picture><source srcset="img/team/work2.webp" type="image/webp"><img src="img/team/work2.png" data-fancybox alt="photo" class="team__photo minimized" /></picture>
+				<img src="img/team/work2.png" data-fancybox alt="photo" class="team__photo minimized"
+					dsfdssssssssssssssssssssssssssssssssssssssssss />
 				<div class="team__inner">
 					<span class="team__prof">Инженер</span>
 					<span class="team__name">Попов Сергей Павлович</span>
@@ -538,7 +539,7 @@
 				обслуживании у нас находится более 800 лифтов. <br /><br />Нам доверяют!
 				Будем рады видеть и Вас среди наших клиентов!
 			</p>
-			<button class="director__btn">Оставить заявку</button>
+			<a href="thank.php" class="director__btn">Оставить заявку</a>
 		</div>
 	</div>
 </section>
@@ -567,7 +568,8 @@
 			надёжных партнёров. Оценка проводилась в рамках ОКВЭД: 33.12 - «Ремонт
 			машин и оборудования» по Сибирскому федеральному округу.
 		</div>
-		<button class="awards__btn">Перейти</button>
+		<a href="https://www.analit-centr.ru/ooo-ob-lift-g-novosibirsk-stalo-luchshim-predpriyatiem-otrasli-2021-i-voshlo-v-rejting-nadezhnyh-partnerov-sibirskogo-federal-nogo-okruga"
+			target="_blank" class="awards__btn">Перейти</a>
 	</div>
 	<div class="container-small">
 		<div class="awards__grid">
@@ -709,12 +711,12 @@
 				<div class="request__wrap request__item">
 					<input type="tel" class="request__field tel" placeholder="Номер телефона" />
 				</div>
-				<button type="submit" class="request__btn request__item">
+				<button type="submit" name="send" class="request__btn request__item">
 					Сделать заказ
 				</button>
 			</div>
 			<label>
-				<input type="checkbox" class="request__check" />
+				<input type="checkbox" class="request__check" checked />
 				<span class="request__agree">Нажамая на кнопку, вы соглашаетесь с условиями обработки персональных
 					данных</span>
 			</label>
@@ -744,11 +746,11 @@
 		<form class="modal__form">
 			<input type="tel" name="telephone" class="modal__field tel" placeholder="телефон*" />
 			<label class="modal__agree">
-				<input type="checkbox" class="modal__check" />
+				<input type="checkbox" class="modal__check" checked />
 				<span class="modal__text">Нажимая на кнопку "Отправить" я даю свое согласие на обработку
 					персональных данных</span>
 			</label>
-			<button type="submit" class="modal__btn">Отправить</button>
+			<button type="submit" class="modal__btn" name="send">Отправить</button>
 		</form>
 	</div>
 </div>
@@ -760,7 +762,7 @@
 			ript
 			src="https://www.sng-it.ru/bitrix/templates/master/js/jquery.inputmask.bundle.min.js"
 		></script>
-		<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js?_v=20221205040702"></script>
-		<script src="js/app.js?_v=20221205040702"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js?_v=20221205155934"></script>
+		<script src="js/app.js?_v=20221205155934"></script>
 	</body>
 </html>

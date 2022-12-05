@@ -425,10 +425,10 @@ template {
 
 .wrapper {
   position: relative;
-  padding: 120px 0 156px;
 }
 
 .wrapper__content {
+  padding: 120px 0 156px;
   position: relative;
   z-index: 10;
 }
@@ -463,6 +463,18 @@ template {
 
 .header {
   padding-bottom: 16px;
+}
+
+.header__sticky {
+  padding: 15px 0;
+  width: 100%;
+  position: fixed;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  -webkit-box-shadow: 0px 0px 14px 0px rgba(34, 60, 80, 0.31);
+          box-shadow: 0px 0px 14px 0px rgba(34, 60, 80, 0.31);
+  z-index: 9999;
 }
 
 .header__row {
@@ -711,7 +723,7 @@ template {
 
 .services {
   position: relative;
-  z-index: 10;
+  z-index: 1;
 }
 
 .services__grid {
@@ -1144,6 +1156,7 @@ template {
 }
 
 .quiz__submit {
+  border: none;
   width: 400px;
   cursor: pointer;
   font-family: Montserrat;
@@ -1375,8 +1388,10 @@ template {
 }
 
 .director__btn {
+  display: inline-block;
   border: none;
   cursor: pointer;
+  text-decoration: none;
   font-family: Montserrat;
   border-radius: 9px 11px 22px 19px;
   background: #f97b61;
@@ -1426,8 +1441,8 @@ template {
 
 .awards__btn {
   cursor: pointer;
-  display: block;
-  margin: 0 auto;
+  text-decoration: none;
+  display: inline-block;
   padding: 30px 136px;
   color: #fff;
   border: none;
@@ -1441,6 +1456,7 @@ template {
 }
 
 .awards__content {
+  text-align: center;
   margin-bottom: 230px;
 }
 
@@ -1459,7 +1475,7 @@ template {
 
 .solutions {
   position: relative;
-  z-index: 10;
+  z-index: 3;
   padding: 242px 0 90px;
 }
 
@@ -1599,6 +1615,7 @@ template {
 
 .zones {
   position: relative;
+  z-index: 1;
 }
 
 .no-webp .zones::before{
@@ -1684,6 +1701,7 @@ template {
 .request {
   position: relative;
   padding: 230px 0 180px;
+  z-index: 0;
 }
 
 .no-webp .request::before{
@@ -2496,7 +2514,7 @@ template {
     font-size: 28px;
   }
 
-  .wrapper {
+  .wrapper__content {
     padding: 90px 0 156px;
   }
 
@@ -2601,10 +2619,6 @@ template {
 
   .team__item {
     margin: 30px 10px;
-  }
-
-  .director {
-    z-index: 100;
   }
 
   .director__background {
@@ -2727,8 +2741,12 @@ template {
     font-size: 21px;
   }
 
-  .wrapper {
+  .wrapper__content {
     padding: 60px 0 90px;
+  }
+
+  .header__item:first-child {
+    display: none;
   }
 
   .header__items {
