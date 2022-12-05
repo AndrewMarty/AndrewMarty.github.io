@@ -25,7 +25,7 @@
 					<header class="header">
 	<div class="container-small">
 		<div class="header__row">
-			<a href="index.php" class="header__logo">
+			<a href="index.html" class="header__logo">
 				<picture><source srcset="img/header/logo.webp" type="image/webp"><img src="img/header/logo.png" alt="logo" class="header__logo-photo" /></picture>
 			</a>
 			<div class="header__items">
@@ -76,7 +76,7 @@
 				<h2 class="screen__form-title">
 					Оставьте заявку и наш менеджер свяжется с Вами в течение 15 минут
 				</h2>
-				<form action="thank.php" class="screen__form" method="post">
+				<form action="thank.html" class="screen__form">
 					<div class="screen__form-item">
 						<label for="name" class="screen__form-label">Имя</label>
 						<div class="screen__form-wrap">
@@ -91,7 +91,7 @@
 							<input id="telephone" type="tel" name='telephone' class="screen__form-input tel" />
 						</div>
 					</div>
-					<button type="submit" name="send" class="screen__form-item screen__form-btn">
+					<button type="submit" class="screen__form-item screen__form-btn">
 						Оставить заявку
 					</button>
 				</form>
@@ -177,21 +177,21 @@
 							<picture><source srcset="img/quiz/photo_1.webp" type="image/webp"><img src="img/quiz/photo_1.png" alt="photo" class="quiz__photo" /></picture>
 							<div class="quiz__answer">
 								<label class="quiz__text">
-									<input type="radio" value="1-5" name="answer" class="quiz__field" />
+									<input type="radio" name="answer" class="quiz__field" />
 									<span class='quiz__check'>1-5</span></label>
 							</div>
 						</label>
 						<label class="quiz__option">
 							<picture><source srcset="img/quiz/photo_1.webp" type="image/webp"><img src="img/quiz/photo_1.png" alt="photo" class="quiz__photo" /></picture>
 							<div class="quiz__answer">
-								<label class="quiz__text"><input type="radio" value="5-10" name="answer" class="quiz__field" />
+								<label class="quiz__text"><input type="radio" name="answer" class="quiz__field" />
 									<span class='quiz__check'>5-10</span></label>
 							</div>
 						</label>
 						<label class="quiz__option">
 							<picture><source srcset="img/quiz/photo_1.webp" type="image/webp"><img src="img/quiz/photo_1.png" alt="photo" class="quiz__photo" /></picture>
 							<div class="quiz__answer">
-								<label class="quiz__text"><input type="radio" value=">10" name="answer" class="quiz__field" /><span
+								<label class="quiz__text"><input type="radio" name="answer" class="quiz__field" /><span
 										class='quiz__check'>>10</span></label>
 							</div>
 						</label>
@@ -382,9 +382,9 @@
 						Заполните форму ниже для получения расчета Вашей зоны обслуживания и
 						ремонта
 					</p>
-					<form action="thank.php" class="quiz__form" method="POST">
+					<form action="thank.html" class="quiz__form">
 						<input type="tel" placeholder="Введите Ваш телефон" name='telephone' class="quiz__telephone tel" />
-						<button class="quiz__submit" name="quiz">Получить расчет</button>
+						<button class="quiz__submit">Получить расчет</button>
 						<div class="quiz__note">
 							К вашему номеру будет привязана персональная скидка
 						</div>
@@ -539,7 +539,7 @@
 				обслуживании у нас находится более 800 лифтов. <br /><br />Нам доверяют!
 				Будем рады видеть и Вас среди наших клиентов!
 			</p>
-			<a href="thank.php" class="director__btn">Оставить заявку</a>
+			<a href="thank.html" class="director__btn">Оставить заявку</a>
 		</div>
 	</div>
 </section>
@@ -711,7 +711,7 @@
 				<div class="request__wrap request__item">
 					<input type="tel" class="request__field tel" placeholder="Номер телефона" />
 				</div>
-				<button type="submit" name="send" class="request__btn request__item">
+				<button type="submit" class="request__btn request__item">
 					Сделать заказ
 				</button>
 			</div>
@@ -750,7 +750,7 @@
 				<span class="modal__text">Нажимая на кнопку "Отправить" я даю свое согласие на обработку
 					персональных данных</span>
 			</label>
-			<button type="submit" class="modal__btn" name="send">Отправить</button>
+			<button type="submit" class="modal__btn">Отправить</button>
 		</form>
 	</div>
 </div>
