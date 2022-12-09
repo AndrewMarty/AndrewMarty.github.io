@@ -19,11 +19,14 @@ document.addEventListener('DOMContentLoaded',initQuiz)
 $('.tel').inputmask("+7 (999) 999-99-99");
 function initQuiz(){
    const quiz = document.querySelector('.quiz')
+   let tel = document.querySelector('.quiz__telephone');
    const quastions = quiz.querySelectorAll('.quiz__template')
    const discount = quiz.querySelector('.quiz__discaunt');
    const wrapper = quiz.querySelector('.quiz__wrapper')
    const prevBtn = quiz.querySelector('.quiz__btn-prev');
    const result = quiz.querySelector('.quiz__result');
+   const answers = [];
+   const form = quiz.querySelector('.quiz__form');
    const nextBtn = quiz.querySelector('.quiz__btn-next')
    let current = 0;
    document.addEventListener('keyup',(e)=>{
@@ -43,20 +46,35 @@ function initQuiz(){
    nextBtn.addEventListener('click',()=>{
       nextQuastion()
    })
+   form.addEventListener('submit',(e)=>{
+      answers.push(tel.value);
+      fetch('quiz.php',{
+         method: 'POST',
+         headers: {
+      'Content-Type': 'application/x-www-form-urlencoded',
+   },
+        body: "username=techbos&password=Pa%24%24w0rd"
+    }).then(res=>{
+         window.location = '/thank.html'
+      })
+      e.preventDefault();
+   })
    function nextQuastion(){
       let select = false
       quastions[current].querySelectorAll('.quiz__field').forEach((item)=>{
          if(item.checked){
-            select = true;
+            select = item;
          }
       })
       if(current < 4 && select){
          current++;
+         answers.push(select.value);
          quastions[current-1].classList.remove('quiz__template-active')
          quastions[current].classList.add('quiz__template-active')
          discount.textContent = (current+1) * 1000
       }
       else if ( current >= 4 && select){
+         answers.push(select.value);
          wrapper.remove()
          result.classList.add('quiz__result-active')
       }
