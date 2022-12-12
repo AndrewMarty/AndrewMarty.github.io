@@ -686,10 +686,12 @@ template {
   line-height: 19px;
 }
 
+.no-webp .screen {
+  background: center/cover url("../img/screen/background.png"); }
+
 .screen {
   padding: 80px 0 90px;
   background-color: greenyellow;
-  background: center/cover url("../img/screen/background.png");
 }
 
 .screen__title {
@@ -903,6 +905,9 @@ template {
   margin-right: 8px;
 }
 
+.no-webp .screen__checkbox::after {
+  background: center/cover url("../img/screen/true.png"); }
+
 .screen__checkbox::after {
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
@@ -917,7 +922,6 @@ template {
           transform: translate(-50%, -50%);
   position: absolute;
   opacity: 0;
-  background: center/cover url("../img/screen/true.png");
 }
 
 .screen__btn-bottom {
@@ -1037,13 +1041,15 @@ template {
   border-radius: 50%;
 }
 
+.no-webp .cars .slick-arrow::after {
+  background: no-repeat center/cover url("../img/feedback/arrow.png"); }
+
 .cars .slick-arrow::after {
   width: 16px;
   height: 28px;
   content: "";
   top: 50%;
   left: 50%;
-  background: no-repeat center/cover url("../img/feedback/arrow.png");
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -1369,13 +1375,15 @@ template {
   border-radius: 50%;
 }
 
+.no-webp .feedback .slick-arrow::after {
+  background: no-repeat center/cover url("../img/feedback/arrow.png"); }
+
 .feedback .slick-arrow::after {
   width: 16px;
   height: 28px;
   content: "";
   top: 50%;
   left: 50%;
-  background: no-repeat center/cover url("../img/feedback/arrow.png");
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -1610,6 +1618,9 @@ template {
      object-fit: cover;
 }
 
+.no-webp .footer__photo::before {
+  background: center/cover url("../img/footer/place.png"); }
+
 .footer__photo::before {
   content: "";
   position: absolute;
@@ -1617,7 +1628,6 @@ template {
   top: 38%;
   width: 39px;
   height: 44px;
-  background: center/cover url("../img/footer/place.png");
 }
 
 .footer__photo::after {
@@ -2563,3 +2573,13 @@ template {
     display: block;
   }
 }
+
+.webp .screen { background: center/cover url(../img/screen/background.webp); }
+
+.webp .screen__checkbox::after { background: center/cover url(../img/screen/true.webp); }
+
+.webp .cars .slick-arrow::after { background: no-repeat center/cover url(../img/feedback/arrow.webp); }
+
+.webp .feedback .slick-arrow::after { background: no-repeat center/cover url(../img/feedback/arrow.webp); }
+
+.webp .footer__photo::before { background: center/cover url(../img/footer/place.webp); }

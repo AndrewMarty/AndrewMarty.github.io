@@ -1,354 +1,449 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RentCar</title>
-    <link rel="stylesheet" href="css/style.min.css">
-  </head>
-  <body>
-    <header class="header">
-      <div class="container">
-        <div class="header__row">
-          <div class="header__logo"><a href="/"><img src="img/logo.svg" alt="logo"></a></div>
-          <div class="header__items">
-            <div class="header__burger">
-              <div class="header__burger-line"></div>
-            </div>
-            <nav class="header__nav">
-              <li class="header__wrap"><a class="header__link" href="#">Cars</a></li>
-              <li class="header__wrap"><a class="header__link" href="#">Feedback</a></li>
-              <li class="header__wrap"><a class="header__link" href="#">F.A.Q</a></li>
-              <li class="header__wrap"><a class="header__link" href="#">How to rent</a></li>
-            </nav>
-            <div class="header__inner">
-              <div class="header__item"><img src="img/header/euro.svg" alt="euro"><span class="header__selectors"> <span class="header__select">EUR</span>
-                  <div class="header__others"> <span class="header__select">DOL</span><span class="header__select">RUB</span></div></span></div>
-              <div class="header__item"><img src="img/header/language.svg" alt="world"><span class="header__selectors"> <span class="header__select">EU</span>
-                  <div class="header__others"> <span class="header__select">DE</span><span class="header__select">RU</span></div></span></div>
-            </div><a class="btn header__btn" href="#reg" rel="modal:open">Sign in</a>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RentCar</title>
+  <link rel="stylesheet" href="css/style.min.css?_v=20221212181749">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__row">
+        <div class="header__logo"><a href="/"><img src="img/logo.svg" alt="logo"></a></div>
+        <div class="header__items">
+          <div class="header__burger">
+            <div class="header__burger-line"></div>
           </div>
+          <nav class="header__nav">
+            <li class="header__wrap"><a class="header__link" href="#">Cars</a></li>
+            <li class="header__wrap"><a class="header__link" href="#">Feedback</a></li>
+            <li class="header__wrap"><a class="header__link" href="#">F.A.Q</a></li>
+            <li class="header__wrap"><a class="header__link" href="#">How to rent</a></li>
+          </nav>
+          <div class="header__inner">
+            <div class="header__item"><img src="img/header/euro.svg" alt="euro"><span class="header__selectors"> <span
+                  class="header__select">EUR</span>
+                <div class="header__others"> <span class="header__select">DOL</span><span
+                    class="header__select">RUB</span></div>
+              </span></div>
+            <div class="header__item"><img src="img/header/language.svg" alt="world"><span class="header__selectors">
+                <span class="header__select">EU</span>
+                <div class="header__others"> <span class="header__select">DE</span><span
+                    class="header__select">RU</span></div>
+              </span></div>
+          </div><a class="btn header__btn" href="#reg" rel="modal:open">Sign in</a>
         </div>
       </div>
-    </header>
-    <section class="screen">
-      <div class="container">
-        <h1 class="title screen__title">Rent a car</h1>
-        <div class="screen__row"> 
-          <form class="screen__form">
-            <div class="screen__inner">
-              <div class="screen__item"><span class="screen__form-title">Location</span>
-                <div class="screen__wrapper"> 
-                  <input class="screen__input screen__input-search" type="text"><img class="screen__search" src="img/screen/search.svg" alt="search">
-                </div>
+    </div>
+  </header>
+  <section class="screen">
+    <div class="container">
+      <h1 class="title screen__title">Rent a car</h1>
+      <div class="screen__row">
+        <form class="screen__form">
+          <div class="screen__inner">
+            <div class="screen__item"><span class="screen__form-title">Location</span>
+              <div class="screen__wrapper">
+                <input class="screen__input screen__input-search" type="text"><img class="screen__search"
+                  src="img/screen/search.svg" alt="search">
               </div>
-              <div class="screen__item"><span class="screen__form-title">Pick up</span>
-                <div class="screen__wrapper"> 
-                  <input class="screen__input" type="text" name="">
-                  <input class="screen__input" type="text" name="">
-                </div>
-              </div>
-              <div class="screen__item"><span class="screen__form-title">Return</span>
-                <div class="screen__wrapper"> 
-                  <input class="screen__input" type="text" name="">
-                  <input class="screen__input" type="text" name="">
-                </div>
-              </div>
-              <button class="btn screen__btn">Reserve</button>
             </div>
-            <div class="screen__labels">
-              <label class="screen__label">
-                <input class="screen__check" type="checkbox">
-                <div class="screen__checkbox"></div><span class="screen__label-text">Driver’s age 21+</span>
-              </label>
-              <label class="screen__label">
-                <input class="screen__check" type="checkbox">
-                <div class="screen__checkbox"></div><span class="screen__label-text">Return to different location</span>
-              </label>
+            <div class="screen__item"><span class="screen__form-title">Pick up</span>
+              <div class="screen__wrapper">
+                <input class="screen__input" type="text" name="">
+                <input class="screen__input" type="text" name="">
+              </div>
             </div>
-            <button class="btn screen__btn screen__btn-bottom">Reserve</button>
-          </form>
+            <div class="screen__item"><span class="screen__form-title">Return</span>
+              <div class="screen__wrapper">
+                <input class="screen__input" type="text" name="">
+                <input class="screen__input" type="text" name="">
+              </div>
+            </div>
+            <button class="btn screen__btn">Reserve</button>
+          </div>
+          <div class="screen__labels">
+            <label class="screen__label">
+              <input class="screen__check" type="checkbox">
+              <div class="screen__checkbox"></div><span class="screen__label-text">Driver’s age 21+</span>
+            </label>
+            <label class="screen__label">
+              <input class="screen__check" type="checkbox">
+              <div class="screen__checkbox"></div><span class="screen__label-text">Return to different location</span>
+            </label>
+          </div>
+          <button class="btn screen__btn screen__btn-bottom">Reserve</button>
+        </form>
+      </div>
+      <div class="advantages">
+        <div class="advantages__card"> <img class="advantages__img" src="img/advantages/item_1.svg" alt="photo"><img
+            class="advantages__img advantages__img-invert" src="img/advantages/item_1-invert.svg" alt="photo"><span
+            class="advantages__title">Delivery to other town is possible</span>
+          <p class="advantages__desc">Rent no matter where you are</p>
         </div>
-        <div class="advantages"> 
-          <div class="advantages__card"> <img class="advantages__img" src="img/advantages/item_1.svg" alt="photo"><img class="advantages__img advantages__img-invert" src="img/advantages/item_1-invert.svg" alt="photo"><span class="advantages__title">Delivery to other town is possible</span>
-            <p class="advantages__desc">Rent no matter where you are</p>
-          </div>
-          <div class="advantages__card"><img class="advantages__img" src="img/advantages/item_2.svg" alt="photo"><img class="advantages__img advantages__img-invert" src="img/advantages/item_2-invert.svg" alt="photo"><span class="advantages__title">New cars</span>
-            <p class="advantages__desc">Cars only 2022 years</p>
-          </div>
-          <div class="advantages__card"> <img class="advantages__img" src="img/advantages/item_3.svg" alt="photo"><img class="advantages__img advantages__img-invert" src="img/advantages/item_3-invert.svg" alt="photo"><span class="advantages__title">Best price</span>
-            <p class="advantages__desc">High quality, best price</p>
-          </div>
+        <div class="advantages__card"><img class="advantages__img" src="img/advantages/item_2.svg" alt="photo"><img
+            class="advantages__img advantages__img-invert" src="img/advantages/item_2-invert.svg" alt="photo"><span
+            class="advantages__title">New cars</span>
+          <p class="advantages__desc">Cars only 2022 years</p>
+        </div>
+        <div class="advantages__card"> <img class="advantages__img" src="img/advantages/item_3.svg" alt="photo"><img
+            class="advantages__img advantages__img-invert" src="img/advantages/item_3-invert.svg" alt="photo"><span
+            class="advantages__title">Best price</span>
+          <p class="advantages__desc">High quality, best price</p>
         </div>
       </div>
-    </section>
-    <div class="subscreen"> 
-      <div class="container">
-        <div class="advantages"> 
-          <div class="advantages__card"> <img class="advantages__img" src="img/advantages/item_1.svg" alt="photo"><img class="advantages__img advantages__img-invert" src="img/advantages/item_1-invert.svg" alt="photo"><span class="advantages__title">Delivery to other town is possible</span>
-            <p class="advantages__desc">Rent no matter where you are</p>
+    </div>
+  </section>
+  <div class="subscreen">
+    <div class="container">
+      <div class="advantages">
+        <div class="advantages__card"> <img class="advantages__img" src="img/advantages/item_1.svg" alt="photo"><img
+            class="advantages__img advantages__img-invert" src="img/advantages/item_1-invert.svg" alt="photo"><span
+            class="advantages__title">Delivery to other town is possible</span>
+          <p class="advantages__desc">Rent no matter where you are</p>
+        </div>
+        <div class="advantages__card"><img class="advantages__img" src="img/advantages/item_2.svg" alt="photo"><img
+            class="advantages__img advantages__img-invert" src="img/advantages/item_2-invert.svg" alt="photo"><span
+            class="advantages__title">New cars</span>
+          <p class="advantages__desc">Cars only 2022 years</p>
+        </div>
+        <div class="advantages__card"> <img class="advantages__img" src="img/advantages/item_3.svg" alt="photo"><img
+            class="advantages__img advantages__img-invert" src="img/advantages/item_3-invert.svg" alt="photo"><span
+            class="advantages__title">Best price</span>
+          <p class="advantages__desc">High quality, best price</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="cars">
+    <div class="container">
+      <h2 class="title cars__title">Our cars</h2>
+      <div class="cars__cars">
+        <div class="cars__item">
+          <div class="cars__photo">
+            <picture>
+              <source srcset="img/cars/car_1.webp" type="image/webp"><img src="img/cars/car_1.png" alt="car">
+            </picture>
           </div>
-          <div class="advantages__card"><img class="advantages__img" src="img/advantages/item_2.svg" alt="photo"><img class="advantages__img advantages__img-invert" src="img/advantages/item_2-invert.svg" alt="photo"><span class="advantages__title">New cars</span>
-            <p class="advantages__desc">Cars only 2022 years</p>
+          <div class="cars__info"> <span class="cars__name">Renault Clio<span
+                class="cars__price cars__price-name">39<img src="img/cars/euro.svg" alt="euro">/per
+                day</span></span><span class="cars__info-line"><img src="img/cars/icon_1.svg" alt="line">Engine
+              displacement: 2.0</span><span class="cars__info-line"><img src="img/cars/icon_2.svg" alt="line">Manual
+              transmission: A</span><span class="cars__info-line"><img src="img/cars/icon_3.svg" alt="line">Passengers:
+              5</span><span class="cars__info-line"><img src="img/cars/icon_4.svg" alt="line">Large bags: 4</span><span
+              class="cars__info-line"><img src="img/cars/icon_5.svg" alt="line">Doors: 4</span></div>
+          <div class="cars__wrapper"><span class="cars__price">39<img src="img/cars/euro.svg" alt="euro">/per day</span>
+            <button class="cars__book">Book now</button>
+            <button class="cars__details">View details</button>
           </div>
-          <div class="advantages__card"> <img class="advantages__img" src="img/advantages/item_3.svg" alt="photo"><img class="advantages__img advantages__img-invert" src="img/advantages/item_3-invert.svg" alt="photo"><span class="advantages__title">Best price</span>
-            <p class="advantages__desc">High quality, best price</p>
+        </div>
+        <div class="cars__item">
+          <div class="cars__photo">
+            <picture>
+              <source srcset="img/cars/car_2.webp" type="image/webp"><img src="img/cars/car_2.png" alt="car">
+            </picture>
+          </div>
+          <div class="cars__info"> <span class="cars__name">Renault Clio<span
+                class="cars__price cars__price-name">39<img src="img/cars/euro.svg" alt="euro">/per
+                day</span></span><span class="cars__info-line"><img src="img/cars/icon_1.svg" alt="line">Engine
+              displacement: 2.0</span><span class="cars__info-line"><img src="img/cars/icon_2.svg" alt="line">Manual
+              transmission: A</span><span class="cars__info-line"><img src="img/cars/icon_3.svg" alt="line">Passengers:
+              5</span><span class="cars__info-line"><img src="img/cars/icon_4.svg" alt="line">Large bags: 4</span><span
+              class="cars__info-line"><img src="img/cars/icon_5.svg" alt="line">Doors: 4</span></div>
+          <div class="cars__wrapper"><span class="cars__price">39<img src="img/cars/euro.svg" alt="euro">/per day</span>
+            <button class="cars__book">Book now</button>
+            <button class="cars__details">View details</button>
           </div>
         </div>
       </div>
     </div>
-    <section class="cars"> 
-      <div class="container"> 
-        <h2 class="title cars__title">Our cars</h2>
-        <div class="cars__cars"> 
-          <div class="cars__item"> 
-            <div class="cars__photo"><img src="img/cars/car_1.png" alt="car"></div>
-            <div class="cars__info"> <span class="cars__name">Renault Clio<span class="cars__price cars__price-name">39<img src="img/cars/euro.svg" alt="euro">/per day</span></span><span class="cars__info-line"><img src="img/cars/icon_1.svg" alt="line">Engine displacement: 2.0</span><span class="cars__info-line"><img src="img/cars/icon_2.svg" alt="line">Manual transmission: A</span><span class="cars__info-line"><img src="img/cars/icon_3.svg" alt="line">Passengers: 5</span><span class="cars__info-line"><img src="img/cars/icon_4.svg" alt="line">Large bags: 4</span><span class="cars__info-line"><img src="img/cars/icon_5.svg" alt="line">Doors: 4</span></div>
-            <div class="cars__wrapper"><span class="cars__price">39<img src="img/cars/euro.svg" alt="euro">/per day</span>
-              <button class="cars__book">Book now</button>
-              <button class="cars__details">View details</button>
+  </section>
+  <section class="reqierments">
+    <div class="container">
+      <h3 class="title reqierments__title">Reqierments</h3>
+      <div class="reqierments__grid">
+        <div class="reqierments__item">
+          <p class="reqierments__text">You must be 21+ years old</p>
+        </div>
+        <div class="reqierments__item">
+          <p class="reqierments__text">Personal driver licence</p>
+        </div>
+        <div class="reqierments__item">
+          <p class="reqierments__text">Valid credit card and 300 euro deposit</p>
+        </div>
+        <div class="reqierments__item">
+          <p class="reqierments__text">Official document (driver licence or passport) for another driver</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="faq">
+    <div class="container faq__container">
+      <h4 class="title faq__title">F.A.Q</h4>
+      <ol class="faq__list">
+        <li class="faq__item">
+          <div class="faq__inner"> <span class="faq__name">What documents are needed for car rental?</span>
+            <p class="faq__desc">Passport or driver licence</p>
+          </div>
+        </li>
+        <li class="faq__item">
+          <div class="faq__inner"><span class="faq__name">What to do in case of an accident?</span>
+            <p class="faq__desc">In the event of an accident, call the number specified in the contract</p>
+          </div>
+        </li>
+        <li class="faq__item">
+          <div class="faq__inner"><span class="faq__name">Is it possible to deliver the car to another city?</span>
+            <p class="faq__desc">Delivery of the car is possible within a radius of 20 km from the city of Nuremberg</p>
+          </div>
+        </li>
+        <li class="faq__item">
+          <div class="faq__inner"><span class="faq__name">Is it possible to transfer the vehicle to third
+              parties?</span>
+            <p class="faq__desc">Allowed if they are written in the contract</p>
+          </div>
+        </li>
+        <li class="faq__item">
+          <div class="faq__inner"><span class="faq__name">What is not included in the rental price?</span>
+            <p class="faq__desc">The price does not include fuel</p>
+          </div>
+        </li>
+        <li class="faq__item">
+          <div class="faq__inner"><span class="faq__name">Are there mileage restrictions?</span>
+            <p class="faq__desc">250 km per day, anything above costs 0.20 cents per kilometer</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+    <div class="faq__photo">
+      <picture>
+        <source srcset="img/faq/car.webp" type="image/webp"><img src="img/faq/car.png" alt="car">
+      </picture>
+    </div>
+  </section>
+  <section class="feedback">
+    <div class="container feedback__container">
+      <h5 class="title feedback__title">Feedback</h5>
+      <div class="feedback__feedbacks">
+        <div class="feedback__item">
+          <div class="feedback__photo">
+            <picture>
+              <source srcset="img/feedback/photo_1.webp" type="image/webp"><img class="feedback__man"
+                src="img/feedback/photo_1.png">
+            </picture>
+            <div class="feedback__info">
+              <div class="feedback__stars feedback__stars-photo">
+                <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
+                <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
+                <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
+                <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
+                <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
+              </div><span class="feedback__author feedback__author-photo">Anrew Nortwood</span>
             </div>
           </div>
-          <div class="cars__item"> 
-            <div class="cars__photo"><img src="img/cars/car_2.png" alt="car"></div>
-            <div class="cars__info"> <span class="cars__name">Renault Clio<span class="cars__price cars__price-name">39<img src="img/cars/euro.svg" alt="euro">/per day</span></span><span class="cars__info-line"><img src="img/cars/icon_1.svg" alt="line">Engine displacement: 2.0</span><span class="cars__info-line"><img src="img/cars/icon_2.svg" alt="line">Manual transmission: A</span><span class="cars__info-line"><img src="img/cars/icon_3.svg" alt="line">Passengers: 5</span><span class="cars__info-line"><img src="img/cars/icon_4.svg" alt="line">Large bags: 4</span><span class="cars__info-line"><img src="img/cars/icon_5.svg" alt="line">Doors: 4</span></div>
-            <div class="cars__wrapper"><span class="cars__price">39<img src="img/cars/euro.svg" alt="euro">/per day</span>
-              <button class="cars__book">Book now</button>
-              <button class="cars__details">View details</button>
+          <div class="feedback__content">
+            <div class="feedback__stars">
+              <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
+              <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
+              <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
+              <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
+              <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
             </div>
+            <p class="feedback__text">
+              Example text
+              The early 1970s saw the first whole-system carshare projects. The ProcoTip system in France lasted only
+              about two years. A much more ambitious project called the Witkar was launched in Amsterdam by the founders
+              of the 1965 white bicycles project
+            </p><span class="feedback__author">Anrew Nortwood</span>
+          </div>
+        </div>
+        <div class="feedback__item">
+          <div class="feedback__photo">
+            <picture>
+              <source srcset="img/feedback/photo_1.webp" type="image/webp"><img class="feedback__man"
+                src="img/feedback/photo_1.png">
+            </picture>
+            <div class="feedback__info">
+              <div class="feedback__stars feedback__stars-photo">
+                <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
+                <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
+                <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
+                <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
+                <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
+              </div><span class="feedback__author feedback__author-photo">Anrew Nortwood</span>
+            </div>
+          </div>
+          <div class="feedback__content">
+            <div class="feedback__stars">
+              <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
+              <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
+              <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
+              <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
+              <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
+            </div>
+            <p class="feedback__text">
+              Example text
+              The early 1970s saw the first whole-system carshare projects. The ProcoTip system in France lasted only
+              about two years. A much more ambitious project called the Witkar was launched in Amsterdam by the founders
+              of the 1965 white bicycles project
+            </p><span class="feedback__author">Anrew Nortwood</span>
+          </div>
+        </div>
+        <div class="feedback__item">
+          <div class="feedback__photo">
+            <picture>
+              <source srcset="img/feedback/photo_1.webp" type="image/webp"><img class="feedback__man"
+                src="img/feedback/photo_1.png">
+            </picture>
+            <div class="feedback__info">
+              <div class="feedback__stars feedback__stars-photo">
+                <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
+                <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
+                <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
+                <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
+                <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
+              </div><span class="feedback__author feedback__author-photo">Anrew Nortwood</span>
+            </div>
+          </div>
+          <div class="feedback__content">
+            <div class="feedback__stars">
+              <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
+              <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
+              <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
+              <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
+              <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
+            </div>
+            <p class="feedback__text">
+              Example text
+              The early 1970s saw the first whole-system carshare projects. The ProcoTip system in France lasted only
+              about two years. A much more ambitious project called the Witkar was launched in Amsterdam by the founders
+              of the 1965 white bicycles project
+            </p><span class="feedback__author">Anrew Nortwood</span>
+          </div>
+        </div>
+        <div class="feedback__item">
+          <div class="feedback__photo">
+            <picture>
+              <source srcset="img/feedback/photo_1.webp" type="image/webp"><img class="feedback__man"
+                src="img/feedback/photo_1.png">
+            </picture>
+            <div class="feedback__info">
+              <div class="feedback__stars feedback__stars-photo">
+                <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
+                <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
+                <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
+                <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
+                <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
+              </div><span class="feedback__author feedback__author-photo">Anrew Nortwood</span>
+            </div>
+          </div>
+          <div class="feedback__content">
+            <div class="feedback__stars">
+              <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
+              <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
+              <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
+              <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
+              <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
+            </div>
+            <p class="feedback__text">
+              Example text
+              The early 1970s saw the first whole-system carshare projects. The ProcoTip system in France lasted only
+              about two years. A much more ambitious project called the Witkar was launched in Amsterdam by the founders
+              of the 1965 white bicycles project
+            </p><span class="feedback__author">Anrew Nortwood</span>
+          </div>
+        </div>
+        <div class="feedback__item">
+          <div class="feedback__photo">
+            <picture>
+              <source srcset="img/feedback/photo_1.webp" type="image/webp"><img class="feedback__man"
+                src="img/feedback/photo_1.png">
+            </picture>
+            <div class="feedback__info">
+              <div class="feedback__stars feedback__stars-photo">
+                <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
+                <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
+                <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
+                <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
+                <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
+              </div><span class="feedback__author feedback__author-photo">Anrew Nortwood</span>
+            </div>
+          </div>
+          <div class="feedback__content">
+            <div class="feedback__stars">
+              <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
+              <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
+              <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
+              <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
+              <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
+            </div>
+            <p class="feedback__text">
+              Example text
+              The early 1970s saw the first whole-system carshare projects. The ProcoTip system in France lasted only
+              about two years. A much more ambitious project called the Witkar was launched in Amsterdam by the founders
+              of the 1965 white bicycles project
+            </p><span class="feedback__author">Anrew Nortwood</span>
           </div>
         </div>
       </div>
-    </section>
-    <section class="reqierments">
-      <div class="container"> 
-        <h3 class="title reqierments__title">Reqierments</h3>
-        <div class="reqierments__grid">
-          <div class="reqierments__item">
-            <p class="reqierments__text">You must be 21+ years old</p>
+      <button class="btn feedback__btn">Leave a feedback </button>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="footer__wrap">
+      <div class="container">
+        <div class="footer__form">
+          <input class="footer__field" type="text" placeholder="Phone">
+          <button class="btn footer__btn">Call me back</button>
+        </div>
+      </div>
+    </div>
+    <div class="footer__content">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__grid">
+            <div class="footer__item"><a href="/"><img class="footer__logo" src="img/logo-invert.svg" alt="logo"></a>
+            </div>
+            <div class="footer__item footer__list"><a class="footer__link" href="#">Cars</a><a class="footer__link"
+                href="#">Feedback</a><a class="footer__link" href="#">F.A.Q</a><a class="footer__link" href="#">How to
+                rent</a></div>
+            <div class="footer__item"> <a class="footer__contact" href="#"><img class="footer__icon"
+                  src="img/footer/telephone.svg" alt="telephne">+1 236 254 02</a><a class="footer__contact" href="#">
+                <img class="footer__icon" src="img/footer/dog.svg" alt="telephne">info@carrent.de</a>
+              <div class="footer__socials"> <a class="footer__social" href="#"><img src="img/footer/instagram.svg"
+                    alt="instagram"></a><a class="footer__social" href="#"><img src="img/footer/telegram.svg"
+                    alt="instagram"></a>
+                <div class="footer__terms"> <a class="footer__link-other" href="#">Terms of Use</a><a
+                    class="footer__link-other" href="#">Privacy Policy</a></div>
+              </div>
+            </div>
           </div>
-          <div class="reqierments__item">
-            <p class="reqierments__text">Personal driver licence</p>
+          <div class="footer__photo">
+            <picture>
+              <source srcset="img/footer/map.webp" type="image/webp"><img src="img/footer/map.png" alt="map">
+            </picture>
           </div>
-          <div class="reqierments__item">
-            <p class="reqierments__text">Valid credit card and 300 euro deposit</p>
-          </div>
-          <div class="reqierments__item">
-            <p class="reqierments__text">Official document (driver licence or passport) for another driver</p>
+          <div class="footer__row">
+            <p class="footer__rights">© 2022 Enterprise Holdings, Inc. All rights reserved.</p>
+            <div class="footer__terms"> <a class="footer__link-other" href="#">Terms of Use</a><a
+                class="footer__link-other" href="#">Privacy Policy</a></div>
           </div>
         </div>
       </div>
-    </section>
-    <section class="faq"> 
-      <div class="container faq__container">
-        <h4 class="title faq__title">F.A.Q</h4>
-        <ol class="faq__list">
-          <li class="faq__item">
-            <div class="faq__inner"> <span class="faq__name">What documents are needed for car rental?</span>
-              <p class="faq__desc">Passport or driver licence</p>
-            </div>
-          </li>
-          <li class="faq__item">
-            <div class="faq__inner"><span class="faq__name">What to do in case of an accident?</span>
-              <p class="faq__desc">In the event of an accident, call the number specified in the contract</p>
-            </div>
-          </li>
-          <li class="faq__item">
-            <div class="faq__inner"><span class="faq__name">Is it possible to deliver the car to another city?</span>
-              <p class="faq__desc">Delivery of the car is possible within a radius of 20 km from the city of Nuremberg</p>
-            </div>
-          </li>
-          <li class="faq__item">
-            <div class="faq__inner"><span class="faq__name">Is it possible to transfer the vehicle to third parties?</span>
-              <p class="faq__desc">Allowed if they are written in the contract</p>
-            </div>
-          </li>
-          <li class="faq__item">
-            <div class="faq__inner"><span class="faq__name">What is not included in the rental price?</span>
-              <p class="faq__desc">The price does not include fuel</p>
-            </div>
-          </li>
-          <li class="faq__item">
-            <div class="faq__inner"><span class="faq__name">Are there mileage restrictions?</span>
-              <p class="faq__desc">250 km per day, anything above costs 0.20 cents per kilometer</p>
-            </div>
-          </li>
-        </ol>
-      </div>
-      <div class="faq__photo"><img src="img/faq/car.png" alt="car"></div>
-    </section>
-    <section class="feedback"> 
-      <div class="container feedback__container">
-        <h5 class="title feedback__title">Feedback</h5>
-        <div class="feedback__feedbacks">
-          <div class="feedback__item"> 
-            <div class="feedback__photo"><img class="feedback__man" src="img/feedback/photo_1.png">
-              <div class="feedback__info">
-                <div class="feedback__stars feedback__stars-photo">
-                  <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
-                  <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
-                  <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
-                  <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
-                  <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
-                </div><span class="feedback__author feedback__author-photo">Anrew Nortwood</span>
-              </div>
-            </div>
-            <div class="feedback__content">
-              <div class="feedback__stars">
-                <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
-                <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
-                <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
-                <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
-                <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
-              </div>
-              <p class="feedback__text">
-                Example text
-                The early 1970s saw the first whole-system carshare projects. The ProcoTip system in France lasted only about two years. A much more ambitious project called the Witkar was launched in Amsterdam by the founders of the 1965 white bicycles project         
-              </p><span class="feedback__author">Anrew Nortwood</span>
-            </div>
-          </div>
-          <div class="feedback__item"> 
-            <div class="feedback__photo"><img class="feedback__man" src="img/feedback/photo_1.png">
-              <div class="feedback__info">
-                <div class="feedback__stars feedback__stars-photo">
-                  <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
-                  <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
-                  <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
-                  <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
-                  <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
-                </div><span class="feedback__author feedback__author-photo">Anrew Nortwood</span>
-              </div>
-            </div>
-            <div class="feedback__content">
-              <div class="feedback__stars">
-                <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
-                <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
-                <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
-                <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
-                <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
-              </div>
-              <p class="feedback__text">
-                Example text
-                The early 1970s saw the first whole-system carshare projects. The ProcoTip system in France lasted only about two years. A much more ambitious project called the Witkar was launched in Amsterdam by the founders of the 1965 white bicycles project         
-              </p><span class="feedback__author">Anrew Nortwood</span>
-            </div>
-          </div>
-          <div class="feedback__item"> 
-            <div class="feedback__photo"><img class="feedback__man" src="img/feedback/photo_1.png">
-              <div class="feedback__info">
-                <div class="feedback__stars feedback__stars-photo">
-                  <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
-                  <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
-                  <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
-                  <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
-                  <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
-                </div><span class="feedback__author feedback__author-photo">Anrew Nortwood</span>
-              </div>
-            </div>
-            <div class="feedback__content">
-              <div class="feedback__stars">
-                <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
-                <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
-                <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
-                <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
-                <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
-              </div>
-              <p class="feedback__text">
-                Example text
-                The early 1970s saw the first whole-system carshare projects. The ProcoTip system in France lasted only about two years. A much more ambitious project called the Witkar was launched in Amsterdam by the founders of the 1965 white bicycles project         
-              </p><span class="feedback__author">Anrew Nortwood</span>
-            </div>
-          </div>
-          <div class="feedback__item"> 
-            <div class="feedback__photo"><img class="feedback__man" src="img/feedback/photo_1.png">
-              <div class="feedback__info">
-                <div class="feedback__stars feedback__stars-photo">
-                  <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
-                  <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
-                  <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
-                  <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
-                  <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
-                </div><span class="feedback__author feedback__author-photo">Anrew Nortwood</span>
-              </div>
-            </div>
-            <div class="feedback__content">
-              <div class="feedback__stars">
-                <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
-                <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
-                <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
-                <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
-                <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
-              </div>
-              <p class="feedback__text">
-                Example text
-                The early 1970s saw the first whole-system carshare projects. The ProcoTip system in France lasted only about two years. A much more ambitious project called the Witkar was launched in Amsterdam by the founders of the 1965 white bicycles project         
-              </p><span class="feedback__author">Anrew Nortwood</span>
-            </div>
-          </div>
-          <div class="feedback__item"> 
-            <div class="feedback__photo"><img class="feedback__man" src="img/feedback/photo_1.png">
-              <div class="feedback__info">
-                <div class="feedback__stars feedback__stars-photo">
-                  <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
-                  <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
-                  <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
-                  <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
-                  <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
-                </div><span class="feedback__author feedback__author-photo">Anrew Nortwood</span>
-              </div>
-            </div>
-            <div class="feedback__content">
-              <div class="feedback__stars">
-                <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
-                <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
-                <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
-                <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
-                <div class="feedback__star"><img src="img/feedback/star.svg" alt="star"></div>
-              </div>
-              <p class="feedback__text">
-                Example text
-                The early 1970s saw the first whole-system carshare projects. The ProcoTip system in France lasted only about two years. A much more ambitious project called the Witkar was launched in Amsterdam by the founders of the 1965 white bicycles project         
-              </p><span class="feedback__author">Anrew Nortwood</span>
-            </div>
-          </div>
-        </div>
-        <button class="btn feedback__btn">Leave a feedback    </button>
-      </div>
-    </section>
-    <footer class="footer">
-      <div class="footer__wrap"> 
-        <div class="container"> 
-          <div class="footer__form">
-            <input class="footer__field" type="text" placeholder="Phone">
-            <button class="btn footer__btn">Call me back</button>
-          </div>
-        </div>
-      </div>
-      <div class="footer__content">
-        <div class="container">
-          <div class="footer__inner"> 
-            <div class="footer__grid"> 
-              <div class="footer__item"><a href="/"><img class="footer__logo" src="img/logo-invert.svg" alt="logo"></a></div>
-              <div class="footer__item footer__list"><a class="footer__link" href="#">Cars</a><a class="footer__link" href="#">Feedback</a><a class="footer__link" href="#">F.A.Q</a><a class="footer__link" href="#">How to rent</a></div>
-              <div class="footer__item"> <a class="footer__contact" href="#"><img class="footer__icon" src="img/footer/telephone.svg" alt="telephne">+1 236 254 02</a><a class="footer__contact" href="#"> <img class="footer__icon" src="img/footer/dog.svg" alt="telephne">info@carrent.de</a>
-                <div class="footer__socials"> <a class="footer__social" href="#"><img src="img/footer/instagram.svg" alt="instagram"></a><a class="footer__social" href="#"><img src="img/footer/telegram.svg" alt="instagram"></a>
-                  <div class="footer__terms"> <a class="footer__link-other" href="#">Terms of Use</a><a class="footer__link-other" href="#">Privacy Policy</a></div>
-                </div>
-              </div>
-            </div>
-            <div class="footer__photo"><img src="img/footer/map.png" alt="map"></div>
-            <div class="footer__row"> 
-              <p class="footer__rights">© 2022 Enterprise Holdings, Inc. All rights reserved.</p>
-              <div class="footer__terms"> <a class="footer__link-other" href="#">Terms of Use</a><a class="footer__link-other" href="#">Privacy Policy</a></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="footer__photo footer__photo-small"><img src="img/footer/map_2.png" alt="map"></div>
-      <p class="footer__rights footer__end">© 2022 Enterprise Holdings, Inc. All rights reserved.</p>
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js"> </script><script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="js/app.min.js"> </script>
-  </body>
+    </div>
+    <div class="footer__photo footer__photo-small">
+      <picture>
+        <source srcset="img/footer/map_2.webp" type="image/webp"><img src="img/footer/map_2.png" alt="map">
+      </picture>
+    </div>
+    <p class="footer__rights footer__end">© 2022 Enterprise Holdings, Inc. All rights reserved.</p>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js?"> </script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js?"></script>
+  <script src="js/app.min.js?_v=20221212181749"> </script>
+</body>
+
 </html>
