@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RentCar</title><link href="https://unpkg.com/aos@2.3.1/dist/aos.css?_v=20221212215805" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.min.css?_v=20221212215805">
+    <title>RentCar</title><link href="https://unpkg.com/aos@2.3.1/dist/aos.css?_v=20221212224526" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css?_v=20221212224526">
   </head>
   <body>
     <header class="header">
@@ -352,7 +352,7 @@
       <div class="popup__back"></div>
       <div class="popup__modal" id="reg">
         <div class="popup__body">
-          <div class="popup__close"> </div>
+          <div class="popup__close close-popup"> </div>
           <h2 class="title popup__title">Regestration</h2>
           <div class="popup__form-reg"> 
             <div class="popup__fields">
@@ -377,7 +377,7 @@
       </div>
       <div class="popup__modal" id="sign">
         <div class="popup__body"> 
-          <div class="popup__close"></div>
+          <div class="popup__close close-popup"></div>
           <h2 class="title popup__title">Sign in</h2>
           <div class="popup__form-reg"> 
             <div class="popup__fields">
@@ -395,9 +395,21 @@
       </div>
       <div class="popup__modal popup__modal-cars" id="car1">
         <div class="popup__body"> 
-          <div class="popup__close"></div>
+          <div class="popup__close close-popup"></div>
           <div class="popup__car-name">Renault Clio 2022</div>
           <div class="popup__car-photo"><picture><source srcset="img/cars/car_1.webp" type="image/webp"><img src="img/cars/car_1.png" alt="cars"></picture></div>
+          <div class="popup__car-info">
+            <div class="popup__car-line"><img src="img/cars/icon_1.svg" alt="icon">V: 2.0</div>
+            <div class="popup__car-line"><img src="img/cars/icon_3.svg" alt="icon">Passengers: 5</div>
+            <div class="popup__car-line"><img src="img/cars/icon_2.svg" alt="icon">Transmission: Auto</div>
+            <div class="popup__car-line"><img src="img/cars/icon_4.svg" alt="icon">Large bags: 4</div>
+            <div class="popup__car-line"></div>
+            <div class="popup__car-line"><img src="img/cars/icon_5.svg" alt="icon">Doors: 4</div>
+          </div>
+          <div class="popup__car-subinfo"> 
+            <div class="popup__car-subinfo-item"><span class="popup__cain-subinfo-text">Satellite Navigation</span><span class="popup__cain-subinfo-text">17" Alloy Wheels</span><span class="popup__cain-subinfo-text">Satellite Bluetooth </span><span class="popup__cain-subinfo-text">Satellite Airbags</span></div>
+            <div class="popup__car-subinfo-item"><span class="popup__cain-subinfo-text">Cruise Control</span><span class="popup__cain-subinfo-text">Speed Limiter</span><span class="popup__cain-subinfo-text">Automatic Headlamps</span><span class="popup__cain-subinfo-text">Centre console</span></div>
+          </div><a class="popup__more" href="#">Read more</a>
           <div class="popup__row">
             <div class="popup__item popup__item-charac">
               <div class="popup__car-line"><img src="img/cars/icon_1.svg" alt="icon">Engine displacement: 2.0</div>
@@ -412,14 +424,26 @@
             <div class="popup__item"><span class="popup__desc">Trip Computer</span><span class="popup__desc">Traction Control</span><span class="popup__desc">Lane Keeping Aid and Alert</span><span class="popup__desc">Electric Parking Brake (EPB)</span><span class="popup__desc">Front Cup Holders</span><span class="popup__desc">Centre Armrest</span></div>
             <div class="popup__item"><span class="popup__desc">Isofix</span><span class="popup__desc">Hazard Warning Lights</span><span class="popup__desc">Interior Lights</span><span class="popup__desc">Rev Counter</span><span class="popup__desc">2 Keys</span><span class="popup__desc">Stop/Start Function</span><span class="popup__desc">Trip Computer</span><span class="popup__desc">Front Fog Lights</span></div>
           </div>
-          <button class="popup__car-btn btn">Book now</button>
+          <button class="popup__car-btn btn">Book now</button><span class="close-popup popup__return">Return</span>
         </div>
       </div>
       <div class="popup__modal popup__modal-cars" id="car2">
         <div class="popup__body"> 
-          <div class="popup__close"></div>
+          <div class="popup__close close-popup"></div>
           <div class="popup__car-name">Renault Clio 2022</div>
           <div class="popup__car-photo"><picture><source srcset="img/cars/car_2.webp" type="image/webp"><img src="img/cars/car_2.png" alt="cars"></picture></div>
+          <div class="popup__car-info">
+            <div class="popup__car-line"><img src="img/cars/icon_1.svg" alt="icon">V: 2.0</div>
+            <div class="popup__car-line"><img src="img/cars/icon_3.svg" alt="icon">Passengers: 5</div>
+            <div class="popup__car-line"><img src="img/cars/icon_2.svg" alt="icon">Transmission: Auto</div>
+            <div class="popup__car-line"><img src="img/cars/icon_4.svg" alt="icon">Large bags: 4</div>
+            <div class="popup__car-line"></div>
+            <div class="popup__car-line"><img src="img/cars/icon_5.svg" alt="icon">Doors: 4</div>
+          </div>
+          <div class="popup__car-subinfo"> 
+            <div class="popup__car-subinfo-item"><span class="popup__cain-subinfo-text">Satellite Navigation</span><span class="popup__cain-subinfo-text">17" Alloy Wheels</span><span class="popup__cain-subinfo-text">Satellite Bluetooth </span><span class="popup__cain-subinfo-text">Satellite Airbags</span></div>
+            <div class="popup__car-subinfo-item"><span class="popup__cain-subinfo-text">Cruise Control</span><span class="popup__cain-subinfo-text">Speed Limiter</span><span class="popup__cain-subinfo-text">Automatic Headlamps</span><span class="popup__cain-subinfo-text">Centre console</span></div>
+          </div><a class="popup__more" href="#">Read more</a>
           <div class="popup__row">
             <div class="popup__item popup__item-charac">
               <div class="popup__car-line"><img src="img/cars/icon_1.svg" alt="icon">Engine displacement: 2.0</div>
@@ -434,12 +458,12 @@
             <div class="popup__item"><span class="popup__desc">Trip Computer</span><span class="popup__desc">Traction Control</span><span class="popup__desc">Lane Keeping Aid and Alert</span><span class="popup__desc">Electric Parking Brake (EPB)</span><span class="popup__desc">Front Cup Holders</span><span class="popup__desc">Centre Armrest</span></div>
             <div class="popup__item"><span class="popup__desc">Isofix</span><span class="popup__desc">Hazard Warning Lights</span><span class="popup__desc">Interior Lights</span><span class="popup__desc">Rev Counter</span><span class="popup__desc">2 Keys</span><span class="popup__desc">Stop/Start Function</span><span class="popup__desc">Trip Computer</span><span class="popup__desc">Front Fog Lights</span></div>
           </div>
-          <button class="popup__car-btn btn">Book now</button>
+          <button class="popup__car-btn btn">Book now</button><span class="close-popup popup__return">Return</span>
         </div>
       </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js?_v=20221212215805"> </script><script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js?_v=20221212215805"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js?_v=20221212215805"></script>
-    <script src="js/app.min.js?_v=20221212215805"> </script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js?_v=20221212224526"> </script><script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js?_v=20221212224526"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js?_v=20221212224526"></script>
+    <script src="js/app.min.js?_v=20221212224526"> </script>
   </body>
 </html>

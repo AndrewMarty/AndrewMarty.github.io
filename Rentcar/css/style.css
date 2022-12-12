@@ -2237,6 +2237,42 @@ template {
   border-radius: 45px;
 }
 
+.popup__return {
+  font-size: 20px;
+  line-height: 23px;
+  display: none;
+}
+
+.popup__car-info {
+  display: none;
+}
+
+.popup__more {
+  position: relative;
+  display: none;
+  color: #290202;
+  font-size: 16px;
+  line-height: 19px;
+  padding-right: 20px;
+  border-bottom: 1px solid #000000;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+.popup__more::after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-right: 2px solid #290202;
+  border-bottom: 2px solid #290202;
+  position: absolute;
+  right: 3px;
+  top: 50%;
+  -webkit-transform: translateY(-50%) rotate(-45deg);
+      -ms-transform: translateY(-50%) rotate(-45deg);
+          transform: translateY(-50%) rotate(-45deg);
+}
+
 @media (max-width: 480px) {
   .header {
     padding: 0;
@@ -2880,6 +2916,96 @@ template {
   .popup__body {
     padding: 50px 8px;
     width: 100%;
+  }
+
+  .popup__modal-cars {
+    width: 100%;
+  }
+
+  .popup__modal-cars .popup__body {
+    border-radius: 0;
+    padding: 8px 20px;
+    height: 100vh;
+  }
+
+  .popup__modal-cars .popup__close {
+    display: none;
+  }
+
+  .popup__car-photo {
+    width: 100%;
+  }
+
+  .popup__car-name {
+    position: static;
+    display: block;
+    margin-bottom: 6px;
+  }
+
+  .popup__car-btn {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .popup__return {
+    display: block;
+    text-align: center;
+  }
+
+  .popup__row {
+    display: none;
+  }
+
+  .popup__car-info {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+    -webkit-column-gap: 20px;
+       -moz-column-gap: 20px;
+            column-gap: 20px;
+    row-gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .popup__car-line {
+    margin-bottom: 0;
+  }
+
+  .popup__car-line img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .popup__car-subinfo {
+    display: -ms-grid;
+    display: grid;
+    -webkit-column-gap: 20px;
+       -moz-column-gap: 20px;
+            column-gap: 20px;
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 14px;
+  }
+
+  .popup__cain-subinfo-text {
+    display: block;
+    opacity: 0.5;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 4px;
+  }
+
+  .popup__cain-subinfo-text:last-child {
+    margin-bottom: 0;
+  }
+
+  .popup__more {
+    margin-left: auto;
+    display: block;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
   }
 }
 
