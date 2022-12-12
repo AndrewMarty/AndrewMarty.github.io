@@ -1892,11 +1892,7 @@ template {
   left: -16px;
 }
 
-@media (max-width: 320px) {
-  .title {
-    font-size: 24px;
-  }
-
+@media (max-width: 480px) {
   .header {
     padding: 0;
     padding-bottom: 6px;
@@ -2024,31 +2020,6 @@ template {
     padding: 8px 16px;
   }
 
-  .advantages {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
-  }
-
-  .advantages__card {
-    padding: 0;
-    height: 177px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    text-align: center;
-    color: #290202;
-    border-bottom: 1px solid #290202;
-    border-radius: 0;
-  }
-
-  .advantages__img {
-    display: none;
-  }
-
-  .advantages__img-invert {
-    display: block;
-  }
-
   .screen {
     padding: 15px 0 18px;
   }
@@ -2132,10 +2103,6 @@ template {
   .screen__search {
     width: 16px;
     height: 16px;
-  }
-
-  .subscreen {
-    display: block;
   }
 
   .cars__title {
@@ -2254,7 +2221,7 @@ template {
   }
 
   .faq__photo {
-    width: 320px;
+    width: 100vw;
   }
 
   .faq__photo::after {
@@ -2559,5 +2526,40 @@ template {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+@media (max-width: 320px) {
+  .title {
+    font-size: 24px;
+  }
+
+  .advantages {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .advantages__card {
+    padding: 0;
+    height: 177px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    color: #290202;
+    border-bottom: 1px solid #290202;
+    border-radius: 0;
+  }
+
+  .advantages__img {
+    display: none;
+  }
+
+  .advantages__img-invert {
+    display: block;
+  }
+
+  .subscreen {
+    display: block;
   }
 }
