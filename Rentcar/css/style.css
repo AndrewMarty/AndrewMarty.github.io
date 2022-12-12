@@ -2005,6 +2005,7 @@ template {
 }
 
 .popup__field {
+  position: relative;
   margin-bottom: 16px;
 }
 
@@ -2271,6 +2272,33 @@ template {
   -webkit-transform: translateY(-50%) rotate(-45deg);
       -ms-transform: translateY(-50%) rotate(-45deg);
           transform: translateY(-50%) rotate(-45deg);
+}
+
+.popup__eye {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 24px;
+  position: absolute;
+  cursor: pointer;
+}
+
+.popup__eye img {
+  width: 24px;
+  height: 24px;
+}
+
+.popup__eye img:last-child {
+  display: none;
+}
+
+.popup__eye-active img:first-child {
+  display: none;
+}
+
+.popup__eye-active img:last-child {
+  display: block;
 }
 
 @media (max-width: 480px) {
