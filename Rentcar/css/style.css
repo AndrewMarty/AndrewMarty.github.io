@@ -1269,6 +1269,7 @@ li.ui-timepicker-selected .ui-timepicker-duration,
 }
 
 .faq {
+  overflow: hidden;
   background-color: #290202;
   padding: 30px 0 38px;
   position: relative;
@@ -2426,22 +2427,7 @@ li.ui-timepicker-selected .ui-timepicker-duration,
   overflow: hidden;
 }
 
-@media (max-width: 480px) {
-  .ui-timepicker-wrapper {
-    padding: 16px 0;
-    position: fixed !important;
-    top: 50% !important;
-    left: 50% !important;
-    -webkit-transform: translate(-50%, -50%) !important;
-        -ms-transform: translate(-50%, -50%) !important;
-            transform: translate(-50%, -50%) !important;
-  }
-
-  .ui-timepicker-list {
-    -ms-grid-columns: (1fr)[2];
-    grid-template-columns: repeat(2, 1fr);
-  }
-
+@media (max-width: 768px) {
   .header {
     padding: 0;
     padding-bottom: 6px;
@@ -2996,6 +2982,122 @@ li.ui-timepicker-selected .ui-timepicker-duration,
     display: block;
   }
 
+  .popup__active {
+    width: calc(100% - 40px);
+  }
+
+  .popup__body {
+    padding: 50px 8px;
+    width: 100%;
+  }
+
+  .popup__modal-cars {
+    width: 100%;
+  }
+
+  .popup__modal-cars .popup__body {
+    border-radius: 0;
+    padding: 8px 20px;
+    height: 100vh;
+  }
+
+  .popup__modal-cars .popup__close {
+    display: none;
+  }
+
+  .popup__car-photo {
+    width: 100%;
+  }
+
+  .popup__car-name {
+    position: static;
+    display: block;
+    margin-bottom: 6px;
+  }
+
+  .popup__car-btn {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .popup__return {
+    display: block;
+    text-align: center;
+  }
+
+  .popup__row {
+    display: none;
+  }
+
+  .popup__car-info {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+    -webkit-column-gap: 20px;
+       -moz-column-gap: 20px;
+            column-gap: 20px;
+    row-gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .popup__car-line {
+    margin-bottom: 0;
+  }
+
+  .popup__car-line img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .popup__car-subinfo {
+    display: -ms-grid;
+    display: grid;
+    -webkit-column-gap: 20px;
+       -moz-column-gap: 20px;
+            column-gap: 20px;
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 14px;
+  }
+
+  .popup__cain-subinfo-text {
+    display: block;
+    opacity: 0.5;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 4px;
+  }
+
+  .popup__cain-subinfo-text:last-child {
+    margin-bottom: 0;
+  }
+
+  .popup__more {
+    margin-left: auto;
+    display: block;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+}
+
+@media (max-width: 480px) {
+  .ui-timepicker-wrapper {
+    padding: 16px 0;
+    position: fixed !important;
+    top: 50% !important;
+    left: 50% !important;
+    -webkit-transform: translate(-50%, -50%) !important;
+        -ms-transform: translate(-50%, -50%) !important;
+            transform: translate(-50%, -50%) !important;
+  }
+
+  .ui-timepicker-list {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .profile__title {
     margin-bottom: 0;
   }
@@ -3117,105 +3219,6 @@ li.ui-timepicker-selected .ui-timepicker-duration,
 
   .profile__more-btn {
     display: none;
-  }
-
-  .popup__active {
-    width: calc(100% - 40px);
-  }
-
-  .popup__body {
-    padding: 50px 8px;
-    width: 100%;
-  }
-
-  .popup__modal-cars {
-    width: 100%;
-  }
-
-  .popup__modal-cars .popup__body {
-    border-radius: 0;
-    padding: 8px 20px;
-    height: 100vh;
-  }
-
-  .popup__modal-cars .popup__close {
-    display: none;
-  }
-
-  .popup__car-photo {
-    width: 100%;
-  }
-
-  .popup__car-name {
-    position: static;
-    display: block;
-    margin-bottom: 6px;
-  }
-
-  .popup__car-btn {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-
-  .popup__return {
-    display: block;
-    text-align: center;
-  }
-
-  .popup__row {
-    display: none;
-  }
-
-  .popup__car-info {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[2];
-    grid-template-columns: repeat(2, 1fr);
-    -webkit-column-gap: 20px;
-       -moz-column-gap: 20px;
-            column-gap: 20px;
-    row-gap: 10px;
-    margin-bottom: 20px;
-  }
-
-  .popup__car-line {
-    margin-bottom: 0;
-  }
-
-  .popup__car-line img {
-    width: 20px;
-    height: 20px;
-  }
-
-  .popup__car-subinfo {
-    display: -ms-grid;
-    display: grid;
-    -webkit-column-gap: 20px;
-       -moz-column-gap: 20px;
-            column-gap: 20px;
-    -ms-grid-columns: (1fr)[2];
-    grid-template-columns: repeat(2, 1fr);
-    margin-bottom: 14px;
-  }
-
-  .popup__cain-subinfo-text {
-    display: block;
-    opacity: 0.5;
-    font-size: 16px;
-    line-height: 19px;
-    margin-bottom: 4px;
-  }
-
-  .popup__cain-subinfo-text:last-child {
-    margin-bottom: 0;
-  }
-
-  .popup__more {
-    margin-left: auto;
-    display: block;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
   }
 }
 
