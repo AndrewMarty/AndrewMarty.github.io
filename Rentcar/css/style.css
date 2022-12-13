@@ -2076,6 +2076,7 @@ li.ui-timepicker-selected .ui-timepicker-duration,
 }
 
 .popup__body {
+  overflow: scroll;
   position: relative;
   padding: 50px 0;
   width: 630px;
