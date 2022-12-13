@@ -485,6 +485,28 @@ template {
   overflow-y: scroll;
 }
 
+.ui-timepicker-list::before,
+.ui-timepicker-list::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  height: 300px;
+  width: 1px;
+  background: #290202;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.ui-timepicker-list::before {
+  left: 38%;
+}
+
+.ui-timepicker-list::after {
+  left: 59.5%;
+}
+
 .ui-timepicker-list::-webkit-scrollbar {
   width: 16px;
   border-radius: 8px;
@@ -2428,6 +2450,14 @@ li.ui-timepicker-selected .ui-timepicker-duration,
 }
 
 @media (max-width: 768px) {
+  .ui-timepicker-list::before {
+    left: 47%;
+  }
+
+  .ui-timepicker-list::after {
+    display: none;
+  }
+
   .ui-timepicker-wrapper {
     padding: 16px 0;
     position: fixed !important;
