@@ -1806,6 +1806,7 @@ li.ui-timepicker-selected .ui-timepicker-duration,
 .profile__items {
   -ms-grid-column-span: 9;
   grid-column: span 9;
+  border-bottom: 1px solid #000000;
 }
 
 .profile__items-row {
@@ -1817,7 +1818,6 @@ li.ui-timepicker-selected .ui-timepicker-duration,
      -moz-column-gap: 65px;
           column-gap: 65px;
   padding-bottom: 40px;
-  border-bottom: 1px solid #000000;
 }
 
 .profile__item {
@@ -1986,6 +1986,18 @@ li.ui-timepicker-selected .ui-timepicker-duration,
 
 .profile__items-history .profile__items-row {
   padding-top: 48px;
+}
+
+.profile__more-btn {
+  display: block;
+  margin-left: auto;
+  padding: 8px 24px;
+  font-size: 16px;
+  line-height: 19px;
+  background-color: #ffffff;
+  border: 1px solid #fe0000;
+  border-radius: 28px;
+  margin-bottom: 16px;
 }
 
 .history {
@@ -3097,6 +3109,10 @@ li.ui-timepicker-selected .ui-timepicker-duration,
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+
+  .profile__more-btn {
+    display: none;
   }
 
   .popup__active {
