@@ -767,12 +767,18 @@ template {
           transform: translateY(-50%);
 }
 
+.screen__form {
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+}
+
 .screen__form-title {
   display: block;
   margin-bottom: 4px;
 }
 
 .screen__input {
+  text-align: center;
   width: 100%;
   border: none;
   font-family: "Roboto";
@@ -799,6 +805,7 @@ template {
 .screen__input-search {
   width: 378px;
   padding-right: 40px;
+  text-align: left;
 }
 
 .screen__search {
@@ -940,6 +947,11 @@ template {
 
 .screen__btn-bottom {
   display: none;
+}
+
+.daterangepicker td.active,
+.daterangepicker td.active:hover {
+  background: #fe0000;
 }
 
 .subscreen {
@@ -1699,14 +1711,14 @@ template {
 .profile__name {
   font-size: 24px;
   line-height: 28px;
-  -ms-grid-column-span: 2;
-  grid-column: span 2;
+  -ms-grid-column-span: 3;
+  grid-column: span 3;
   border-right: 1px solid #000000;
 }
 
 .profile__items {
-  -ms-grid-column-span: 10;
-  grid-column: span 10;
+  -ms-grid-column-span: 9;
+  grid-column: span 9;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[4];
