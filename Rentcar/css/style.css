@@ -1719,6 +1719,9 @@ template {
 .profile__items {
   -ms-grid-column-span: 9;
   grid-column: span 9;
+}
+
+.profile__items-row {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[4];
@@ -1894,7 +1897,7 @@ template {
   padding-top: 48px;
 }
 
-.profile__items-history {
+.profile__items-history .profile__items-row {
   padding-top: 48px;
 }
 
@@ -2092,6 +2095,9 @@ template {
 
 .popup__log-btn {
   display: block;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   margin: 0 auto;
   color: #ffffff;
   padding: 12px 48px;
@@ -2882,9 +2888,27 @@ template {
   }
 
   .profile__items {
-    padding: 10px 0 20px;
     -ms-grid-column-span: 1;
     grid-column: span 1;
+    overflow: hidden;
+    -webkit-transition: 0.8s;
+    -o-transition: 0.8s;
+    transition: 0.8s;
+  }
+
+  .profile__items-history .profile__items-row {
+    padding-top: 0px;
+  }
+
+  .profile__form-wrapper {
+    overflow: hidden;
+    -webkit-transition: 0.8s;
+    -o-transition: 0.8s;
+    transition: 0.8s;
+  }
+
+  .profile__items-row {
+    padding: 0 0 20px;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     border-bottom: 0;
@@ -2903,6 +2927,7 @@ template {
     border-right: 0;
     -ms-grid-column-span: 1;
     grid-column: span 1;
+    margin-bottom: 10px;
     border-bottom: 1px solid #000000;
   }
 
@@ -2913,6 +2938,21 @@ template {
     display: block;
     position: absolute;
     height: 7px;
+    right: 0;
+    border-right: 2px solid #290202;
+    border-bottom: 2px solid #290202;
+    -webkit-transform: translateY(-50%) rotate(45deg);
+        -ms-transform: translateY(-50%) rotate(45deg);
+            transform: translateY(-50%) rotate(45deg);
+  }
+
+  .profile__name-active::after {
+    top: 50%;
+    content: "";
+    width: 6px;
+    display: block;
+    position: absolute;
+    height: 6px;
     right: 0;
     border-right: 2px solid #290202;
     border-bottom: 2px solid #290202;
@@ -2933,6 +2973,10 @@ template {
   }
 
   .profile__form {
+    -webkit-transition: 0.8s;
+    -o-transition: 0.8s;
+    transition: 0.8s;
+    overflow: hidden;
     padding: 10px 0 30px;
   }
 
