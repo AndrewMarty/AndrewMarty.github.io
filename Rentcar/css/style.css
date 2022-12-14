@@ -1639,6 +1639,8 @@ li.ui-timepicker-selected .ui-timepicker-duration,
 }
 
 .footer__grid {
+  position: relative;
+  z-index: 1;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[12];
@@ -2449,6 +2451,251 @@ li.ui-timepicker-selected .ui-timepicker-duration,
   overflow: hidden;
 }
 
+@media (max-width: 1500px) {
+  .container {
+    max-width: 1250px;
+  }
+
+  .title {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .header {
+    padding-top: 40px;
+  }
+
+  .header__logo img {
+    width: 170px;
+  }
+
+  .header__wrap {
+    margin-right: 35px;
+  }
+
+  .header__link {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .header__inner span {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .header__selectors::after {
+    top: 7px;
+  }
+
+  .header__btn {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .advantages__img {
+    margin-bottom: 20px;
+  }
+
+  .advantages__card {
+    padding: 25px 0 30px;
+  }
+
+  .advantages__title {
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .advantages__desc {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .screen {
+    padding: 60px 0 70px;
+  }
+
+  .screen__title {
+    margin-bottom: 40px;
+  }
+
+  .screen__input {
+    font-size: 16px;
+    line-height: 21px;
+    padding: 24px 10px;
+  }
+
+  .screen__row {
+    margin-bottom: 120px;
+  }
+
+  .screen__label-text {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .screen__btn {
+    font-size: 20px;
+    line-height: 24px;
+    padding: 22px 58px;
+  }
+
+  .cars__photo {
+    max-width: 700px;
+  }
+
+  .cars .slick-arrow {
+    width: 70px;
+    height: 70px;
+  }
+
+  .cars__details,
+  .cars__book {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .reqierments__item {
+    padding: 40px 24px;
+  }
+
+  .faq__item::before {
+    font-size: 29px;
+  }
+
+  .faq__name {
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .faq__desc {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .feedback__photo {
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 3;
+    grid-column: 4/7;
+  }
+
+  .feedback__text {
+    font-size: 16px;
+  }
+
+  .feedback__stars {
+    margin-bottom: 30px;
+  }
+
+  .feedback .slick-arrow {
+    width: 70px;
+    height: 70px;
+  }
+
+  .footer__logo {
+    width: 170px;
+  }
+
+  .footer__grid {
+    margin-bottom: 60px;
+  }
+
+  .footer__link {
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 20px;
+  }
+
+  .footer__rights {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .profile__name {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .profile__item-name {
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .profile__item-line {
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 14px;
+  }
+
+  .profile__cancel-btn,
+  .profile__edit-btn {
+    font-size: 14px;
+  }
+
+  .profile__input,
+  .profile__add-btn,
+  .profile__submit-btn {
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .profile__more-btn,
+  .profile__delete-btn {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .history__item {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .popup__body {
+    padding: 35px 0;
+    width: 590px;
+  }
+
+  .popup__input {
+    padding: 14px 24px;
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .popup__label-text {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .popup__label {
+    margin-bottom: 25px;
+  }
+
+  .popup__link-asign {
+    margin-bottom: 25px;
+  }
+
+  .popup__link {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .popup__log-btn {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .popup__car-photo {
+    width: 550px;
+  }
+
+  .popup__body-cars {
+    padding: 40px 16px 16px;
+  }
+
+  .popup__popup-desc {
+    font-size: 14px;
+  }
+}
+
 @media (max-width: 780px) {
   .profile__title {
     margin-bottom: 0;
@@ -3256,7 +3503,7 @@ li.ui-timepicker-selected .ui-timepicker-duration,
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 480px) {
   .title {
     font-size: 24px;
   }
@@ -3285,7 +3532,9 @@ li.ui-timepicker-selected .ui-timepicker-duration,
   .advantages__img-invert {
     display: block;
   }
+}
 
+@media (max-width: 320px) {
   .subscreen {
     display: block;
   }
