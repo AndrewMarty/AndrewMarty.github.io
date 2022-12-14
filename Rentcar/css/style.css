@@ -581,8 +581,25 @@ li.ui-timepicker-selected .ui-timepicker-duration,
 }
 
 .header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
   background-color: #ffffff;
   padding: 48px 0 18px;
+}
+
+.header__sticky {
+  position: fixed;
+  -webkit-box-shadow: 0 0 18px 0 rgba(34, 60, 80, 0.41);
+          box-shadow: 0 0 18px 0 rgba(34, 60, 80, 0.41);
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 20px 0;
+  -webkit-animation: show 0.8s;
+          animation: show 0.8s;
 }
 
 .header__row {
@@ -770,6 +787,30 @@ li.ui-timepicker-selected .ui-timepicker-duration,
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
+}
+
+@-webkit-keyframes show {
+  from {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes show {
+  from {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }
 
 .advantages {
@@ -2459,6 +2500,11 @@ li.ui-timepicker-selected .ui-timepicker-duration,
   display: block;
 }
 
+body {
+  background: #ffffff;
+  padding-top: 122px;
+}
+
 .lock {
   overflow: hidden;
 }
@@ -2718,6 +2764,10 @@ li.ui-timepicker-selected .ui-timepicker-duration,
   .popup__popup-desc {
     font-size: 14px;
   }
+
+  body {
+    padding-top: 108px;
+  }
 }
 
 @media (max-width: 780px) {
@@ -2872,7 +2922,6 @@ li.ui-timepicker-selected .ui-timepicker-duration,
   .header {
     padding: 0;
     padding-bottom: 6px;
-    position: relative;
   }
 
   .header__burger {
@@ -2926,6 +2975,8 @@ li.ui-timepicker-selected .ui-timepicker-duration,
 
   .header__nav {
     width: 282px;
+    -webkit-box-shadow: 0 0 18px 0 rgba(34, 60, 80, 0.41);
+            box-shadow: 0 0 18px 0 rgba(34, 60, 80, 0.41);
     margin: 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2964,12 +3015,16 @@ li.ui-timepicker-selected .ui-timepicker-duration,
   .header__wrap {
     margin-right: 0;
     width: 100%;
-    padding: 16px 34px 16px 20px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-    position: relative;
   }
 
-  .header__wrap::after {
+  .header__link {
+    display: block;
+    position: relative;
+    padding: 16px 34px 16px 20px;
+  }
+
+  .header__link::after {
     content: "";
     display: block;
     position: absolute;
@@ -3524,6 +3579,10 @@ li.ui-timepicker-selected .ui-timepicker-duration,
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
+  }
+
+  body {
+    padding-top: 82px;
   }
 }
 
