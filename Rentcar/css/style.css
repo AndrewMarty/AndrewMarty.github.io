@@ -3556,9 +3556,7 @@ li.ui-timepicker-selected .ui-timepicker-duration,
   .advantages__img-invert {
     display: block;
   }
-}
 
-@media (max-width: 320px) {
   .subscreen {
     display: block;
   }
