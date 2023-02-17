@@ -403,7 +403,15 @@ template {
 @font-face {
   font-family: AvenirNextCyr;
   font-display: swap;
-  src: url("../fonts/AvenirNextCyr-DemiItalic.woff2") format("woff2"), url("../fonts/AvenirNextCyr.woff") format("woff");
+  src: url("../fonts/AvenirNextCyr-Heavy.woff2") format("woff2"), url("../fonts/AvenirNextCyr.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: AvenirNextCyr;
+  font-display: swap;
+  src: url("../fonts/AvenirNextCyr-Italic.woff2") format("woff2"), url("../fonts/AvenirNextCyr.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
@@ -419,15 +427,7 @@ template {
 @font-face {
   font-family: AvenirNextCyr;
   font-display: swap;
-  src: url("../fonts/AvenirNextCyr-Italic.woff2") format("woff2"), url("../fonts/AvenirNextCyr.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: AvenirNextCyr;
-  font-display: swap;
-  src: url("../fonts/AvenirNextCyr-Light.woff2") format("woff2"), url("../fonts/AvenirNextCyr.woff") format("woff");
+  src: url("../fonts/AvenirNextCyr-DemiItalic.woff2") format("woff2"), url("../fonts/AvenirNextCyr.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
@@ -445,14 +445,6 @@ template {
   font-display: swap;
   src: url("../fonts/AvenirNextCyr-Medium.woff2") format("woff2"), url("../fonts/AvenirNextCyr.woff") format("woff");
   font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: AvenirNextCyr;
-  font-display: swap;
-  src: url("../fonts/AvenirNextCyr-Heavy.woff2") format("woff2"), url("../fonts/AvenirNextCyr.woff") format("woff");
-  font-weight: 800;
   font-style: normal;
 }
 
@@ -483,7 +475,7 @@ template {
 @font-face {
   font-family: AvenirNextCyr;
   font-display: swap;
-  src: url("../fonts/AvenirNextCyr-ThinItalic.woff2") format("woff2"), url("../fonts/AvenirNextCyr.woff") format("woff");
+  src: url("../fonts/AvenirNextCyr-Light.woff2") format("woff2"), url("../fonts/AvenirNextCyr.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
@@ -499,8 +491,40 @@ template {
 @font-face {
   font-family: AvenirNextCyr;
   font-display: swap;
+  src: url("../fonts/AvenirNextCyr-ThinItalic.woff2") format("woff2"), url("../fonts/AvenirNextCyr.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: AvenirNextCyr;
+  font-display: swap;
   src: url("../fonts/AvenirNextCyr-UltraLightIt.woff2") format("woff2"), url("../fonts/AvenirNextCyr.woff") format("woff");
   font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: PorscheNextTT;
+  font-display: swap;
+  src: url("../fonts/PorscheNextTT-Regular.woff2") format("woff2"), url("../fonts/PorscheNextTT.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: PorscheNextTT;
+  font-display: swap;
+  src: url("../fonts/PorscheNextTT-Bold.woff2") format("woff2"), url("../fonts/PorscheNextTT.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: PorscheNextTT;
+  font-display: swap;
+  src: url("../fonts/PorscheNextTT-Thin.woff2") format("woff2"), url("../fonts/PorscheNextTT.woff") format("woff");
+  font-weight: 100;
   font-style: normal;
 }
 
@@ -712,6 +736,7 @@ template {
 }
 
 .header__slogan {
+  font-family: "PorscheNextTT";
   color: #fff;
   max-width: 190px;
   font-size: 14px;
@@ -774,6 +799,7 @@ template {
 }
 
 .header__socials-text {
+  font-family: "PorscheNextTT";
   color: #fff;
   max-width: 130px;
   font-size: 16px;
@@ -789,6 +815,7 @@ template {
 }
 
 .header__time {
+  font-family: "PorscheNextTT";
   color: #fff;
   display: block;
   font-size: 16px;
@@ -891,6 +918,7 @@ template {
 }
 
 .footer__desc {
+  font-family: "PorscheNextTT";
   font-size: 14px;
   line-height: 18px;
   letter-spacing: 0.03em;
@@ -922,6 +950,7 @@ template {
 }
 
 .footer__link {
+  font-family: "PorscheNextTT";
   text-decoration: none;
   display: block;
   font-size: 14px;
@@ -952,6 +981,7 @@ template {
 }
 
 .footer__ask {
+  font-family: "PorscheNextTT";
   display: block;
   font-size: 16px;
   line-height: 20px;
@@ -961,6 +991,7 @@ template {
 }
 
 .footer__number {
+  font-family: "PorscheNextTT";
   display: block;
   font-weight: 700;
   font-size: 24px;
@@ -1125,6 +1156,7 @@ template {
   margin: 0;
   color: #1c1c1c;
   margin-bottom: 45px;
+  font-family: "PorscheNextTT";
 }
 
 .qwuiz__wrapper {
@@ -1138,6 +1170,7 @@ template {
 }
 
 .qwuiz__num {
+  font-family: "PorscheNextTT";
   color: #c8d8d8;
   font-weight: 400;
   font-size: 18px;
@@ -1214,6 +1247,7 @@ template {
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
   max-width: 290px;
+  font-family: "PorscheNextTT";
 }
 
 .qwuiz__photo-img {
@@ -1302,6 +1336,7 @@ template {
   line-height: 18px;
   letter-spacing: 0.03em;
   color: #000;
+  font-weight: 450;
 }
 
 .kinds__title {
@@ -1347,6 +1382,7 @@ template {
 }
 
 .kinds__item:nth-child(-n+9)::after {
+  font-family: "PorscheNextTT";
   content: "0" counter(num);
 }
 
@@ -1365,6 +1401,7 @@ template {
 }
 
 .kinds__category {
+  font-family: "PorscheNextTT";
   position: absolute;
   z-index: 10;
   color: #fff;
@@ -1512,6 +1549,7 @@ template {
 }
 
 .faq__wrapper {
+  font-family: "PorscheNextTT";
   padding: 21px 0;
   border: 1px solid #f1f5f5;
   font-size: 18px;
@@ -1737,6 +1775,7 @@ template {
 }
 
 .guarantee__text {
+  font-family: "PorscheNextTT";
   font-size: 30px;
   line-height: 39px;
   /* or 130% */
@@ -1795,6 +1834,7 @@ template {
 }
 
 .guarantee__quality-text {
+  font-family: "PorscheNextTT";
   font-size: 16px;
   line-height: 21px;
   /* or 131% */
@@ -1816,6 +1856,7 @@ template {
 }
 
 .seo__text {
+  font-family: "PorscheNextTT";
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.02em;
