@@ -1082,8 +1082,133 @@ template {
   background: url("../img/first/background.png"); }
 
 .first {
-  min-height: 100vh;
+  overflow: hidden;
+  color: #fff;
+  min-height: 1080px;
+  padding-top: 182px;
   background-size: cover;
+}
+
+.first__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 80px 0 84px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.first__item {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  position: relative;
+  z-index: 10;
+  max-width: 600px;
+  margin-right: 130px;
+}
+
+.first__title {
+  font-weight: 700;
+  font-size: 90px;
+  line-height: 90px;
+  /* or 100% */
+  letter-spacing: 0.02em;
+  margin: 0;
+  margin-bottom: 125px;
+}
+
+.first__subtitle {
+  font-family: "PorscheNextTT";
+  margin: 0;
+  margin-bottom: 80px;
+  font-size: 30px;
+  line-height: 40px;
+  letter-spacing: 0.04em;
+}
+
+.first__calc {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 50px;
+  letter-spacing: 0.02em;
+  background: #38bc80;
+  padding: 25px 0;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  color: #fff;
+  border: none;
+  margin-bottom: 30px;
+}
+
+.first__calc-text {
+  margin-right: 10px;
+}
+
+.first__info {
+  font-family: "PorscheNextTT";
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: 0.04em;
+}
+
+.first__card {
+  cursor: pointer;
+  width: 330px;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.first__card-name {
+  font-weight: 450;
+  font-size: 16px;
+  line-height: 20px;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.first__rubles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.first__photo {
+  border-radius: 20px;
+  overflow: hidden;
+  width: 100%;
+  min-height: 495px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+
+.first__slider {
+  width: 1110px;
+}
+
+.first__wrapper {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: visible;
+}
+
+.first .swiper-slide-active {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.first__img {
+  margin-right: 2px;
+}
+
+.first__img:last-child {
+  margin-right: 0;
 }
 
 .benefits {
@@ -3089,6 +3214,132 @@ template {
 
 .solutions__dots .swiper-pagination-bullet-active {
   background-color: #38bc80;
+}
+
+.catalog {
+  overflow: hidden;
+  padding: 215px 0 80px;
+  background: #fff;
+  position: relative;
+}
+
+.catalog__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.catalog__item {
+  position: relative;
+  z-index: 10;
+  max-width: 840px;
+}
+
+.catalog__title {
+  max-width: 820px;
+  margin: 0;
+  font-weight: 450;
+  font-size: 60px;
+  line-height: 75px;
+  /* or 125% */
+  letter-spacing: 0.02em;
+  margin-bottom: 30px;
+}
+
+.catalog__subtitle {
+  margin: 0;
+  margin-bottom: 98px;
+  font-size: 30px;
+  line-height: 39px;
+  font-family: "PorscheNextTT";
+  letter-spacing: 0.02em;
+}
+
+.catalog__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.catalog__field {
+  margin-right: 45px;
+}
+
+.catalog__field-name {
+  display: block;
+  font-size: 16px;
+  line-height: 39px;
+  font-family: "PorscheNextTT";
+  letter-spacing: 0.03em;
+  margin-bottom: 15px;
+  color: #6f6f6f;
+}
+
+.catalog__input {
+  font-family: "AvenirNextCyr";
+  border: none;
+  font-size: 18px;
+  line-height: 39px;
+  letter-spacing: 0.03em;
+  border-bottom: 1px solid #000;
+  padding: 0;
+  padding-bottom: 26px;
+  width: 250px;
+}
+
+.catalog__input:focus {
+  outline: none;
+}
+
+.catalog__button {
+  cursor: pointer;
+  background: #38bc80;
+  border: none;
+  padding: 0 48px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 450;
+  font-size: 18px;
+  line-height: 50px;
+  color: #fff;
+  letter-spacing: 0.02em;
+}
+
+.catalog__button-inner {
+  margin-right: 15px;
+}
+
+.catalog__background {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+}
+
+.catalog__box {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  border-color: #38bc80;
+}
+
+.check__input:checked + .catalog__box {
+  background: #38bc80;
+}
+
+.catalog__text {
+  font-size: 10px;
+  line-height: 15px;
+}
+
+.catalog__link {
+  color: #1c1c1c;
+  font-weight: 700;
 }
 
 body {
