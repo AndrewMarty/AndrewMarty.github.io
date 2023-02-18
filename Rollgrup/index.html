@@ -33,9 +33,9 @@
     <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
     <link rel="icon" type="image/png" sizes="228x228" href="img/favicons/coast-228x228.png">
     <link rel="yandex-tableau-widget" href="img/favicons/yandex-browser-manifest.json">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20230218231012">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css?_v=20230218231012">
-    <link rel="stylesheet" href="css/style.min.css?_v=20230218231012">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20230219023402">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css?_v=20230219023402">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230219023402">
   </head>
   <body>
     <div class="wrapper">
@@ -241,7 +241,7 @@
                 </div>
                 <div class="price__items">
                   <div class="price__item-number"> <span class="price__number">Введите номер телефона</span>
-                    <input class="price__input" type="text" placeholder="+ 7 (_ _ _) _ _ _ - _ _ - _ _">
+                    <input class="price__input" type="text" placeholder="+7 (___) ___-__-__">
                     <label class="check price__check">
                       <input class="check__input" type="checkbox">
                       <div class="check__box price__box"></div><span class="check__text price__text">
@@ -652,9 +652,11 @@
                 </h4>
                 <p class="catalog__subtitle">и вдохновитесь идеями </p>
                 <div class="catalog__inner">
-                  <div class="catalog__field"><span class="catalog__field-name">Куда прислать презентацию?</span></div>
+                  <div class="catalog__field"><span class="catalog__field-name">Куда прислать презентацию?</span>
+                    <input class="catalog__option catalog__input" type="text">
+                  </div>
                   <div class="catalog__field"><span class="catalog__field-name">Введите номер телефона</span>
-                    <input class="catalog__number catalog__input" type="text" placeholder="+ 7 (_ _ _) _ _ _ - _ _ - _ _">
+                    <input class="catalog__number catalog__input" type="text" placeholder="+7 (___) ___-__-__">
                   </div>
                   <button class="catalog__button"><span class="catalog__button-inner">Скачать каталог</span><img src="img/catalog/arrow.svg" alt="arrow"></button>
                 </div>
@@ -663,6 +665,86 @@
                   <div class="check__box catalog__box"></div><span class="check__text catalog__text">Нажимая кнопку вы соглашаетесь  с условиями <a class="catalog__link" href="#">Политики конфиденциальности</a></span>
                 </label>
               </div><picture><source srcset="img/catalog/background.webp" type="image/webp"><img class="catalog__background" src="img/catalog/background.png" alt="background"></picture>
+            </div>
+          </div>
+        </section>
+        <section class="about"> 
+          <div class="container">
+            <div class="about__grid"> 
+              <div class="about__item">
+                <h3 class="about__title">Каждый заказ мы делаем как для себя</h3>
+                <p class="about__subtitle">Наша цель — максимальное удобство для клиентов. Благодаря собственному производству мы отвечаем за сроки и неизменную стоимость в процессе работы, фиксируя это в договоре. </p>
+                <h4 class="about__title-second">
+                  Штат состоит из уникальных
+                  специалистов, имеющих опыт
+                  работы с 1997 года
+                </h4>
+                <p class="about__sub-second">Каждый знает все о рольставнях, их производстве и монтаже.</p>
+                <div class="about__more"> <span class="about__more-text">Подробнее о компании</span><img src="img/about/arrow.svg" alt="arrow"></div>
+              </div>
+              <div class="about__item-middle">
+                <div class="about__item-inner"> 
+                  <p class="about__text">
+                    Посмотрите небольшое
+                    видео о нашей компании.
+                    Длительность: 2:32 мин
+                  </p>
+                  <button class="about__play"> <img src="img/about/play.svg" alt="play"></button>
+                </div>
+              </div>
+              <div class="about__item-small"> 
+                <h6 class="about__achievement">1997<span class="about__small">год</span>   </h6><span class="about__achievement-name">основания компании</span>
+                <h6 class="about__achievement">1400м<sup>2</sup></h6><span class="about__achievement-name">площадь производства</span>
+                <h6 class="about__achievement">38</h6><span class="about__achievement-name">сотрудников в штате</span>
+              </div>
+            </div>
+            <div class="about__documentation">
+              <div class="about__documentation-item">
+                <h5 class="about__documentation-title">
+                  Техническая
+                  документация
+                  и сертификаты
+                  качества
+                </h5>
+                <p class="about__documentation-subtitle">В данном разделе собраны актуальные сертификаты качества и протоколы испытаний, инструкции по монтажу и многое другое. </p>
+              </div>
+              <div class="about__slider"> 
+                <div class="about__slider-wrapper swiper-wrapper"><picture><source srcset="img/about/2.webp" type="image/webp"><picture><source srcset="img/about/2.webp" type="image/webp"><img class="swiper-slide" src="img/about/2.png" alt="serteficate"></picture></picture><picture><source srcset="img/about/3.webp" type="image/webp"><picture><source srcset="img/about/3.webp" type="image/webp"><img class="swiper-slide" src="img/about/3.png" alt="serteficate"></picture></picture><picture><source srcset="img/about/4.webp" type="image/webp"><picture><source srcset="img/about/4.webp" type="image/webp"><img class="swiper-slide" src="img/about/4.png" alt="serteficate"></picture></picture><img class="swiper-slide" src="img/about/2.png" alt="serteficate"><img class="swiper-slide" src="img/about/3.png" alt="serteficate"><img class="swiper-slide" src="img/about/4.png" alt="serteficate"></div>
+                <div class="about__controls"> 
+                  <button class="about__button-prev about__button"> <img src="img/about/prev.svg" alt="prev"></button>
+                  <button class="about__button-next about__button"> <img src="img/about/next.svg" alt="prev"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="high">
+          <div class="container">
+            <h4 class="high__title">
+              С нами вы гарантированно получите
+              сервис высочайшего уровня
+            </h4>
+            <ul class="high__list"> 
+              <li class="high__item">Персональный менеджер</li>
+              <li class="high__item">Гибкая система оплаты</li>
+              <li class="high__item">Кредит и рассрочка</li>
+            </ul>
+            <div class="high__row"> 
+              <div class="high__content">
+                <p class="high__text">Закрепим за вами <span class="high__green">персонального менеджера</span> — специалиста с опытом работы от 10 лет.</p>
+              </div>
+              <div class="high__instruction"> <span class="high__name">Оставьте заявку на консультацию</span>
+                <div class="high__wrapper">
+                  <div class="high__field"> <span class="high__field-name">Введите номер телефона</span>
+                    <input class="high__field-input" type="text">
+                  </div>
+                  <button class="high__button">Получить консультацию</button>
+                </div>
+                <label class="check high__check">
+                  <input class="check__input" type="checkbox">
+                  <div class="check__box high__box"></div><span class="check__text high__check-text">Нажимая кнопку вы соглашаетесь  с условиями <a hre="#" class="high__link">Политики конфиденциальности</a></span>
+                </label>
+              </div>
             </div>
           </div>
         </section>
@@ -747,27 +829,27 @@
               </div>
               <div class="faq__quastions"> 
                 <div class="faq__quastion"> 
-                  <div class="faq__inner"> <span class="faq__quastion-title">Работаете ли вы по договору?</span><img src="img/base/arrow-green.svg" alt="" srcset=""></div>
+                  <div class="faq__inner"> <span class="faq__quastion-title">Работаете ли вы по договору?</span><img class="faq__img" src="img/base/arrow-green.svg" alt="" srcset=""></div>
                   <div class="faq__wrapper">Оплата за заказ производится частями. Окончательный расчет — после монтажа и приемки работы.</div>
                 </div>
                 <div class="faq__quastion"> 
-                  <div class="faq__inner"> <span class="faq__quastion-title">Возможна ли оплата по частям, в рассрочку или кредит?</span><img src="img/base/arrow-green.svg" alt="" srcset=""></div>
+                  <div class="faq__inner"> <span class="faq__quastion-title">Возможна ли оплата по частям, в рассрочку или кредит?</span><img class="faq__img" src="img/base/arrow-green.svg" alt="" srcset=""></div>
                   <div class="faq__wrapper">Оплата за заказ производится частями. Окончательный расчет — после монтажа и приемки работы.</div>
                 </div>
                 <div class="faq__quastion"> 
-                  <div class="faq__inner"> <span class="faq__quastion-title">Работаете ли вы по договору?</span><img src="img/base/arrow-green.svg" alt="" srcset=""></div>
+                  <div class="faq__inner"> <span class="faq__quastion-title">Работаете ли вы по договору?</span><img class="faq__img" src="img/base/arrow-green.svg" alt="" srcset=""></div>
                   <div class="faq__wrapper">Оплата за заказ производится частями. Окончательный расчет — после монтажа и приемки работы.</div>
                 </div>
                 <div class="faq__quastion"> 
-                  <div class="faq__inner"> <span class="faq__quastion-title">Работаете ли вы по договору?</span><img src="img/base/arrow-green.svg" alt="" srcset=""></div>
+                  <div class="faq__inner"> <span class="faq__quastion-title">Работаете ли вы по договору?</span><img class="faq__img" src="img/base/arrow-green.svg" alt="" srcset=""></div>
                   <div class="faq__wrapper">Оплата за заказ производится частями. Окончательный расчет — после монтажа и приемки работы.</div>
                 </div>
                 <div class="faq__quastion"> 
-                  <div class="faq__inner"> <span class="faq__quastion-title">Работаете ли вы по договору?</span><img src="img/base/arrow-green.svg" alt="" srcset=""></div>
+                  <div class="faq__inner"> <span class="faq__quastion-title">Работаете ли вы по договору?</span><img class="faq__img" src="img/base/arrow-green.svg" alt="" srcset=""></div>
                   <div class="faq__wrapper">Оплата за заказ производится частями. Окончательный расчет — после монтажа и приемки работы.</div>
                 </div>
                 <div class="faq__quastion"> 
-                  <div class="faq__inner"> <span class="faq__quastion-title">Работаете ли вы по договору?</span><img src="img/base/arrow-green.svg" alt="" srcset=""></div>
+                  <div class="faq__inner"> <span class="faq__quastion-title">Работаете ли вы по договору?</span><img class="faq__img" src="img/base/arrow-green.svg" alt="" srcset=""></div>
                   <div class="faq__wrapper">Оплата за заказ производится частями. Окончательный расчет — после монтажа и приемки работы.</div>
                 </div>
               </div>
@@ -857,7 +939,7 @@
         </div>
       </footer>
     </div>
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js?_v=20230218231012"> </script><script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20230218231012"></script>
-    <script src="js/app.min.js?_v=20230218231012"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js?_v=20230219023402"> </script><script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20230219023402"></script>
+    <script src="js/app.min.js?_v=20230219023402"></script><script ript src="https://www.sng-it.ru/bitrix/templates/master/js/jquery.inputmask.bundle.min.js?_v=20230219023402"></script>
   </body>
 </html>
