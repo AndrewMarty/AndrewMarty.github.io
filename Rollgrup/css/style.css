@@ -2487,6 +2487,361 @@ template {
   list-style: square;
 }
 
+.examples {
+  background: #fff;
+}
+
+.examples__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.examples__items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 70px;
+}
+
+.examples__menu {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 400px;
+  margin-right: 150px;
+}
+
+.examples__title {
+  font-weight: 450;
+  font-size: 60px;
+  line-height: 75px;
+  letter-spacing: 0.02em;
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+.examples__filter-item {
+  margin-bottom: 50px;
+}
+
+.examples__photo img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+
+.examples__filter-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.examples__box {
+  width: 15px;
+  height: 15px;
+  background: #f1f5f5;
+  border-radius: 2px;
+  border-color: #f1f5f5;
+}
+
+.examples__box::after {
+  opacity: 1;
+  width: 2px;
+  height: 4px;
+  border-color: #c8d8d8;
+  background-color: none;
+}
+
+.check__input:checked + .examples__box {
+  background-color: #38bc80;
+}
+
+.check__input:checked + .examples__box::after {
+  border-color: #fff;
+}
+
+.examples__filter-text {
+  color: #000;
+  font-family: "PorscheNextTT";
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: 0.02em;
+}
+
+.examples__rate-img {
+  margin-right: 8px;
+}
+
+.examples__rate-img:last-child {
+  margin-right: 0;
+}
+
+.examples__filter-name {
+  display: block;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: 0.02em;
+  margin-bottom: 12px;
+}
+
+.examples__more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  color: #38bc80;
+  text-decoration: none;
+  margin-bottom: 50px;
+}
+
+.examples__more span {
+  margin-right: 15px;
+}
+
+.examples__reset {
+  background: #f1f5f5;
+  display: inline-block;
+  padding: 14px 35px;
+  font-weight: 450;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.02em;
+  border: none;
+  cursor: pointer;
+  color: #c8d8d8;
+}
+
+.examples__card {
+  overflow: hidden;
+}
+
+.examples__galery {
+  position: relative;
+  margin-bottom: 45px;
+}
+
+.examples__bottom {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  position: absolute;
+  z-index: 11;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.examples__hard {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.examples__hard-text {
+  font-weight: 450;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.02em;
+  color: #c8d8d8;
+  margin-right: 14px;
+}
+
+.examples__hard-star {
+  margin-right: 9px;
+}
+
+.examples__hard-star:last-child {
+  margin-right: 0;
+}
+
+.examples__card-name {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 29px;
+  letter-spacing: 0.02em;
+}
+
+.examples__play {
+  cursor: pointer;
+  width: 65px;
+  height: 65px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #38bc80;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.examples__card-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.examples__card-more {
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.02em;
+  color: #38bc80;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+.examples__tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 140px;
+  margin: -2px;
+}
+
+.examples__controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.examples__buttons {
+  margin-right: 10px;
+}
+
+.examples__tag {
+  color: #fff;
+  font-family: "PorscheNextTT";
+  display: block;
+  padding: 5px 10px;
+  margin: 2px;
+  background: #05a0eb;
+  font-size: 10px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  border-radius: 20px;
+}
+
+.examples__tag_purple {
+  background: #746fbb;
+}
+
+.examples__tag_red {
+  background: #ef5b47;
+}
+
+.examples__dots {
+  z-index: 100;
+  position: absolute;
+  left: auto !important;
+  right: 41px !important;
+  bottom: 29px !important;
+  width: auto !important;
+}
+
+.examples__dots .swiper-pagination-bullet {
+  opacity: 1;
+  background: #fff !important;
+  cursor: pointer;
+}
+
+.examples__dots .swiper-pagination-bullet-active {
+  background-color: #38bc80 !important;
+}
+
+.examples__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.examples__button {
+  cursor: pointer;
+  background: #f1f5f5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  width: 65px;
+  height: 65px;
+  margin-right: 2px;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.examples__button:last-child {
+  margin-right: 0;
+}
+
+.examples__button:hover {
+  background: #38bc80;
+}
+
+.examples__all {
+  cursor: pointer;
+  margin-top: auto;
+  padding: 35px 40px;
+  background: #fff;
+  border: 1px solid #38bc80;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 450;
+  font-size: 18px;
+  letter-spacing: 0.02em;
+  color: #38bc80;
+}
+
+.examples__all-text {
+  margin-right: 10px;
+}
+
 .seo {
   padding: 60px 0 80px;
 }
