@@ -6338,6 +6338,10 @@ html {
     line-height: 20px;
   }
 
+  .help__item {
+    margin-bottom: 120px;
+  }
+
   .help__title {
     font-size: 22px;
     line-height: 27px;
@@ -6353,15 +6357,18 @@ html {
     padding-top: 20px;
   }
 
+  .help__cost {
+    text-align: left;
+    top: -69px;
+    right: auto;
+    left: 60px;
+  }
+
   .help__person {
     width: 100vw;
     position: relative;
     left: -15px;
     bottom: 0;
-  }
-
-  .help__person img {
-    width: 100%;
   }
 
   .complex {
