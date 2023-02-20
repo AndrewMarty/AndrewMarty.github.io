@@ -33,9 +33,9 @@
     <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
     <link rel="icon" type="image/png" sizes="228x228" href="img/favicons/coast-228x228.png">
     <link rel="yandex-tableau-widget" href="img/favicons/yandex-browser-manifest.json">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20230220052837">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css?_v=20230220052837">
-    <link rel="stylesheet" href="css/style.min.css?_v=20230220052837">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20230220122555">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css?_v=20230220122555">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230220122555">
   </head>
   <body>
     <div class="wrapper">
@@ -104,6 +104,14 @@
                     </div>
                   </div>
                 </div>
+              </div>
+              <div class="first__item-mob">
+                <button class="first__btn-mob"><span class="first__mob-name">Рассчитать стоимость и получить предложение</span><img src="img/first/arrow.svg" alt="arrow"></button>
+                <p class="first__text-mob">
+                  Пройдите короткий тест, чтобы мы точно рассчитали стоимость и сделали выгодное предложение
+                     
+                     
+                </p>
               </div>
             </div>
           </div>
@@ -217,7 +225,7 @@
           <div class="container"> 
             <div class="own__row"> 
               <div class="own__item"> 
-                <h3 class="own__title">
+                <h3 class="own__title title">
                   Собственное
                   производство
                   роллетных
@@ -276,6 +284,11 @@
                     </label>
                   </div>
                   <button class="price__btn"><span>Вызвать замерщика</span><img src="img/price/arrow.svg" alt="arrow"></button>
+                  <label class="check price__check price__check-mob">
+                    <input class="check__input" type="checkbox">
+                    <div class="check__box price__box"></div><span class="check__text price__text">
+                       Нажимая кнопку вы соглашаетесь  с условиями <a class="price__link" href="#">Политики конфиденциальности</a></span>
+                  </label>
                 </div><picture><source srcset="img/price/background.webp" type="image/webp"><img class="price__background" src="img/price/background.png" alt="background"></picture>
               </div>
             </div>
@@ -313,6 +326,7 @@
               <li class="solutions__item">Монтаж</li>
               <li class="solutions__item">Цвета и оформление</li>
             </ul>
+            <div class="solutions__mobile"> <img class="solutions__img" src="img/solutions/cursor.svg" alt="cursor"><span class="solutions__mobile-text">Листайте влево/вправо</span></div>
             <div class="solutions__swiper"> 
               <ol class="solutions__wrapper swiper-wrapper"> 
                 <li class="solutions__card swiper-slide"><picture><source srcset="img/solutions/photo_1.webp" type="image/webp"><img class="solutions__card-img" src="img/solutions/photo_1.png" alt="photo"></picture>
@@ -364,6 +378,9 @@
                   на разных
                   объектах
                 </h4>
+                <div class="examples__settings"><span class="examples__settings-text">Фильтр </span>
+                  <div class="examples__settings-box"> <img class="examples__filter-img" src="img/examples/filter.svg" alt="filter"></div>
+                </div>
                 <div class="examples__wrap">
                   <div class="examples__filter-item"><span class="examples__filter-name">Тип роллетной системы</span>
                     <ul class="examples__filter-list">
@@ -781,6 +798,7 @@
                     качества
                   </h5>
                   <p class="about__documentation-subtitle">В данном разделе собраны актуальные сертификаты качества и протоколы испытаний, инструкции по монтажу и многое другое. </p>
+                  <div class="about__instruction"> <img class="about__cursor" src="img/about/cursor.svg" alt="cursor"><span class="about__instruction-text">Листайте влево/вправо</span></div>
                 </div>
                 <div class="about__slider"> 
                   <div class="about__slider-wrapper swiper-wrapper"><picture><source srcset="img/about/2.webp" type="image/webp"><picture><source srcset="img/about/2.webp" type="image/webp"><img class="swiper-slide" src="img/about/2.png" alt="serteficate"></picture></picture><picture><source srcset="img/about/3.webp" type="image/webp"><picture><source srcset="img/about/3.webp" type="image/webp"><img class="swiper-slide" src="img/about/3.png" alt="serteficate"></picture></picture><picture><source srcset="img/about/4.webp" type="image/webp"><picture><source srcset="img/about/4.webp" type="image/webp"><img class="swiper-slide" src="img/about/4.png" alt="serteficate"></picture></picture><img class="swiper-slide" src="img/about/2.png" alt="serteficate"><img class="swiper-slide" src="img/about/3.png" alt="serteficate"><img class="swiper-slide" src="img/about/4.png" alt="serteficate"></div>
@@ -828,6 +846,9 @@
             <div class="complex__grid">
               <div class="complex__left"> 
                 <div class="complex__title title">Весь комплекс работ делаем сами</div>
+                <div class="complex__mobile"> <img class="complex__cursor" src="img/complex/cursor.svg" alt="cursop">
+                  <spna class="complex__mobile-text">Листайте влево/вправо</spna>
+                </div>
                 <div class="complex__buttons">
                   <div class="complex__button-prev complex__button-slider"><img src="img/complex/prev.svg" alt="arrow"></div>
                   <div class="complex__button-next complex__button-slider"><img src="img/complex/next.svg" alt="arrow"></div>
@@ -914,16 +935,17 @@
                     </div>
                   </div>
                 </div><a class="trust__more" href="#"> <span class="trust__read">Читать отзывы на Яндекс Картах</span><img src="img/trust/arrow.svg" alt="arrow"></a>
-                <div class="trust__inner"> <img class="trust__yandex" src="img/trust/yandex.svg" alt="yandex"><span class="trust__mark">4,8<span class="trust__small">/5</span></span><img class="trust__star" src="img/trust/star.svg" alt="star"><span class="trust__your">Ваша оценка</span>
-                  <div class="trust__controls"> 
-                    <div class="trust__buttons"> 
-                      <button class="trust__button trust__button-prev"><img src="img/trust/prev.svg" alt="prev"></button>
-                      <button class="trust__button trust__button-next"><img src="img/trust/next.svg" alt="prev"></button>
-                    </div>
-                    <div class="trust__dots"></div>
+                <div class="trust__inner"> <img class="trust__yandex" src="img/trust/yandex.svg" alt="yandex"><span class="trust__mark">4,8<span class="trust__small">/5</span></span><img class="trust__star" src="img/trust/star.svg" alt="star"><span class="trust__your">Ваша оценка</span></div>
+              </div>
+              <div class="trust__mobile"><picture><source srcset="img/trust/mobile.webp" type="image/webp"><img class="trust__img" src="img/trust/mobile.png" alt="mobile"></picture>
+                <div class="trust__controls"> 
+                  <div class="trust__buttons"> 
+                    <button class="trust__button trust__button-prev"><img src="img/trust/prev.svg" alt="prev"></button>
+                    <button class="trust__button trust__button-next"><img src="img/trust/next.svg" alt="prev"></button>
                   </div>
+                  <div class="trust__dots"></div>
                 </div>
-              </div><picture><source srcset="img/trust/mobile.webp" type="image/webp"><img class="trust__mobile" src="img/trust/mobile.png" alt="mobile"></picture>
+              </div>
             </div>
           </div>
         </section>
@@ -1035,11 +1057,7 @@
             </div>
             <div class="footer__item"> 
               <h6 class="footer__title">Контакты</h6><span class="footer__work">Пн-Сб  9:00-19:00 </span><a class="footer__number" href="#">+7 (499) 688-84-83</a><span class="footer__green">Смотреть все<img src="img/footer/arrow.svg" alt="arrow"></span><span class="footer__ask">Спрашивайте, отвечаем онлайн</span>
-              <div class="footer__socials"> 
-                <div class="footer__social footer__social-whatsapp"><img class="footer__social-img" src="img/base/whatsapp.svg" alt="" srcset=""></div>
-                <div class="footer__social footer__social-telegram"> <img class="footer__social-img" src="img/base/telegram.svg" alt="" srcset=""></div>
-                <div class="footer__social footer__social-viber"><img class="footer__social-img" src="img/base/viber.svg" alt="" srcset=""></div>
-              </div><span class="footer__green">Все контакты<img src="img/footer/arrow.svg" alt="arrow"></span>
+              <div class="footer__socials"> <a class="footer__social footer__social-whatsapp" href="#"><img class="footer__social-img" src="img/base/whatsapp.svg" alt="" srcset=""></a><a class="footer__social footer__social-telegram" href="#"> <img class="footer__social-img" src="img/base/telegram.svg" alt="" srcset=""></a><a class="footer__social footer__social-viber" href="#"><img class="footer__social-img" src="img/base/viber.svg" alt="" srcset=""></a></div><span class="footer__green">Все контакты<img src="img/footer/arrow.svg" alt="arrow"></span>
             </div>
           </div>
           <div class="footer__subrow"> 
@@ -1049,7 +1067,7 @@
         </div>
       </footer>
     </div>
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js?_v=20230220052837"> </script><script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20230220052837"></script>
-    <script src="js/app.min.js?_v=20230220052837"></script><script ript src="https://www.sng-it.ru/bitrix/templates/master/js/jquery.inputmask.bundle.min.js?_v=20230220052837"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js?_v=20230220122555"> </script><script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20230220122555"></script>
+    <script src="js/app.min.js?_v=20230220122555"></script><script ript src="https://www.sng-it.ru/bitrix/templates/master/js/jquery.inputmask.bundle.min.js?_v=20230220122555"></script>
   </body>
 </html>
