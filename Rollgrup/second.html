@@ -33,9 +33,9 @@
     <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
     <link rel="icon" type="image/png" sizes="228x228" href="img/favicons/coast-228x228.png">
     <link rel="yandex-tableau-widget" href="img/favicons/yandex-browser-manifest.json">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20230221175508">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css?_v=20230221175508">
-    <link rel="stylesheet" href="css/style.min.css?_v=20230221175508">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20230221233346">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css?_v=20230221233346">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230221233346">
   </head>
   <body>
     <div class="wrapper">
@@ -440,28 +440,30 @@
           </div>
         </section>
         <section class="price price-second">
-          <div class="price__subgrid"> 
-            <div class="price__subgrid-row">
-              <div class="price__information"> 
-                <h5 class="price__information-title">Узнайте точную стоимость на замере</h5>
-                <p class="price__information-subtitle">Специалист приедет в удобное для Вас время, проконсультирует по всем интересующим вопросам, а также привезет образцы материалов, из которых будут изготовлены изделия</p>
-              </div>
-              <div class="price__items">
-                <div class="price__item-number"> <span class="price__number">Введите номер телефона</span>
-                  <input class="price__input" type="text" placeholder="+7 (___) ___-__-__">
-                  <label class="check price__check">
+          <div class="container">
+            <div class="price__subgrid"> 
+              <div class="price__subgrid-row">
+                <div class="price__information"> 
+                  <h5 class="price__information-title">Узнайте точную стоимость на замере</h5>
+                  <p class="price__information-subtitle">Специалист приедет в удобное для Вас время, проконсультирует по всем интересующим вопросам, а также привезет образцы материалов, из которых будут изготовлены изделия</p>
+                </div>
+                <div class="price__items">
+                  <div class="price__item-number"> <span class="price__number">Введите номер телефона</span>
+                    <input class="price__input" type="text" placeholder="+7 (___) ___-__-__">
+                    <label class="check price__check">
+                      <input class="check__input" type="checkbox">
+                      <div class="check__box price__box"></div><span class="check__text price__text">
+                         Нажимая кнопку вы соглашаетесь  с условиями <a class="price__link" href="#">Политики конфиденциальности</a></span>
+                    </label>
+                  </div>
+                  <button class="price__btn"><span>Вызвать замерщика</span><img src="img/price/arrow.svg" alt="arrow"></button>
+                  <label class="check price__check price__check-mob">
                     <input class="check__input" type="checkbox">
                     <div class="check__box price__box"></div><span class="check__text price__text">
                        Нажимая кнопку вы соглашаетесь  с условиями <a class="price__link" href="#">Политики конфиденциальности</a></span>
                   </label>
-                </div>
-                <button class="price__btn"><span>Вызвать замерщика</span><img src="img/price/arrow.svg" alt="arrow"></button>
-                <label class="check price__check price__check-mob">
-                  <input class="check__input" type="checkbox">
-                  <div class="check__box price__box"></div><span class="check__text price__text">
-                     Нажимая кнопку вы соглашаетесь  с условиями <a class="price__link" href="#">Политики конфиденциальности</a></span>
-                </label>
-              </div><picture><source srcset="img/price/background.webp" type="image/webp"><img class="price__background" src="img/price/background.png" alt="background"></picture>
+                </div><picture><source srcset="img/price/background.webp" type="image/webp"><img class="price__background" src="img/price/background.png" alt="background"></picture>
+              </div>
             </div>
           </div>
         </section>
@@ -504,7 +506,32 @@
         <section class="scheme"> 
           <div class="container"> 
             <h3 class="scheme__title">Наша схема работы:</h3>
-            <div class="scheme__row"></div>
+            <div class="scheme__row">
+              <div class="scheme__item"> <img class="scheme__icon" src="img/scheme/icon_1.svg" alt="icon">
+                <div class="scheme__inner"> 
+                  <div class="scheme__num">1</div>
+                  <p class="scheme__text"><b>Выезд специалиста</b> на объект для замера</p>
+                </div>
+              </div>
+              <div class="scheme__item"> <img class="scheme__icon" src="img/scheme/icon_2.svg" alt="icon">
+                <div class="scheme__inner"> 
+                  <div class="scheme__num">2</div>
+                  <p class="scheme__text"><b>Производство вашего заказа</b> на собственном высокотехнологичном производстве</p>
+                </div>
+              </div>
+              <div class="scheme__item"> <img class="scheme__icon" src="img/scheme/icon_3.svg" alt="icon">
+                <div class="scheme__inner"> 
+                  <div class="scheme__num">3</div>
+                  <p class="scheme__text"><b>Монтаж готовой продукции</b>  за несколько часов</p>
+                </div>
+              </div>
+              <div class="scheme__item"> <img class="scheme__icon" src="img/scheme/icon_4.svg" alt="icon">
+                <div class="scheme__inner"> 
+                  <div class="scheme__num">4</div>
+                  <p class="scheme__text"><b>Дополнительные строительные работы</b>, если потребуются для правильного монтажа</p>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
         <section class="about"> 
@@ -655,7 +682,7 @@
         </div>
       </footer>
     </div>
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js?_v=20230221175508"> </script><script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20230221175508"></script>
-    <script src="js/app.min.js?_v=20230221175508"></script><script ript src="https://www.sng-it.ru/bitrix/templates/master/js/jquery.inputmask.bundle.min.js?_v=20230221175508"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js?_v=20230221233346"> </script><script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20230221233346"></script>
+    <script src="js/app.min.js?_v=20230221233346"></script><script ript src="https://www.sng-it.ru/bitrix/templates/master/js/jquery.inputmask.bundle.min.js?_v=20230221233346"></script>
   </body>
 </html>
