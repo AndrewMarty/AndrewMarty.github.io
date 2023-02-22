@@ -1281,6 +1281,8 @@ template {
 }
 
 .footer__telegram-img {
+  width: 1.5625vw;
+  height: 1.3020833333vw;
   margin-right: 1.0416666667vw;
 }
 
@@ -2070,6 +2072,18 @@ template {
 
 .qwuiz__quastions {
   margin-bottom: 1.8229166667vw;
+}
+
+.qwuiz__button img {
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.qwuiz__button:hover img {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .qwuiz__button img {
@@ -6034,6 +6048,7 @@ template {
 }
 
 .types {
+  overflow: hidden;
   padding: 4.6875vw 0 4.1666666667vw;
   background-color: #fff;
 }
@@ -6047,6 +6062,11 @@ template {
 
 .types__card {
   width: 25vw;
+}
+
+.types__button img {
+  width: 0.78125vw;
+  height: 0.78125vw;
 }
 
 .types__photo {
@@ -6857,9 +6877,13 @@ html {
 @media (max-width: 990px) {
   .header__socials,
   .header__info,
-  .header__slogan,
-  .header__nav {
+  .header__slogan {
     display: none;
+  }
+
+  .header__nav {
+    opacity: 0;
+    visibility: hidden;
   }
 
   .header__burger {
@@ -6874,12 +6898,16 @@ html {
     background: center/cover url("../img/header/background.png"); }
 
   .header__nav_active {
+    -webkit-transition: opacity 0.2s;
+    -o-transition: opacity 0.2s;
+    transition: opacity 0.2s;
     padding: 1.5625vw 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    display: block;
+    visibility: visible;
+    opacity: 1;
     min-height: 100vh;
   }
 
@@ -7308,6 +7336,11 @@ html {
     max-width: 56.25vw;
   }
 
+  .footer__telegram-img {
+    width: 9.375vw;
+    height: 7.8125vw;
+  }
+
   .footer__name {
     font-size: 3.75vw;
     line-height: 5.625vw;
@@ -7519,6 +7552,11 @@ html {
     max-width: none;
   }
 
+  .first__current,
+  .first__max {
+    font-size: 2.1875vw;
+  }
+
   .first__title {
     font-size: 10vw;
     line-height: 10.9375vw;
@@ -7571,6 +7609,7 @@ html {
 
   .first__dots .swiper-pagination-bullet {
     width: 4.6875vw !important;
+    height: 0.3125vw !important;
   }
 
   .first__card-name {
