@@ -1564,6 +1564,7 @@ template {
   min-height: 56.25vw;
   padding-top: 9.4791666667vw;
   position: relative;
+  margin-bottom: 2.2395833333vw;
 }
 
 .first__container {
@@ -3629,6 +3630,10 @@ template {
   grid-gap: 3.6458333333vw;
 }
 
+.examples__filter-point {
+  cursor: pointer;
+}
+
 .examples__menu {
   -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -3697,6 +3702,7 @@ template {
   font-size: 0.8333333333vw;
   line-height: 1.3020833333vw;
   letter-spacing: 0.02em;
+  cursor: pointer;
 }
 
 .examples__rate-img {
@@ -7564,10 +7570,6 @@ html {
     bottom: 59.375vw;
   }
 
-  .first__item-right {
-    max-width: 46.875vw;
-  }
-
   .first__row {
     padding: 4.6875vw 0 14.6875vw;
     -ms-flex-wrap: wrap;
@@ -7586,6 +7588,9 @@ html {
   }
 
   .first__item-right {
+    margin-left: 3.125vw;
+    margin-right: auto;
+    max-width: 46.875vw;
     margin-bottom: 15.625vw;
   }
 
@@ -8030,12 +8035,14 @@ html {
   }
 
   .price__dependence {
-    padding: 6.875vw 6.25vw;
+    padding: 6.875vw 0;
+    padding-right: 6.25vw;
     border-right: 0.3125vw solid #f1f5f5;
   }
 
   .price__dependence:last-child {
     border-right: none;
+    padding-right: 0;
   }
 
   .price__information {
@@ -9105,8 +9112,9 @@ html {
     margin-bottom: 4.6875vw;
   }
 
-  .solutions__text {
-    display: none;
+  .solutions__name {
+    font-size: 5vw;
+    line-height: 7.8125vw;
   }
 
   .catalog {
