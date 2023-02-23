@@ -395,14 +395,6 @@ template {
 @font-face {
   font-family: AvenirNextCyr;
   font-display: swap;
-  src: url("../fonts/AvenirNextCyr-Demi.woff2") format("woff2"), url("../fonts/AvenirNextCyr.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: AvenirNextCyr;
-  font-display: swap;
   src: url("../fonts/AvenirNextCyr-Heavy.woff2") format("woff2"), url("../fonts/AvenirNextCyr.woff") format("woff");
   font-weight: 800;
   font-style: normal;
@@ -411,7 +403,7 @@ template {
 @font-face {
   font-family: AvenirNextCyr;
   font-display: swap;
-  src: url("../fonts/AvenirNextCyr-Italic.woff2") format("woff2"), url("../fonts/AvenirNextCyr.woff") format("woff");
+  src: url("../fonts/AvenirNextCyr-DemiItalic.woff2") format("woff2"), url("../fonts/AvenirNextCyr.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
@@ -427,7 +419,7 @@ template {
 @font-face {
   font-family: AvenirNextCyr;
   font-display: swap;
-  src: url("../fonts/AvenirNextCyr-DemiItalic.woff2") format("woff2"), url("../fonts/AvenirNextCyr.woff") format("woff");
+  src: url("../fonts/AvenirNextCyr-Demi.woff2") format("woff2"), url("../fonts/AvenirNextCyr.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
@@ -435,7 +427,15 @@ template {
 @font-face {
   font-family: AvenirNextCyr;
   font-display: swap;
-  src: url("../fonts/AvenirNextCyr-LightItalic.woff2") format("woff2"), url("../fonts/AvenirNextCyr.woff") format("woff");
+  src: url("../fonts/AvenirNextCyr-Light.woff2") format("woff2"), url("../fonts/AvenirNextCyr.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: AvenirNextCyr;
+  font-display: swap;
+  src: url("../fonts/AvenirNextCyr-MediumItalic.woff2") format("woff2"), url("../fonts/AvenirNextCyr.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
@@ -451,7 +451,7 @@ template {
 @font-face {
   font-family: AvenirNextCyr;
   font-display: swap;
-  src: url("../fonts/AvenirNextCyr-MediumItalic.woff2") format("woff2"), url("../fonts/AvenirNextCyr.woff") format("woff");
+  src: url("../fonts/AvenirNextCyr-LightItalic.woff2") format("woff2"), url("../fonts/AvenirNextCyr.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
@@ -467,15 +467,7 @@ template {
 @font-face {
   font-family: AvenirNextCyr;
   font-display: swap;
-  src: url("../fonts/AvenirNextCyr-Thin.woff2") format("woff2"), url("../fonts/AvenirNextCyr.woff") format("woff");
-  font-weight: 100;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: AvenirNextCyr;
-  font-display: swap;
-  src: url("../fonts/AvenirNextCyr-Light.woff2") format("woff2"), url("../fonts/AvenirNextCyr.woff") format("woff");
+  src: url("../fonts/AvenirNextCyr-RegularItalic.woff2") format("woff2"), url("../fonts/AvenirNextCyr.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
@@ -491,6 +483,14 @@ template {
 @font-face {
   font-family: AvenirNextCyr;
   font-display: swap;
+  src: url("../fonts/AvenirNextCyr-Thin.woff2") format("woff2"), url("../fonts/AvenirNextCyr.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: AvenirNextCyr;
+  font-display: swap;
   src: url("../fonts/AvenirNextCyr-ThinItalic.woff2") format("woff2"), url("../fonts/AvenirNextCyr.woff") format("woff");
   font-weight: 400;
   font-style: normal;
@@ -499,7 +499,7 @@ template {
 @font-face {
   font-family: AvenirNextCyr;
   font-display: swap;
-  src: url("../fonts/AvenirNextCyr-UltraLightIt.woff2") format("woff2"), url("../fonts/AvenirNextCyr.woff") format("woff");
+  src: url("../fonts/AvenirNextCyr-UltraLightItalic.woff2") format("woff2"), url("../fonts/AvenirNextCyr.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
@@ -515,16 +515,16 @@ template {
 @font-face {
   font-family: PorscheNextTT;
   font-display: swap;
-  src: url("../fonts/PorscheNextTT-Bold.woff2") format("woff2"), url("../fonts/PorscheNextTT.woff") format("woff");
-  font-weight: 700;
+  src: url("../fonts/PorscheNextTT-Thin.woff2") format("woff2"), url("../fonts/PorscheNextTT.woff") format("woff");
+  font-weight: 100;
   font-style: normal;
 }
 
 @font-face {
   font-family: PorscheNextTT;
   font-display: swap;
-  src: url("../fonts/PorscheNextTT-Thin.woff2") format("woff2"), url("../fonts/PorscheNextTT.woff") format("woff");
-  font-weight: 100;
+  src: url("../fonts/PorscheNextTT-Bold.woff2") format("woff2"), url("../fonts/PorscheNextTT.woff") format("woff");
+  font-weight: 700;
   font-style: normal;
 }
 
@@ -1120,6 +1120,8 @@ template {
 }
 
 .header__nav {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   border-bottom: 0.0520833333vw solid rgba(248, 247, 247, 0.1);
 }
 
@@ -1335,9 +1337,13 @@ template {
   position: relative;
 }
 
+.footer__green-last {
+  margin-bottom: 1.0416666667vw;
+}
+
 .footer__green img {
-  width: 0.5208333333vw;
-  height: 0.5208333333vw;
+  width: 0.78125vw;
+  height: 0.78125vw;
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;
   transition: 0.2s;
@@ -1546,6 +1552,7 @@ template {
   letter-spacing: 0.03em;
   max-width: 26.0416666667vw;
   text-align: right;
+  font-weight: 500;
 }
 
 .no-webp .first {
@@ -2418,7 +2425,7 @@ template {
 
 .faq__quastion {
   cursor: pointer;
-  margin-bottom: 1.5625vw;
+  margin-bottom: 1.8229166667vw;
 }
 
 .faq__quastion:last-child {
@@ -2449,7 +2456,7 @@ template {
 
 .faq__quastion-title {
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 1.25vw;
   line-height: 1.5104166667vw;
 }
@@ -2465,6 +2472,24 @@ template {
 
 .completed {
   padding-top: 6.25vw;
+  background-color: #fff;
+  position: relative;
+}
+
+.completed .container {
+  position: relative;
+}
+
+.completed::before {
+  content: "";
+  height: 11.6666666667vw;
+  position: absolute;
+  display: block;
+  background-color: #f1f5f5;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 0;
 }
 
 .completed__title {
@@ -2511,7 +2536,7 @@ template {
 }
 
 .information__inner {
-  max-width: 14.84375vw;
+  max-width: 15.8854166667vw;
 }
 
 .information__title {
@@ -2529,13 +2554,15 @@ template {
 
 .information__small {
   font-size: 1.0416666667vw;
-  line-height: 1.25vw;
-  font-weight: 450;
+  line-height: 1.5625vw;
+  font-family: "PorscheNextTT";
   display: block;
+  font-weight: 400;
 }
 
 .information__button-calc {
   cursor: pointer;
+  max-width: 13.0208333333vw;
   display: block;
   text-align: center;
   border: 0.1041666667vw solid #fff;
@@ -2557,6 +2584,7 @@ template {
 }
 
 .information__button-telegram {
+  max-width: 225px;
   cursor: pointer;
   padding: 1.3020833333vw 1.0416666667vw;
   background-color: #05a0eb;
@@ -2583,7 +2611,7 @@ template {
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;
   transition: 0.2s;
-  margin-right: 0.5208333333vw;
+  margin-right: 1.0416666667vw;
   width: 1.5625vw;
   height: 1.3020833333vw;
 }
@@ -2621,9 +2649,6 @@ template {
 
 .price__grid,
 .price__subgrid {
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
   display: -ms-grid;
   display: grid;
   grid-gap: 0 1.5625vw;
@@ -2698,7 +2723,7 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 2.6041666667vw 0.2604166667vw 0 3.125vw;
+  padding: 2.6041666667vw 0.2604166667vw 2.6041666667vw 3.125vw;
 }
 
 .price__inner::after {
@@ -2754,6 +2779,7 @@ template {
   font-weight: 450;
   font-size: 1.5625vw;
   line-height: 2.0833333333vw;
+  max-width: 17.7083333333vw;
   margin: 0;
   /* or 133% */
   margin-bottom: 1.3020833333vw;
@@ -2777,7 +2803,7 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1.9791666667vw 4.1666666667vw;
+  padding: 2.1875vw 4.6875vw;
   font-weight: 450;
   font-size: 1.0416666667vw;
   letter-spacing: 0.02em;
@@ -2834,16 +2860,16 @@ template {
   font-size: 0.8333333333vw;
   line-height: 2.03125vw;
   letter-spacing: 0.03em;
-  margin-bottom: 1.5625vw;
+  margin-bottom: 0.2604166667vw;
 }
 
 .price__items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .price__input {
@@ -2888,6 +2914,7 @@ template {
 
 .price__text {
   font-size: 0.5208333333vw;
+  font-weight: 500;
   line-height: 0.78125vw;
 }
 
@@ -2929,6 +2956,8 @@ template {
 }
 
 .guarantee__back {
+  width: 66.8229166667vw;
+  height: 51.9270833333vw;
   position: absolute;
   right: 0;
   bottom: 0;
@@ -3077,6 +3106,7 @@ template {
 }
 
 .help__suptitle {
+  max-width: 28.6458333333vw;
   display: block;
   font-family: "PorscheNextTT";
   font-size: 2.0833333333vw;
@@ -3178,6 +3208,7 @@ template {
   text-decoration: none;
   font-weight: 450;
   font-size: 0.8333333333vw;
+  margin: 0 auto;
   line-height: 170%;
   /* or 27) */
   text-align: center;
@@ -3191,6 +3222,7 @@ template {
 }
 
 .help__social-light {
+  font-size: 9px;
   font-family: "PorscheNextTT";
   color: #cecece;
 }
@@ -3245,6 +3277,7 @@ template {
 .help__info-item {
   font-family: "PorscheNextTT";
   margin-right: 0.78125vw;
+  font-weight: 400;
 }
 
 .help__info-item:last-child {
@@ -3357,8 +3390,8 @@ template {
 
 .complex__left {
   position: relative;
-  -ms-grid-column-span: 4;
-  grid-column: span 4;
+  -ms-grid-column-span: 5;
+  grid-column: span 5;
 }
 
 .complex__right {
@@ -3385,13 +3418,16 @@ template {
 
 .complex__dots {
   left: auto !important;
-  right: 0 !important;
+  right: 7.2916666667vw !important;
   width: auto !important;
   position: absolute;
   z-index: 100;
+  bottom: 2.6041666667vw !important;
 }
 
 .complex__dots .swiper-pagination-bullet {
+  width: 0.5208333333vw;
+  height: 0.5208333333vw;
   opacity: 1 !important;
   background: #f1f5f5 !important;
   cursor: pointer;
@@ -3422,7 +3458,7 @@ template {
   display: flex;
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: 1.5625vw;
 }
 
 .complex__button-slider {
@@ -4193,6 +4229,10 @@ template {
   height: 0.78125vw;
 }
 
+.solutions__text {
+  opacity: 0;
+}
+
 .solutions__swiper {
   width: 91.1458333333vw;
   overflow: hidden;
@@ -4204,20 +4244,6 @@ template {
   margin: 0;
   padding: 0;
   overflow: visible;
-}
-
-.solutions__text {
-  -webkit-transition: 0.2s;
-  -o-transition: 0.2s;
-  transition: 0.2s;
-  opacity: 0;
-  visibility: hidden;
-  margin: 0;
-  position: relative;
-  z-index: 10;
-  font-size: 1.1458333333vw;
-  line-height: 1.5625vw;
-  color: #fff;
 }
 
 .solutions__card {
@@ -4250,8 +4276,11 @@ template {
 }
 
 .solutions__card:hover .solutions__text {
+  position: relative;
+  color: #fff;
   opacity: 1;
   visibility: visible;
+  z-index: 100;
 }
 
 .solutions__card:hover::before {
@@ -4411,11 +4440,15 @@ template {
 .catalog__item {
   position: relative;
   z-index: 10;
-  max-width: 43.75vw;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  max-width: 44.0104166667vw;
 }
 
 .catalog__title {
-  max-width: 42.7083333333vw;
+  font-size: 3.125vw;
+  max-width: 44.0104166667vw;
   margin-bottom: 1.5625vw;
 }
 
@@ -4445,7 +4478,6 @@ template {
   line-height: 2.03125vw;
   font-family: "PorscheNextTT";
   letter-spacing: 0.03em;
-  margin-bottom: 0.78125vw;
   color: #6f6f6f;
 }
 
@@ -4468,6 +4500,9 @@ template {
 .catalog__button {
   cursor: pointer;
   background: #38bc80;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   border: none;
   padding: 0 1.4583333333vw;
   -webkit-box-align: center;
@@ -4476,10 +4511,13 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-weight: 450;
   font-size: 0.9375vw;
   overflow: hidden;
-  line-height: 2.6041666667vw;
+  line-height: 1.0416666667vw;
   color: #fff;
   letter-spacing: 0.02em;
   position: relative;
@@ -4506,6 +4544,8 @@ template {
 }
 
 .catalog__background {
+  width: 55.5729166667vw;
+  height: 45.78125vw;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -4611,6 +4651,7 @@ template {
 }
 
 .about__title-second {
+  max-width: 25.5208333333vw;
   font-weight: 700;
   font-size: 1.6666666667vw;
   line-height: 2.1875vw;
@@ -4620,6 +4661,7 @@ template {
 }
 
 .about__sub-second {
+  max-width: 27.6041666667vw;
   font-size: 1.25vw;
   line-height: 1.7708333333vw;
   font-family: "PorscheNextTT";
@@ -4759,7 +4801,7 @@ template {
 
 .about__documentation-item {
   position: relative;
-  max-width: 26.0416666667vw;
+  max-width: 25.5208333333vw;
   margin-right: 4.1666666667vw;
 }
 
@@ -4768,6 +4810,7 @@ template {
   font-weight: 450;
   font-size: 3.125vw;
   line-height: 3.90625vw;
+  padding-right: 0.5208333333vw;
   /* or 125% */
   letter-spacing: 0.02em;
   margin-bottom: 1.0416666667vw;
@@ -4823,7 +4866,7 @@ template {
   background: #38bc80;
 }
 
-.about__button__mob {
+.about__mob {
   display: none;
 }
 
@@ -4898,7 +4941,7 @@ template {
   content: "";
   width: 100%;
   height: 100%;
-  background: #1c1c1c;
+  background: #1c1a1a;
   left: 0;
   top: 0;
   display: block;
@@ -4909,7 +4952,7 @@ template {
   font-weight: 450;
   font-size: 3.125vw;
   line-height: 3.90625vw;
-  /* or 125% */
+  max-width: 57.8125vw;
   letter-spacing: 0.02em;
   margin: 0;
   margin-bottom: 1.0416666667vw;
@@ -5019,7 +5062,7 @@ template {
 }
 
 .high__item_active {
-  font-weight: 700;
+  font-weight: 500;
   font-size: 1.25vw;
   line-height: 3.90625vw;
   color: #fff;
@@ -5057,7 +5100,7 @@ template {
   line-height: 2.03125vw;
   letter-spacing: 0.03em;
   display: block;
-  color: #6f6f6f;
+  color: #fff;
 }
 
 .high__field-input {
@@ -5069,6 +5112,9 @@ template {
 }
 
 .high__button {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5132,6 +5178,12 @@ template {
 .high__check-text {
   font-size: 0.5208333333vw;
   line-height: 0.78125vw;
+  color: #fff;
+  font-weight: 450;
+}
+
+.high__instruction {
+  width: 39.0625vw;
 }
 
 .high__field-input {
@@ -5504,8 +5556,8 @@ template {
 
 .trust__controls {
   position: absolute;
-  left: -15px;
-  bottom: 0;
+  left: -70px;
+  bottom: 2.0833333333vw;
 }
 
 .trust__inner {
@@ -5523,7 +5575,7 @@ template {
 .trust__inner::after {
   content: "";
   top: 0;
-  right: 0;
+  right: 2.6041666667vw;
   position: absolute;
   width: 100vw;
   height: 100%;
@@ -5612,6 +5664,7 @@ template {
 .trust__your {
   font-size: 1.7708333333vw;
   line-height: 1.0416666667vw;
+  font-weight: 400;
   letter-spacing: 0.02em;
   color: #cbd5d8;
 }
@@ -7343,6 +7396,7 @@ html {
 
   .footer__name {
     font-size: 3.75vw;
+    font-weight: 500;
     line-height: 5.625vw;
   }
 
@@ -7891,6 +7945,7 @@ html {
   }
 
   .information__button-telegram {
+    max-width: 46.875vw;
     font-size: 3.75vw;
     padding: 3.125vw 6.25vw;
   }
@@ -7898,6 +7953,10 @@ html {
   .information__button-telegram img {
     width: 3.4375vw;
     height: 4.6875vw;
+  }
+
+  .information__title_black {
+    max-width: 186px;
   }
 
   .information__item {
@@ -7915,6 +7974,9 @@ html {
 
   .information__img {
     right: -15px;
+    top: auto;
+    bottom: 0;
+    height: 57.8125vw;
   }
 
   .information__title {
@@ -7931,6 +7993,7 @@ html {
   }
 
   .information__button-calc {
+    max-width: 46.875vw;
     font-size: 3.125vw;
     line-height: 170%;
     padding: 4.6875vw;
@@ -8005,6 +8068,10 @@ html {
   .price__information-title {
     font-size: 5.625vw;
     line-height: 6.875vw;
+  }
+
+  .price__information-title {
+    max-width: none;
   }
 
   .price__information-subtitle {
@@ -8209,6 +8276,8 @@ html {
 
   .guarantee__back {
     width: 100%;
+    height: 92.8125vw;
+    bottom: -8.75vw;
   }
 
   .help__item {
@@ -8452,6 +8521,10 @@ html {
     font-size: 4.6875vw;
   }
 
+  .help__suptitle {
+    max-width: none;
+  }
+
   .help__info-number {
     font-size: 5vw;
   }
@@ -8466,7 +8539,9 @@ html {
   }
 
   .help__person-img {
-    width: 100%;
+    width: 100vw;
+    position: relative;
+    left: -30px;
   }
 
   .help__suptitle,
@@ -8688,7 +8763,7 @@ html {
 
   .complex__slider {
     position: relative;
-    left: -4.6875vw;
+    left: -15px;
     overflow: visible;
     width: 100vw;
   }
@@ -9030,6 +9105,10 @@ html {
     margin-bottom: 4.6875vw;
   }
 
+  .solutions__text {
+    display: none;
+  }
+
   .catalog {
     padding: 0;
     padding-top: 7.1875vw;
@@ -9139,6 +9218,9 @@ html {
     position: relative;
     left: -4.6875vw;
     width: 100vw;
+    height: 100.625vw;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 
   .catalog__text {
@@ -9262,6 +9344,7 @@ html {
     font-size: 5.625vw;
     line-height: 7.5vw;
     margin-bottom: 4.6875vw;
+    max-width: none;
   }
 
   .about__item-inner {
@@ -9290,6 +9373,7 @@ html {
   }
 
   .about__sub-second {
+    max-width: none;
     font-size: 5.625vw;
     line-height: 7.8125vw;
   }
@@ -9522,6 +9606,7 @@ html {
   }
 
   .high__title {
+    max-width: none;
     font-size: 8.125vw;
     line-height: 10.625vw;
   }
@@ -9539,6 +9624,11 @@ html {
   }
 
   .high__content {
+    max-width: none;
+  }
+
+  .high__instruction {
+    width: auto;
     max-width: none;
   }
 
