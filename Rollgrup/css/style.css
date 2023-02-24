@@ -4969,7 +4969,6 @@ template {
   font-size: 3.125vw;
   line-height: 3.90625vw;
   padding-right: 0.5208333333vw;
-  /* or 125% */
   letter-spacing: 0.02em;
   margin-bottom: 1.0416666667vw;
 }
@@ -7086,6 +7085,10 @@ html {
 }
 
 @media (max-width: 990px) {
+  .header .container {
+    padding: 0;
+  }
+
   .header__socials,
   .header__info,
   .header__slogan {
