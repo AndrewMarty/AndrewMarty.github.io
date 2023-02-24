@@ -15,6 +15,7 @@
     <meta name="msapplication-config" content="img/favicons/browserconfig.xml">
     <meta name="description" content="desctiption of installation">
     <title>installation</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="img/icon.png">
     <link rel="shortcut icon" href="/img/favicons/favicon.ico">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
@@ -33,9 +34,9 @@
     <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
     <link rel="icon" type="image/png" sizes="228x228" href="img/favicons/coast-228x228.png">
     <link rel="yandex-tableau-widget" href="img/favicons/yandex-browser-manifest.json">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20230224183616">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css?_v=20230224183616">
-    <link rel="stylesheet" href="css/style.min.css?_v=20230224183616">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20230224214219">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css?_v=20230224214219">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230224214219">
   </head>
   <body>
     <div class="wrapper">
@@ -57,7 +58,7 @@
             </div>
           </div>
           <div class="row header__nav">
-            <div class="header__link" href="#">Каталог
+            <div class="header__link" href="#"> <span class="header__link-text">Каталог</span>
               <div class="header__submenu header__submenu-catalog">
                 <div class="container header__submenu-container">
                   <div class="header__submenu-row">
@@ -124,7 +125,7 @@
                 </div>
               </div>
             </div>
-            <div class="header__link" href="#">О нас
+            <div class="header__link" href="#"> <span class="header__link-text">О нас</span>
               <div class="header__submenu">
                 <div class="container">
                   <div class="header__submenu-grid">
@@ -136,19 +137,19 @@
           </div>
         </div>
       </header>
-      <main class="main">
+      <main class="main transition-fade" id="swup">
         <section class="first first__installation">
           <div class="row first__history">
             <ul class="first__history-list">
               <li class="first__history-item">Главная</li>
               <li class="first__history-item">Каталог</li>
-              <li class="first__history-item">Доставка и оплата</li>
+              <li class="first__history-item">Монтаж и гарантии</li>
             </ul>
           </div>
           <div class="container"> 
             <div class="first__row first__delivery-row">
-              <div class="first__item first__house-item"> 
-                <h1 class="first__title first__house-title">Монтаж и гарантии</h1>
+              <div class="first__item first__delivery-item"> 
+                <h1 class="first__title first__delivery-title">Монтаж и гарантии</h1>
                 <p class="first__subtitle">Рольставни с оперативной доставкой и монтажом на объект</p>
               </div>
             </div>
@@ -180,38 +181,40 @@
             </div>
           </div>
         </section>
-      </main>
-      <footer class="footer">
-        <div class="container"> 
-          <div class="row footer__row"> 
-            <div class="footer__item"> <a class="footer__logo" href="#"><img src="img/base/logo.svg" alt="logo"></a>
-              <p class="footer__desc">Работаем по всей России. Все виды роллетных систем. Изготовление, монтаж, обслуживание</p><a class="footer__telegram-link" href="#">
-                <svg class="footer__telegram-img" width="31" height="25" viewBox="0 0 31 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <footer class="footer">
+          <div class="container"> 
+            <div class="row footer__row"> 
+              <div class="footer__item"> <a class="footer__logo" href="#"><img src="img/base/logo.svg" alt="logo"></a>
+                <p class="footer__desc">Работаем по всей России. Все виды роллетных систем. Изготовление, монтаж, обслуживание</p><a class="footer__telegram-link" href="#">
+                  <svg class="footer__telegram-img" width="31" height="25" viewBox="0 0 31 25" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M12.1219 16.2901L11.6089 23.1896C12.3391 23.1896 12.659 22.8884 13.0392 22.5234L16.467 19.3778L23.57 24.3714C24.8735 25.0666 25.7908 24.7016 26.1409 23.2186L30.8058 2.24205C31.2222 0.399866 30.1118 -0.324263 28.8445 0.133386L1.4341 10.2075C-0.436714 10.9026 -0.406539 11.9048 1.11425 12.3567L8.12074 14.448L24.3968 4.66932C25.1632 4.18271 25.8572 4.44919 25.2839 4.9416L12.1219 16.2901Z" fill="#05A0EB"></path>
 </svg>Telegram канал</a><span class="footer__green"> <span class="footer__green-text">Вызвать замерщика</span><img src="img/footer/arrow.svg" alt="arrow"></span>
+              </div>
+              <div class="footer__item"> 
+                <h6 class="footer__title">Навигация по сайту</h6><a class="footer__link footer__link-anim" href="#">Главная</a><a class="footer__link footer__link-anim" href="#">Портфолио</a><a class="footer__link footer__link-anim" href="#">О компании</a><a class="footer__link footer__link-anim" href="#">Дилерам</a><a class="footer__link footer__link-anim" href="#">Застройщикам</a><a class="footer__link footer__link-anim" href="#">Вопрос-ответ</a><a class="footer__link footer__link-anim" href="#">Контакты</a>
+              </div>
+              <div class="footer__item"> 
+                <h6 class="footer__title">Что мы делаем</h6><a class="footer__link footer__link-anim" href="#">Прозрачные рольставни</a><a class="footer__link footer__link-anim" href="#">Антивандальные рольставни</a><a class="footer__link footer__link-anim" href="#">Декоративные рольставни</a><a class="footer__link footer__link-anim" href="#">Решетчатые рольставни</a><a class="footer__link footer__link-anim" href="#">Гаражные ворота</a><a class="footer__link footer__link-anim" href="#">Рольворота</a><span class="footer__green"> <span class="footer__green-text">Смотреть все</span><img src="img/footer/arrow.svg" alt="arrow"></span>
+              </div>
+              <div class="footer__item"> 
+                <h6 class="footer__title">Преимущества</h6><a class="footer__link" href="#">Гарантия 3 года по договору</a><a class="footer__link" href="#">Собственное производство</a><a class="footer__link" href="#">Уникальные специалисты, имеющие опыт с 1997 г.</a><a class="footer__link" href="#">Гибкая система оплаты</a><a class="footer__link" href="#">Комплектющие напрямую с заводов-изготовителей</a><a class="footer__link" href="#">Лучший клиентский сервис</a><a class="footer__link" href="#">Удобное приложение для дилеров</a>
+              </div>
+              <div class="footer__item"> 
+                <h6 class="footer__title">Контакты</h6><span class="footer__work">Пн-Сб  9:00-19:00 </span><a class="footer__number" href="tel:+7(499)688-84-83">+7 (499) 688-84-83</a><span class="footer__green footer__green-last"><span class="footer__green-text">Обратный звонок</span><img src="img/footer/arrow.svg" alt="arrow"></span><span class="footer__ask">Спрашивайте, отвечаем онлайн</span>
+                <div class="footer__socials"> <a class="footer__social footer__social-whatsapp" href="#"><img class="footer__social-img" src="img/base/whatsapp.svg" alt="" srcset=""></a><a class="footer__social footer__social-telegram" href="#"> <img class="footer__social-img" src="img/base/telegram.svg" alt="" srcset=""></a><a class="footer__social footer__social-viber" href="#"><img class="footer__social-img" src="img/base/viber.svg" alt="" srcset=""></a></div><span class="footer__green"> <span class="footer__green-text">Все контакты</span><img src="img/footer/arrow.svg" alt="arrow"></span>
+              </div>
             </div>
-            <div class="footer__item"> 
-              <h6 class="footer__title">Навигация по сайту</h6><a class="footer__link footer__link-anim" href="#">Главная</a><a class="footer__link footer__link-anim" href="#">Портфолио</a><a class="footer__link footer__link-anim" href="#">О компании</a><a class="footer__link footer__link-anim" href="#">Дилерам</a><a class="footer__link footer__link-anim" href="#">Застройщикам</a><a class="footer__link footer__link-anim" href="#">Вопрос-ответ</a><a class="footer__link footer__link-anim" href="#">Контакты</a>
-            </div>
-            <div class="footer__item"> 
-              <h6 class="footer__title">Что мы делаем</h6><a class="footer__link footer__link-anim" href="#">Прозрачные рольставни</a><a class="footer__link footer__link-anim" href="#">Антивандальные рольставни</a><a class="footer__link footer__link-anim" href="#">Декоративные рольставни</a><a class="footer__link footer__link-anim" href="#">Решетчатые рольставни</a><a class="footer__link footer__link-anim" href="#">Гаражные ворота</a><a class="footer__link footer__link-anim" href="#">Рольворота</a><span class="footer__green"> <span class="footer__green-text">Смотреть все</span><img src="img/footer/arrow.svg" alt="arrow"></span>
-            </div>
-            <div class="footer__item"> 
-              <h6 class="footer__title">Преимущества</h6><a class="footer__link" href="#">Гарантия 3 года по договору</a><a class="footer__link" href="#">Собственное производство</a><a class="footer__link" href="#">Уникальные специалисты, имеющие опыт с 1997 г.</a><a class="footer__link" href="#">Гибкая система оплаты</a><a class="footer__link" href="#">Комплектющие напрямую с заводов-изготовителей</a><a class="footer__link" href="#">Лучший клиентский сервис</a><a class="footer__link" href="#">Удобное приложение для дилеров</a>
-            </div>
-            <div class="footer__item"> 
-              <h6 class="footer__title">Контакты</h6><span class="footer__work">Пн-Сб  9:00-19:00 </span><a class="footer__number" href="tel:+7(499)688-84-83">+7 (499) 688-84-83</a><span class="footer__green footer__green-last"><span class="footer__green-text">Обратный звонок</span><img src="img/footer/arrow.svg" alt="arrow"></span><span class="footer__ask">Спрашивайте, отвечаем онлайн</span>
-              <div class="footer__socials"> <a class="footer__social footer__social-whatsapp" href="#"><img class="footer__social-img" src="img/base/whatsapp.svg" alt="" srcset=""></a><a class="footer__social footer__social-telegram" href="#"> <img class="footer__social-img" src="img/base/telegram.svg" alt="" srcset=""></a><a class="footer__social footer__social-viber" href="#"><img class="footer__social-img" src="img/base/viber.svg" alt="" srcset=""></a></div><span class="footer__green"> <span class="footer__green-text">Все контакты</span><img src="img/footer/arrow.svg" alt="arrow"></span>
+            <div class="footer__subrow"> 
+              <div class="footer__left"> <span class="footer__name">ООО РОЛГРУПП</span><a class="footer__agree-link" href="#">Политика конфиденциальности</a></div>
+              <div class="footer__right">Материалы с сайта защищены законом РФ об авторских и смежных правах. Копирование запрещено. Сайт не является договором офферты </div>
             </div>
           </div>
-          <div class="footer__subrow"> 
-            <div class="footer__left"> <span class="footer__name">ООО РОЛГРУПП</span><a class="footer__agree-link" href="#">Политика конфиденциальности</a></div>
-            <div class="footer__right">Материалы с сайта защищены законом РФ об авторских и смежных правах. Копирование запрещено. Сайт не является договором офферты </div>
-          </div>
-        </div>
-      </footer>
+        </footer>
+      </main>
     </div>
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js?_v=20230224183616"> </script><script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20230224183616"></script>
-    <script src="js/app.min.js?_v=20230224183616"></script><script ript src="https://www.sng-it.ru/bitrix/templates/master/js/jquery.inputmask.bundle.min.js?_v=20230224183616"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js?_v=20230224214219"> </script><script src="https://unpkg.com/swup@3?_v=20230224214219"></script>
+<script ript src="https://www.sng-it.ru/bitrix/templates/master/js/jquery.inputmask.bundle.min.js?_v=20230224214219"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20230224214219"></script>
+    <script src="js/app.min.js?_v=20230224214219"></script>
   </body>
 </html>

@@ -1189,6 +1189,10 @@ template {
   display: none;
 }
 
+.header__link-text {
+  cursor: pointer;
+}
+
 .header__history {
   position: absolute;
   bottom: 0;
@@ -1248,6 +1252,36 @@ template {
 
 .header__burger_active .header__burger-cross {
   display: block;
+}
+
+.transition-fade {
+  -webkit-transition: 0.6s;
+  -o-transition: 0.6s;
+  transition: 0.6s;
+  opacity: 1;
+}
+
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #1c1c1c;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: 0.6s;
+  -o-transition: 0.6s;
+  transition: 0.6s;
+}
+
+html.is-animating .transition-fade {
+  opacity: 0;
+}
+
+html.is-animating .overlay {
+  background-color: #000;
+  opacity: 1;
+  z-index: 99;
 }
 
 .footer {
@@ -1602,7 +1636,7 @@ template {
 }
 
 .first .first__delivery-title {
-  max-width: 45.8333333333vw;
+  max-width: 49.4791666667vw;
   margin-bottom: 2.8645833333vw;
 }
 
@@ -3440,82 +3474,6 @@ template {
 
 .help__info-inner {
   margin-right: 0.5208333333vw;
-}
-
-.help__social-whatsapp {
-  padding-top: 1.5625vw;
-  padding-bottom: 1.5625vw;
-}
-
-.help__social-whatsapp img {
-  width: 22px;
-  height: 22px;
-}
-
-.help__item {
-  margin-bottom: 37.1875vw;
-}
-
-.help__info {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.help__info-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  width: 100%;
-}
-
-.help__info-number {
-  font-size: 6.5625vw;
-  width: 100%;
-  margin-bottom: 1.5625vw;
-}
-
-.help__info-inner {
-  font-size: 3.4375vw;
-  margin-right: 2.5vw;
-}
-
-.help__info-or {
-  margin-right: 0.9375vw;
-}
-
-.help__info-time,
-.help__info-or {
-  font-size: 4.375vw;
-  line-height: 4.375vw;
-}
-
-.help__cost {
-  max-width: none;
-  top: -23.4375vw;
-  left: 6.875vw;
-}
-
-.help__cost-text {
-  font-size: 4.375vw;
-  line-height: 5vw;
-}
-
-.help__person-info {
-  text-align: right;
-  max-width: 39.0625vw;
-  right: 14.6875vw;
-  bottom: 16.5625vw;
-}
-
-.help__person-name {
-  font-size: 6.25vw;
-  margin-bottom: 4.6875vw;
-}
-
-.help__person-rang {
-  font-size: 3.75vw;
 }
 
 .complex {
@@ -7480,10 +7438,6 @@ html {
     margin-bottom: 3.75vw;
   }
 
-  .header__submenu-name:last-child {
-    margin-bottom: 0;
-  }
-
   .header__link {
     font-size: 5vw;
     line-height: 5vw;
@@ -8961,6 +8915,82 @@ html {
     position: relative;
     left: -6.875vw;
     bottom: 0;
+  }
+
+  .help__social-whatsapp {
+    padding-top: 1.5625vw;
+    padding-bottom: 1.5625vw;
+  }
+
+  .help__social-whatsapp img {
+    width: 22px;
+    height: 22px;
+  }
+
+  .help__item {
+    margin-bottom: 37.1875vw;
+  }
+
+  .help__info {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .help__info-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .help__info-number {
+    font-size: 6.5625vw;
+    width: 100%;
+    margin-bottom: 1.5625vw;
+  }
+
+  .help__info-inner {
+    font-size: 3.4375vw;
+    margin-right: 2.5vw;
+  }
+
+  .help__info-or {
+    margin-right: 0.9375vw;
+  }
+
+  .help__info-time,
+  .help__info-or {
+    font-size: 4.375vw;
+    line-height: 4.375vw;
+  }
+
+  .help__cost {
+    max-width: none;
+    top: -23.4375vw;
+    left: 6.875vw;
+  }
+
+  .help__cost-text {
+    font-size: 4.375vw;
+    line-height: 5vw;
+  }
+
+  .help__person-info {
+    text-align: right;
+    max-width: 39.0625vw;
+    right: 14.6875vw;
+    bottom: 16.5625vw;
+  }
+
+  .help__person-name {
+    font-size: 6.25vw;
+    margin-bottom: 4.6875vw;
+  }
+
+  .help__person-rang {
+    font-size: 3.75vw;
   }
 
   .complex {
