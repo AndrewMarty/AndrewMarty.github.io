@@ -1243,6 +1243,10 @@ template {
   bottom: 0.2604166667vw;
 }
 
+.header__burger .container {
+  padding: 0;
+}
+
 .header__burger_active .header__burger-inner::before {
   top: -0.2604166667vw;
   -webkit-transform: rotate(40deg);
@@ -2250,7 +2254,7 @@ html.is-animating .transition-fade {
   display: -ms-flexbox;
   display: flex;
   border: 0.0520833333vw solid #f1f5f5;
-  background-color: #f1f5f5;
+  background-color: #fff;
 }
 
 .benefits__check img {
@@ -8150,6 +8154,7 @@ html {
   }
 
   .benefits__item {
+    padding: 0 6.875vw;
     position: relative;
     padding: 5vw 0;
     width: 100%;
