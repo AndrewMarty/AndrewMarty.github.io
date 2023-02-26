@@ -1165,6 +1165,10 @@ template {
   visibility: hidden;
 }
 
+.header__nav-inner {
+  overflow: scroll;
+}
+
 .header__link {
   font-weight: 700;
   font-size: 0.8333333333vw;
@@ -1331,6 +1335,11 @@ template {
 
 .header__burger_active .header__burger-cross {
   display: block;
+}
+
+.header__nav {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 
 .header__mob-visible {
@@ -7963,7 +7972,7 @@ html {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    padding: 12.5vw 0;
+    padding: 18.75vw 0 9.375vw;
   }
 
   .first__delivery .first__title,
@@ -8022,7 +8031,7 @@ html {
   }
 
   .first__house-row {
-    padding: 17.1875vw 0 15vw;
+    padding: 26.5625vw 0 15vw;
   }
 
   .first__house-title {
@@ -8044,7 +8053,7 @@ html {
     position: absolute;
     padding-left: 0vw;
     left: 6.875vw;
-    top: 19.375vw;
+    top: 18.125vw;
   }
 
   .first__history-item {
