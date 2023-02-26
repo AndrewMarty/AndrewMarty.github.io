@@ -1243,10 +1243,6 @@ template {
   bottom: 0.2604166667vw;
 }
 
-.header__burger .container {
-  padding: 0;
-}
-
 .header__burger_active .header__burger-inner::before {
   top: -0.2604166667vw;
   -webkit-transform: rotate(40deg);
@@ -7501,6 +7497,10 @@ html {
     display: none;
   }
 
+  .header .container {
+    padding: 0;
+  }
+
   .header__submenu-link {
     font-size: 3.75vw;
     line-height: 5vw;
@@ -8154,9 +8154,8 @@ html {
   }
 
   .benefits__item {
-    padding: 0 6.875vw;
     position: relative;
-    padding: 5vw 0;
+    padding: 5vw 6.875vw;
     width: 100%;
   }
 
