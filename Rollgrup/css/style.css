@@ -9926,6 +9926,27 @@ html {
     line-height: 3.125vw;
   }
 
+  .catalog__img {
+    width: 8.4375vw;
+    height: 8.4375vw;
+  }
+
+  .catalog__list {
+    height: 16.25vw;
+  }
+
+  .catalog__current {
+    font-size: 4.375vw;
+    line-height: 6.25vw;
+  }
+
+  .catalog__current::after {
+    width: 1.875vw;
+    height: 1.875vw;
+    border-width: 0.3125vw;
+    right: -4.0625vw;
+  }
+
   .about {
     padding-top: 15.625vw;
     padding-bottom: 9.375vw;
