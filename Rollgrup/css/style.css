@@ -5281,6 +5281,7 @@ html.is-animating .transition-fade {
 
 .about__grid {
   position: relative;
+  z-index: 10;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[14];
@@ -5336,6 +5337,7 @@ html.is-animating .transition-fade {
 }
 
 .about__more {
+  display: inline-block;
   color: #38bc80;
   font-weight: 700;
   font-size: 1.0416666667vw;
@@ -5346,6 +5348,19 @@ html.is-animating .transition-fade {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-decoration: none;
+}
+
+.about__more img {
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.about__more:hover img {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .about__more-text {
