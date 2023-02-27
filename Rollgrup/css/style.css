@@ -10952,6 +10952,7 @@ html {
   .ways__name,
   .ways__desc {
     font-size: 6.875vw;
+    line-height: 7.1875vw;
   }
 
   .ways__item {
@@ -11237,6 +11238,11 @@ html {
     margin-bottom: 9.375vw;
   }
 
+  .development__photo {
+    position: relative;
+    z-index: 1;
+  }
+
   .development__wrap {
     position: relative;
     max-width: none;
@@ -11248,7 +11254,7 @@ html {
     left: -6.875vw;
     top: -12.5vw;
     height: 200vh;
-    z-index: -1;
+    z-index: 0;
     position: absolute;
     display: block;
     background: #38bc80;
@@ -11400,6 +11406,7 @@ html {
   }
 
   .control__item {
+    max-width: 100%;
     padding: 9.375vw 0 7.8125vw;
     -ms-flex-negative: 1;
         flex-shrink: 1;
