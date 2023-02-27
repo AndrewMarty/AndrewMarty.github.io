@@ -9952,6 +9952,114 @@ html {
     height: 1.5625vw;
   }
 
+  .examples__wrap {
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+    opacity: 0;
+    visibility: hidden;
+    height: 100vh;
+    max-height: 100vh;
+    overflow: visible;
+    width: 81.25vw;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .examples__wrap-inner {
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+
+  .examples__wrap_active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .examples__wrap_active .examples__wrap-inner {
+    -webkit-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+
+  .examples__wrap-back {
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: -1;
+  }
+
+  .examples__more {
+    font-size: 3.4375vw;
+  }
+
+  .examples__more img {
+    width: 3.4375vw;
+    height: 3.4375vw;
+  }
+
+  .examples__filter-name {
+    font-size: 4.375vw;
+    line-height: 5.3125vw;
+    margin-bottom: 3.125vw;
+  }
+
+  .examples__filter-text {
+    font-size: 3.75vw;
+    line-height: 5vw;
+  }
+
+  .examples__box {
+    width: 3.125vw;
+    height: 3.125vw;
+  }
+
+  .examples__box::after {
+    width: 0.625vw;
+    height: 0.9375vw;
+    border-width: 0.3125vw;
+  }
+
+  .examples__filter-point {
+    margin-bottom: 3.125vw;
+  }
+
+  .examples__filter-item {
+    margin-bottom: 6.25vw;
+  }
+
+  .examples__reset {
+    display: inline-block;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    padding: 0 4.6875vw;
+    font-size: 3.75vw;
+    line-height: 9.375vw;
+  }
+
+  .examples__wrap-inner {
+    background-color: #fff;
+    padding: 6.25vw;
+    overflow: auto;
+  }
+
   .seo {
     padding: 6.25vw 0;
   }
