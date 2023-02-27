@@ -10225,6 +10225,7 @@ html {
   }
 
   .catalog__background {
+    display: block;
     position: relative;
     left: -6.875vw;
     width: 130vw;
@@ -10237,6 +10238,10 @@ html {
     position: absolute;
     bottom: 0;
     right: 0;
+  }
+
+  .catalog__background-sup {
+    position: relative;
   }
 
   .catalog__text {
