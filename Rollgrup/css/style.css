@@ -813,7 +813,7 @@ template {
 }
 
 .header__logo img {
-  image-rendering: optimizeQuality;
+  image-rendering: crisp-edges;
   -o-object-fit: cover;
      object-fit: cover;
   width: 10.4166666667vw;
@@ -1714,7 +1714,7 @@ html.is-animating .transition-fade {
 }
 
 .footer__logo img {
-  image-rendering: optimizeQuality;
+  image-rendering: crisp-edges;
   width: 10.4166666667vw;
 }
 
@@ -5891,6 +5891,10 @@ html.is-animating .transition-fade {
           justify-content: space-between;
 }
 
+.own-gray {
+  background: #f7f7f7;
+}
+
 .own__subtitle {
   font-family: "PorscheNextTT";
   font-size: 1.5625vw;
@@ -6474,7 +6478,7 @@ html.is-animating .transition-fade {
 }
 
 .scheme__num {
-  font-weight: 700;
+  font-weight: 500;
   font-size: 4.1666666667vw;
   line-height: 4.1666666667vw;
   letter-spacing: 0.02em;
@@ -6483,10 +6487,14 @@ html.is-animating .transition-fade {
 
 .scheme__text {
   margin: 0;
-  font-weight: 450;
+  font-weight: 500;
   font-size: 1.25vw;
   line-height: 1.7708333333vw;
   letter-spacing: 0.02em;
+}
+
+.scheme__text b {
+  font-weight: 600;
 }
 
 .basic {
