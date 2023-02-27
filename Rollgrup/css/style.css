@@ -6436,7 +6436,7 @@ html.is-animating .transition-fade {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 19.7916666667vw;
+  max-width: 17.791667vw;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -6488,7 +6488,7 @@ html.is-animating .transition-fade {
 .scheme__text {
   margin: 0;
   font-weight: 500;
-  font-size: 1.25vw;
+  font-size: 1.1458333333vw;
   line-height: 1.7708333333vw;
   letter-spacing: 0.02em;
 }
