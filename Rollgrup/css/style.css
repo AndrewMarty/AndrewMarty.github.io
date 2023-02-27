@@ -3114,7 +3114,7 @@ html.is-animating .transition-fade {
 }
 
 .information__button-telegram {
-  max-width: 225px;
+  max-width: 13.5416666667vw;
   cursor: pointer;
   padding: 1.3020833333vw 1.0416666667vw;
   background-color: #05a0eb;
