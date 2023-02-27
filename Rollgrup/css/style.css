@@ -813,6 +813,7 @@ template {
 }
 
 .header__logo img {
+  image-rendering: optimizeQuality;
   -o-object-fit: cover;
      object-fit: cover;
   width: 10.4166666667vw;
@@ -1713,6 +1714,7 @@ html.is-animating .transition-fade {
 }
 
 .footer__logo img {
+  image-rendering: optimizeQuality;
   width: 10.4166666667vw;
 }
 
@@ -2674,7 +2676,8 @@ html.is-animating .transition-fade {
   margin-left: 0.5208333333vw;
 }
 
-.qwuiz__item:hover {
+.qwuiz__item {
+  display: block;
   cursor: pointer;
 }
 
@@ -2865,6 +2868,36 @@ html.is-animating .transition-fade {
   font-weight: 700;
   font-size: 1.0416666667vw;
   letter-spacing: 0.02em;
+  position: relative;
+  overflow: hidden;
+}
+
+.kinds__button img {
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.kinds__button::after {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 2.7083333333vw;
+  height: 12.5vw;
+  -webkit-transform: rotate(40deg);
+      -ms-transform: rotate(40deg);
+          transform: rotate(40deg);
+  top: -2.6041666667vw;
+  background-color: #fff;
+  z-index: 1;
+  -webkit-animation: blick 5s infinite;
+          animation: blick 5s infinite;
+}
+
+.kinds__button:hover img {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .kinds__arrow {
@@ -8770,10 +8803,12 @@ html {
   }
 
   .information__item-left::before {
-    right: -15px;
+    width: 100vw;
+    right: -6.875vw;
   }
 
   .information__img {
+    display: none;
     right: -15px;
     top: auto;
     bottom: 0;
@@ -10122,6 +10157,11 @@ html {
     width: 100%;
   }
 
+  .catalog__button img {
+    width: 4.6875vw;
+    height: 4.6875vw;
+  }
+
   .catalog__button::after {
     height: 100vw;
     width: 4.6875vw;
@@ -10131,10 +10171,16 @@ html {
   .catalog__background {
     position: relative;
     left: -6.875vw;
-    width: 100vw;
-    height: 100.625vw;
+    width: 130vw;
+    height: 96.875vw;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+
+  .catalog__background:last-child {
+    position: absolute;
+    bottom: 0;
+    right: 0;
   }
 
   .catalog__text {
