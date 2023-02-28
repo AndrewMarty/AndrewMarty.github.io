@@ -2081,6 +2081,9 @@ html.is-animating .transition-fade {
 }
 
 .first__photo {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(37.58%, rgba(28, 26, 26, 0)), to(rgba(28, 26, 26, 0.6)));
+  background: -o-linear-gradient(top, rgba(28, 26, 26, 0) 37.58%, rgba(28, 26, 26, 0.6) 100%);
+  background: linear-gradient(180deg, rgba(28, 26, 26, 0) 37.58%, rgba(28, 26, 26, 0.6) 100%);
   border-radius: 1.0416666667vw;
   overflow: hidden;
   width: 100%;
@@ -3077,11 +3080,6 @@ html.is-animating .transition-fade {
 
 .information__item-right {
   width: 50%;
-}
-
-.information__small {
-  padding-top: 2.5vw;
-  max-width: 40.625vw;
 }
 
 .price {
@@ -8837,6 +8835,8 @@ html {
   }
 
   .information__small {
+    padding-top: 2.5vw;
+    max-width: 40.625vw;
     font-size: 3.125vw;
     line-height: 170%;
   }
