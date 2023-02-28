@@ -10398,9 +10398,6 @@ html {
     height: 96.875vw;
     -o-object-fit: cover;
        object-fit: cover;
-  }
-
-  .catalog__background:last-child {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -10408,6 +10405,7 @@ html {
 
   .catalog__background-sup {
     position: relative;
+    z-index: 1;
   }
 
   .catalog__text {
